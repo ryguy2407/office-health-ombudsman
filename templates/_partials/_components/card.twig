@@ -1,0 +1,30 @@
+
+<a href="{{ card.url }}" aria-label="{{ card.title }}">
+    <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg  transition-all rounded overflow-hidden">    
+        
+        {% if card.featureImage[0] %}
+
+            {% set image = card.featureImage[0] %}
+            {% set full = (image.width > 2000) ? 2000 : image.width %}
+            {% set half = (full / 2)|round %}
+            {% set fourth = (full / 4)|round %}
+            <div class="cardative h-0 aspect-ratio-landscape overflow-hidden">
+                <img class="lazyload absolute inset-0 object-cover w-full h-full scale-100 group-hover:scale-110 transition-all" src="{{ image.url({ width: half }) }}" alt=""
+                    data-srcset="{{ image.url({ width: fourth }) }} {{ fourth }}w,
+                            {{ image.url({ width: half }) }} {{ half }}w,
+                            {{ image.url({ width: full }) }} {{ full }}w"
+                    data-sizes="(min-width: {{ half + 1 }}px) {{ full }}px,
+                            (min-width: {{ fourth + 1 }}px) {{ half }}px,
+                            100vw"
+                > 
+            </div>
+        {% endif %}
+
+        <div class="p-6">
+            
+                <h4>{{ card.title }}</h4>
+                <p>{{ card.pageIntroduction }}</p>
+            
+        </div>
+    </article>
+</a>

@@ -1,0 +1,57 @@
+.btn {
+    @apply font-bold inline-block px-5 py-3 rounded-sm text-base transition-all;
+}
+
+.btn-solid {
+    @apply bg-navy-500 border border-navy-500 text-white;
+    &:hover {
+        @apply bg-navy-700 border-navy-700 shadow-md;
+    }
+}
+.btn-outline {
+    @apply bg-transparent border border-navy-500 text-navy-500;
+    &:hover {
+        @apply bg-navy-500 border-navy-500 text-white shadow-md;
+    }
+}
+
+.btn-link {
+    @apply px-0 py-1 bg-transparent border-b-2 text-navy-500 border-navy-500 rounded-none;
+    &:hover {
+        @apply border-teal-500;
+    }
+}
+
+.theme-dark {
+    .btn-solid {
+        @apply bg-white border border-white text-navy-500;
+        &:hover {
+            @apply bg-navy-500 border-navy-500 text-white;
+        }
+    }
+    .btn-outline {
+        @apply bg-transparent border border-white text-white;
+        &:hover {
+            @apply bg-white border-white text-navy-500;
+        }
+    }
+    .btn-link {
+        @apply  px-0 py-1 bg-transparent text-white border-b-2 border-white rounded-none;
+        &:hover {
+            @apply border-teal-500;
+        }
+    }
+}
+
+.btn-lg {
+    @apply px-5;
+    @apply py-4;
+}
+
+.btn-sm {
+    @apply px-3 py-2 text-sm;
+}
+
+.btn + .btn-link {
+    @apply ml-3;
+}

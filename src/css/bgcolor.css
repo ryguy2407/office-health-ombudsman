@@ -1,0 +1,35 @@
+/*! Section background colours */
+
+.section-bg-white {
+    background-color: #fff;
+    border-top: 1px solid #F1F6F5;
+}
+ 
+.section-bg-lightGrey {
+    background-color: #F1F6F5;
+} 
+
+.section-bg-teal {
+    @apply bg-teal-500;
+}
+
+.section-bg-blue {
+    @apply bg-navy-500;
+}
+
+.section-bg-navy {
+    @apply bg-navy-700;
+}
+.section {
+
+    
+}
+
+.section-inner {
+    margin-bottom: 2rem;
+    @apply relative;
+}
+
+*:nth-last-child(1) {
+    margin-bottom: 0!important;
+}

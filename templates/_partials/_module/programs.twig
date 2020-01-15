@@ -1,0 +1,77 @@
+{% if module.type.handle == 'programs' %}
+    <div class="container relative mb-8">
+        <div class="flex flex-wrap items-end -mx-3">
+            <div class="md:w-2/3 richtext px-3 mb-3 md:mb-0"> 
+                {{ module.richText | markdown }}
+            </div>
+            <div class="md:w-1/3 richtext px-3 hidden md:flex justify-end"> 
+                <button id="program-prev" class="h-16 w-16 bg-light hover:bg-teal-500 rounded-full focus:outline-none transition-all mr-2">Prev</button>
+                <button  id="program-next" class="h-16 w-16 bg-light hover:bg-teal-500 rounded-full focus:outline-none transition-all">Next</button>
+            </div>
+        </div> 
+    </div>
+    <div class="container relative">
+        <div class="flex flex-wrap -mx-3"> 
+            {% set relatedEntries = module.programEntries.with(['programSliderImage'],['title'],['url']).all() %}
+                {% if relatedEntries|length %} 
+                <div class="swiper-container program-swiper container overflow-visible px-3  pb-10 md:pb-0">
+                    <div class="swiper-wrapper">
+                        {% for rel in relatedEntries %} 
+                            <div class="swiper-slide">
+                            <a href="{{ rel.url }}" aria-label="{{ rel.title }}">
+                                <article class=" overflow-hidden flex flex-col group w-full h-full rounded bg-white {% if block.bgColor == "white" %}bg-light{% endif %} shadow hover:shadow-lg  transition-all overflow-hidden">
+                                    <div class="p-6">
+                                        <h4>{{ rel.title }}</h4>
+                                        <svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                                                <g id="Link-list-item" transform="translate(-359.000000, -28.000000)" stroke="#003D69" stroke-width="2">
+                                                    <g id="Group" transform="translate(368.000000, 35.000000) rotate(-90.000000) translate(-368.000000, -35.000000) translate(362.000000, 27.000000)">
+                                                        <path d="M6,1.36424205e-12 L6,14.9333333" id="Path-5"></path>
+                                                        <path d="M12,10 L6.70710678,15.2928932 C6.31658249,15.6834175 5.68341751,15.6834175 5.29289322,15.2928932 L0,10 L0,10" id="Path-6"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                     {% if rel.programSliderImage %}
+
+                                         {% set image = rel.programSliderImage[0] %}
+                                         {% set transformedImages = craft.imager.transformImage(image,
+                                             [
+                                                 { width: 800 },
+                                                 { width: 400 },
+                                             ],
+                                             {
+                                                 allowUpscale: true,
+                                                 mode: 'crop',
+                                                 pngQuality: 80,
+                                                 interlace: true,
+                                                 position: image.getFocalPoint()
+                                             }
+                                             ) %}
+
+                                        <div class="relative h-0 aspect-ratio-square mt-auto">
+                                            <img class="lazyload absolute inset-0 object-cover w-full h-full scale-100 group-hover:scale-110 transition-all"
+                                                 src="{{ craft.imager.base64Pixel(2,1) }}"
+                                                 data-sizes="auto"
+                                                 data-srcset="{{ craft.imager.srcset(transformedImages) }}"
+                                                 alt="{{ image.title }}"
+                                            >
+                                        </div>
+                                    {% endif %}
+                                </article>
+                            </a>
+                            </div>
+                        {% endfor %}
+                        </div>
+                        <div class="swiper-pagination block md:hidden"></div>
+                    </div>    
+                    
+                {% endif %}
+        </div>
+    </div>
+
+
+    
+{% endif %}     
+

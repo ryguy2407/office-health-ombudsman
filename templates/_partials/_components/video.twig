@@ -1,0 +1,76 @@
+
+
+    {% if module.image.one() %}
+     
+        <div class="w-full mx-auto"> 
+            <figure>
+                <div data-micromodal-trigger="modal-{{ layoutCount }}-{{ moduleCount }}" class="group hover:cursor-pointer "> 
+                    <div class=" h-0 aspect-ratio-16/9 relative rounded overflow-hidden">
+                        {% set image = module.image.one() %}
+
+                        {% set transformedImages = craft.imager.transformImage(image,
+                            [
+                                { width: 2000 },
+                                { width: 1020, jpegQuality: 80 },
+                            ],
+                            {
+                                format: 'jpg',
+                                allowUpscale: true,
+                                mode: 'crop',
+                                jpegQuality: 80,
+                                interlace: true,
+                                position: image.getFocalPoint()
+                            }
+                            )
+                        %}
+                    
+                        <img class="lazyload scale-100 group-hover:scale-110 transition-all object-cover absolute w-full h-full mb-4 md:mb-0"
+                             src="{{ craft.imager.base64Pixel(2,1) }}"
+                             data-sizes="100vw"
+                             data-srcset="{{ craft.imager.srcset(transformedImages) }}"
+                             alt="{{ image.title }}"
+                        >
+                    <div class="absolute inset-0 bg-navy-800 opacity-0 group-hover:opacity-25 transition-all"></div>   
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button aria-label="Play video" data-micromodal-trigger="modal-{{ layoutCount }}-{{ moduleCount }}" class="flex items-center justify-center">
+                            <img class="w-20" src="../assets/img/play.svg" alt="Play"/>
+                        </button>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+                {% if module.caption %}
+                <figcaption class="text-sm text-gray-500 mt-4">
+                    {{ module.caption }}
+                </figcaption>
+                {% endif %}
+                
+            </figure>   
+            
+        </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-{{ layoutCount }}-{{ moduleCount }}" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="container mx-auto p-3 relative">
+                <div class="embed-container" role="dialog" aria-modal="true">
+                    {{ module.videoEmbed | raw }}
+                </div>
+                <button class="modal__close absolute w-8 h-8 top-0 right-0 text-navy-800 rounded-full bg-teal-500" aria-label="Close modal" data-micromodal-close>&times;</button>
+            </div>
+        </div>
+    </div> 
+    {% else %}
+
+            <div class="w-full mx-auto relative">
+                <figure class="embed-container rounded overflow-hidden">
+                    {{ module.videoEmbed | raw }}
+                </figure>
+                {% if module.caption %}
+                    <figcaption class="text-sm text-gray-500 mt-4">
+                        {{ module.caption }}
+                    </figcaption>
+                {% endif %}
+            </div>
+
+    {% endif %}

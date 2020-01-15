@@ -1,0 +1,46 @@
+{% if module.type.handle == 'textMedia' %}
+    <div class="container relative">
+        <div class="flex flex-wrap items-center -mx-3">
+            <div class="w-full {% if module.mediaWidth == '12' %}md:w-1/2{% elseif module.mediaWidth == '13' %}md:w-1/3{% elseif module.mediaWidth == '23' %}md:w-2/3{% endif %} px-3 mb-4 md:mb-0 {% if module.order == 'mediaLeft' %}order-first{% elseif module.order == 'mediaRight' %}order-last{% endif %}"> 
+                <figure data-micromodal-trigger="modal-{{ layoutCount }}-{{ moduleCount }}" class="h-0 {% if module.videoEmbed|length %}group hover:cursor-pointer{% endif %} {% if module.aspectRatio == 'landscape' %}aspect-ratio-landscape{% elseif module.aspectRatio == 'square' %}aspect-ratio-square{% elseif module.aspectRatio == 'portrait' %}aspect-ratio-portrait{% endif %} relative rounded overflow-hidden">
+                {% set ImageVar = module.image.one() %}
+                {% set baseWidth = ImageVar.getWidth() / 3 %}
+                {% set baseHeight = ImageVar.getHeight() / 3 %}
+                
+                    <img class="lazyload object-cover absolute w-full h-full mb-4 md:mb-0 {% if module.videoEmbed|length %}scale-100 group-hover:scale-110 transition-all{% endif %}"
+                    data-srcset=" 
+                    {{ ImageVar.getUrl({ width: baseWidth, height: baseHeight }) }} 1x,
+                    {{ ImageVar.getUrl({ width: baseWidth*2, height: baseHeight*2 }) }} 2x,
+                    {{ ImageVar.getUrl({ width: baseWidth*3, height: baseHeight*3 }) }} 3x"
+                    src="{{ ImageVar.getUrl({ width: baseWidth, height: baseHeight }) }}"
+                    alt="{{ ImageVar.title }}"
+                    >
+                    {% if module.videoEmbed|length %}    
+                        <div class="absolute inset-0 bg-navy-800 opacity-0 group-hover:opacity-25 transition-all"></div>   
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button aria-label="Play video" data-micromodal-trigger="modal-{{ layoutCount }}-{{ moduleCount }}" class="flex items-center justify-center">
+                                <img class="w-20" src="../assets/img/play.svg" alt="Play"/>
+                            </button>
+                        </div>
+                    {% endif %}
+                </figure>
+            </div>
+            <div class="w-full {% if module.mediaWidth == '12' %}md:w-1/2{% elseif module.mediaWidth == '13' %}md:w-2/3{% elseif module.mediaWidth == '23' %}md:w-1/3{% endif %} px-3 md:px-16 {% if module.order == 'mediaLeft' %}order-last{% elseif module.order == 'mediaRight' %}order-last md:order-first{% endif %}">  
+                {{ module.richText | markdown }}
+                {% include '_partials/_module/buttons' %}
+            </div>
+        </div>
+    </div>
+{% if module.videoEmbed|length %} 
+       <div class="modal micromodal-slide" id="modal-{{ layoutCount }}-{{ moduleCount }}" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="container relative">
+                <div class="embed-container" role="dialog" aria-modal="true">
+                    {{ module.videoEmbed | raw }}
+                </div>
+                <button class="modal__close absolute w-8 h-8 top-0 right-0 text-navy-800 rounded-full bg-teal-500" aria-label="Close modal" data-micromodal-close>&times;</button>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endif %}     

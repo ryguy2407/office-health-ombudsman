@@ -1,0 +1,31 @@
+{% if block.type.handle == 'image' %}
+    {% if block.image.one() %}
+    <div class="container relative">
+        <div class="md:max-w-4xl mx-auto "> 
+            <figure>
+                {% set image = block.image.one() %}
+                
+                <img class="lazyload rounded object-cover w-full h-full"
+                     src="{{ image.getUrl() }}"
+                     data-sizes="100vw"
+                     data-srcset="
+                        {{ image.getUrl('xl') }} 2000w,
+                        {{ image.getUrl('lg') }} 1000w.
+                        {{ image.getUrl('md') }} 700w,
+                        {{ image.getUrl('sm') }} 500w,
+                        {{ image.getUrl('xs') }} 250w
+                     "
+                     alt="{{ image.title }}"
+                >
+                
+                {% if block.caption %}
+                <figcaption class="text-sm text-gray-500 mt-4">
+                    {{ block.caption }}
+                </figcaption>
+                {% endif %}
+            </figure>   
+            
+        </div>
+    </div> 
+    {% endif %}
+{% endif %}    

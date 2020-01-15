@@ -1,0 +1,61 @@
+{% if entry is defined %}
+
+    {% set blocks = entry.pageBuilder.all() %}
+    {% for block in blocks %}
+
+        {% set pageSections = block.pageSection.all() %}
+        <section class="section relative py-10 md:py-24 overflow-hidden">
+            {% for block in pageSections %}
+                <div class="mb-8">
+                    {% include ('/_partials/_module/' ~ block.type) %}
+                </div>
+            {% endfor %}
+        </section>
+
+    {% endfor %}
+
+
+{% endif %}
+
+
+{#{% if entry is defined %}#}
+{#    {% set layoutCount = 0 %}#}
+
+{#    {% for block in entry.pageBuilder.level(1).all %}#}
+{#        {% switch block.type.handle %}#}
+{#            {% case 'pageSection' %}#}
+{#            {% set layoutCount = layoutCount + 1 %}#}
+{#            <section {% if block.sectionId %}id="{{ block.sectionId }}"{% endif %} class="section theme-{{ block.theme }} section-bg-{{ block.bgColor }} relative py-10 md:py-24 overflow-hidden">#}
+{#                {% if block.backgroundImage.one() %}#}
+{#                    <div class="absolute inset-0">#}
+{#                        {% set image = block.backgroundImage.one() %}#}
+{#                        {% set full = (image.width > 2000) ? 2000 : image.width %}#}
+{#                        {% set half = round(full / 2) %}#}
+{#                        {% set fourth = round(full / 4) %}#}
+
+{#                        <img class="object-cover w-full h-full lazyload" src="{{ image.url({ width: half }) }}" alt=""#}
+{#                            data-srcset="{{ image.url({ width: fourth }) }} {{ fourth }}w,#}
+{#                                    {{ image.url({ width: half }) }} {{ half }}w,#}
+{#                                    {{ image.url({ width: full }) }} {{ full }}w"#}
+{#                            sizes="(min-width: {{ half + 1 }}px) {{ full }}px,#}
+{#                                    (min-width: {{ fourth + 1 }}px) {{ half }}px,#}
+{#                                    100vw"#}
+{#                        >#}
+{#                    </div>#}
+{#                {% endif %}#}
+{#                <div class="overlay opacity-{{ block.overlay }} z-0 absolute inset-0"></div>#}
+
+{#                    {% if block.children.all() is not empty  %}#}
+{#                        {% set moduleCount = 0 %}#}
+
+{#                        {% for module in block.children.all() %}#}
+{#                        {% set moduleCount = moduleCount + 1 %}#}
+{#                        <div class="mb-8">#}
+{#                            {% include ('/_partials/_module/' ~ module.type.handle) %}#}
+{#                        </div>#}
+{#                        {% endfor %}#}
+{#                    {% endif %}#}
+{#            </section>#}
+{#        {% endswitch %}#}
+{#    {% endfor %}#}
+{#{% endif %}#}

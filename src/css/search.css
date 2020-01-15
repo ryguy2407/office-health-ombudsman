@@ -1,0 +1,7 @@
+#searchContainer {
+
+}
+
+#searchContainer.active {
+    height: 100vh;
+}

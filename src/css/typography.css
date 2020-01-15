@@ -1,0 +1,131 @@
+body {
+    @apply text-gray-700;
+}
+
+h1 {
+    @apply text-6xl font-bold leading-tight;
+}
+@media (max-width: 640px) { 
+    h1 {
+        @apply text-3xl;
+    } 
+} 
+
+h2 {
+    @apply text-4xl font-bold leading-snug;
+} 
+@media (max-width: 640px) { 
+    h2 {
+        @apply text-2xl;
+    } 
+} 
+
+h3 {
+    @apply text-3xl leading-snug;
+} 
+@media (max-width: 640px) { 
+    h3 {
+        @apply text-xl;
+    } 
+} 
+
+h4 {
+    @apply text-2xl leading-snug;
+}
+@media (max-width: 640px) { 
+    h4 {
+        @apply text-lg;
+    } 
+} 
+
+h5 {
+    @apply text-xl leading-snug;
+} 
+@media (max-width: 640px) { 
+    h5 {
+        @apply text-base;
+    } 
+}
+
+h6 {
+    @apply text-sm font-bold uppercase leading-snug;
+} 
+@media (max-width: 640px) { 
+    h6 {
+        @apply text-xs;
+    } 
+}
+
+p {
+    @apply leading-relaxed text-base;
+}
+@media (max-width: 640px) { 
+    p {
+        @apply text-sm;
+    }
+}
+    
+    h1, h2, h3, h4, h5, h6 {
+        &:not(.text-white) {
+            @apply text-navy-700;
+        }
+    }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 1rem;
+}
+
+.theme-dark {
+    h6 {
+        @apply text-teal-500;
+    }
+    *:not(.btn):not(h6) {
+        color: #fff!important;
+    }
+}
+
+
+
+.theme-dark .overlay {
+    @apply bg-navy-800;
+}
+
+.theme-light .overlay {
+    background-color: #fff;
+}
+
+.theme-light hr {
+    height: 1px;
+    @apply border-0 bg-navy-800 opacity-10;
+}
+
+.richtext {
+    ul, ol {
+        @apply pl-6 mb-4 text-base;
+    }
+
+    ul {
+        @apply list-disc;
+    }
+
+    ol {
+        @apply list-decimal;
+    }
+
+    li {
+        @apply mb-2;
+    }
+}
+
+@media (max-width: 640px) { 
+    ul, ol, li {
+        @apply text-sm;
+    }
+}
+
+.richtext a {
+    @apply border-b border-dotted text-navy-500 transition-all; 
+    &:hover {
+        @apply border-solid border-teal-500;
+    }
+}

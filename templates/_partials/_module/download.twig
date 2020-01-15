@@ -1,0 +1,71 @@
+{% if module.type.handle == 'download' %}   
+    <div class="container relative">
+        <div class="md:max-w-2xl mx-auto "> 
+            {% set relatedEntries = module.downloadEntries.with(['download']).all() %}
+                {% if relatedEntries|length %} 
+                {% for rel in relatedEntries %}
+                {% set download = rel.download[0]  %}
+                    <a class="flex items-center bg-white rounded border hover:shadow-md p-6 md:p-8 transition-all mb-3" target="_blank" rel="noopener" href="{{ download.url }}">
+                        {% if rel.type.handle == "pdf" %}
+                        
+                        <div class="mr-4">
+                            <svg width="26px" height="34px" viewBox="0 0 26 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Modules" transform="translate(-134.000000, -8402.000000)">
+                                        <g id="PDF" transform="translate(134.000000, 8402.000000)" stroke="#00BBC3">
+                                            <g transform="translate(1.000000, 1.000000)">
+                                                <path d="M0,30 L0,2 C-3.57315355e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L14.4574329,0 C14.9800835,-1.16127156e-16 15.4819695,0.204592396 15.8556682,0.569986662 L23.3982353,7.94494115 C23.783069,8.32122306 24,8.83673045 24,9.37495448 L24,30 C24,31.1045695 23.1045695,32 22,32 L2,32 C0.8954305,32 1.3527075e-16,31.1045695 0,30 Z" id="Path-2" stroke-width="2"></path>
+                                                <path d="M14,5 L14,9 C14,10.1045695 14.8954305,11 16,11 L20,11 L20,11" id="Path-3" stroke-width="2" stroke-linecap="round"></path>
+                                            </g>
+                                        </g>
+                                        <path d="M142.232,8424.032 C142.672,8424.032 142.896,8424.464 142.896,8424.808 C142.896,8425.168 142.656,8425.584 142.2,8425.584 L141.168,8425.584 L141.168,8424.032 L142.232,8424.032 Z M140,8428.008 C140,8428.296 140.28,8428.552 140.584,8428.552 C140.904,8428.552 141.168,8428.304 141.168,8428.008 L141.168,8426.608 L142.256,8426.608 C143.512,8426.608 144.072,8425.72 144.072,8424.808 C144.072,8423.904 143.512,8423 142.256,8423 L140.56,8423 C140.208,8423 140.008,8423.272 140,8423.6 L140,8428.008 Z M146.096,8424.032 L147.088,8424.032 C147.968,8424.032 148.408,8424.856 148.408,8425.768 C148.408,8426.672 147.968,8427.488 147.088,8427.488 L146.096,8427.488 L146.096,8424.032 Z M147.088,8428.512 C148.672,8428.512 149.576,8427.328 149.576,8425.768 C149.576,8424.2 148.672,8423 147.088,8423 L145.392,8423 C145.096,8423 144.936,8423.224 144.928,8423.496 L144.928,8428.016 C144.928,8428.28 145.096,8428.512 145.392,8428.512 L147.088,8428.512 Z M151.024,8423 L153.56,8423 C153.824,8423 154.04,8423.232 154.04,8423.52 C154.04,8423.784 153.816,8424.024 153.56,8424.032 L151.728,8424.032 L151.728,8425.296 L153.088,8425.296 C153.352,8425.296 153.568,8425.52 153.568,8425.8 C153.568,8426.064 153.344,8426.304 153.088,8426.304 L151.728,8426.304 L151.728,8428.008 C151.728,8428.304 151.464,8428.552 151.144,8428.552 C150.84,8428.552 150.56,8428.296 150.56,8428.008 L150.56,8423.496 C150.568,8423.224 150.728,8423 151.024,8423 Z" id="PDF" fill="#00243F" fill-rule="nonzero"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        
+                        {% else %}
+
+                        <div class="mr-4">
+                            <svg width="26px" height="34px" viewBox="0 0 26 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Modules" transform="translate(-134.000000, -8402.000000)">
+                                        <g id="PDF" transform="translate(134.000000, 8402.000000)" stroke="#00BBC3">
+                                            <g transform="translate(1.000000, 1.000000)">
+                                                <path d="M0,30 L0,2 C-3.57315355e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L14.4574329,0 C14.9800835,-1.16127156e-16 15.4819695,0.204592396 15.8556682,0.569986662 L23.3982353,7.94494115 C23.783069,8.32122306 24,8.83673045 24,9.37495448 L24,30 C24,31.1045695 23.1045695,32 22,32 L2,32 C0.8954305,32 1.3527075e-16,31.1045695 0,30 Z" id="Path-2" stroke-width="2"></path>
+                                                <path d="M14,5 L14,9 C14,10.1045695 14.8954305,11 16,11 L20,11 L20,11" id="Path-3" stroke-width="2" stroke-linecap="round"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+
+                        {% endif %}
+                        
+                        <h5 class="m-0 mr-4">{{ rel.title }}</h5>
+                        
+                        <p class="text-sm text-gray-500 mb-0 ml-auto mr-4">({{ download.size|filesize }})</p>
+                        <div class="w-10 h-full flex justify-center">
+                        
+                            
+                            <svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                                    <g id="Download-/-Normal" transform="translate(-754.000000, -35.000000)" stroke="#00243F">
+                                        <g id="Download" transform="translate(754.000000, 35.000000)">
+                                            <g transform="translate(1.000000, 1.000000)">
+                                                <path d="M0,15 L0,21 C1.3527075e-16,22.1045695 0.8954305,23 2,23 L20,23 C21.1045695,23 22,22.1045695 22,21 L22,15 L22,15" id="Path-4" stroke-width="2"></path>
+                                                <path d="M11,0 L11,14" id="Path-5" stroke-width="2"></path>
+                                                <path d="M18,8 L11.7071068,14.2928932 C11.3165825,14.6834175 10.6834175,14.6834175 10.2928932,14.2928932 L4,8 L4,8" id="Path-6" stroke-width="2"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div> 
+{% endif %}    

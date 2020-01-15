@@ -1,0 +1,56 @@
+{% if module.type.handle == 'news' %}
+    {% if module.richText is not empty %}
+        <div class="container relative mb-8">
+            <div class="flex flex-wrap items-center -mx-3">
+                <div class="w-2/3 richtext px-3 mb-3 md:mb-0"> 
+                    {{ module.richText | markdown }}
+                </div>
+                <div class="w-1/3 px-3 flex justify-end"> 
+                    <a class="btn btn-outline" href="/news">View all</a>
+                </div>
+            </div> 
+        </div>
+    {% endif %}
+    {% if module.newsEntries is empty %}
+        {% set newsEntries = craft.entries().section('news').limit(3).all() %}
+    {% else %}
+        {% set newsEntries = module.newsEntries %}
+    {% endif %}
+    <div class="relative container swiper-container entry-swiper overflow-visible pb-10 lg:pb-0">
+        <div class="swiper-wrapper">
+           
+            {% for entry in newsEntries %}
+                <div class="swiper-slide">
+                    <a href="{{ entry.url }}">
+                        <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg  transition-all rounded overflow-hidden">
+                            <div class="relative h-0 aspect-ratio-landscape overflow-hidden bg-gray-200">
+                            {% if entry.featureImage.one() %}
+                                {% set image = entry.featureImage.one() %}
+                                {% set full = (image.width > 2000) ? 2000 : image.width %}
+                                {% set half = (full / 2)|round %}
+                                {% set fourth = (full / 4)|round %}
+                                
+                                    <img class="lazyload absolute inset-0 object-cover w-full h-full scale-100 group-hover:scale-110 transition-all" src="{{ image.url({ width: half }) }}" alt=""
+                                        data-srcset="{{ image.url({ width: fourth }) }} {{ fourth }}w,
+                                                {{ image.url({ width: half }) }} {{ half }}w,
+                                                {{ image.url({ width: full }) }} {{ full }}w"
+                                        sizes="(min-width: {{ half + 1 }}px) {{ full }}px,
+                                                (min-width: {{ fourth + 1 }}px) {{ half }}px,
+                                                100vw"
+                                    > 
+                                
+                            {% endif %}
+                            </div>
+                            <div class="p-6">
+                                <h5>{{ entry.title }}</h5>
+                                <p class="text-sm">{{ entry.postDate | date("M d, Y") }}</p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            {% endfor %}
+
+        </div>
+        <div class="swiper-pagination block lg:hidden"></div>
+    </div>
+{% endif %}     

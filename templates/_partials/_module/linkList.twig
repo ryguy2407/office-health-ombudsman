@@ -1,0 +1,29 @@
+{% if module.type.handle == 'linkList' %}
+    <div class="container relative">
+        <div class="flex flex-wrap justify-center -mx-3"> 
+            {% set relatedEntries = module.entry.with(['title'],['url']).all() %}
+                {% if relatedEntries|length %}
+                    
+                        {% for rel in relatedEntries %}
+                            <div class="w-full md:w-1/3 px-3 -mt-px">
+                            <a class="group relative block h-full border-t border-b border-gray-300 py-4 pr-10" href="{{ rel.url }}"  aria-label="{{ rel.title }}">
+                                <p class="mb-0 group-hover:text-navy-700 transition-all">{{ rel.title }}</p>
+                                <div class="absolute right-2 group-hover:right-0 top-5 transition-all">
+                                    <svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                                            <g id="Link-list-item" transform="translate(-359.000000, -28.000000)" stroke="#003D69" stroke-width="2">
+                                                <g id="Group" transform="translate(368.000000, 35.000000) rotate(-90.000000) translate(-368.000000, -35.000000) translate(362.000000, 27.000000)">
+                                                    <path d="M6,1.36424205e-12 L6,14.9333333" id="Path-5"></path>
+                                                    <path d="M12,10 L6.70710678,15.2928932 C6.31658249,15.6834175 5.68341751,15.6834175 5.29289322,15.2928932 L0,10 L0,10" id="Path-6"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </a>
+                            </div>
+                        {% endfor %}
+                {% endif %}
+        </div>
+    </div>
+{% endif %}    

@@ -1,0 +1,7 @@
+input:not([type="checkbox"]) {
+  @apply border block w-full rounded-sm px-4 py-3 mb-3;
+}
+
+label {
+  @apply inline-block mb-1;
+}

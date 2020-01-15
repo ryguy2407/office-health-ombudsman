@@ -1,0 +1,40 @@
+{% if module.type.handle == 'splitScreen' %}
+
+    <div class="w-full {% if module.mediaWidth == '12' %}md:w-1/2{% elseif module.mediaWidth == '13' %}md:w-1/3{% elseif module.mediaWidth == '23' %}md:w-2/3{% endif %} mb-16 -mt-16 md:mb-0 md:mt-0 relative md:absolute inset-y-0 {% if module.order == 'mediaRight' %}right-0{% elseif module.order == 'mediaLeft' %}left-0{% endif %}">
+        {% set image = module.image.one() %}
+        {% set transformedImages = craft.imager.transformImage(image,
+            [
+                { width: 2000 },
+                { width: 1020, jpegQuality: 80 },
+            ],
+            {
+                format: 'jpg',
+                allowUpscale: true,
+                mode: 'crop',
+                jpegQuality: 80,
+                interlace: true,
+                position: image.getFocalPoint()
+            }
+            )
+        %}
+        
+        <img class="lazyload object-cover w-full h-full mb-3 md:mb-0 pointer-events-none"
+             src="{{ craft.imager.base64Pixel(2,1) }}"
+             data-sizes="100vw"
+             data-srcset="{{ craft.imager.srcset(transformedImages) }}"
+             alt="{{ image.title }}"
+        >
+    </div>
+
+    <div class="relative z-10">
+        <div class="container">
+            <div class="flex flex-wrap items-center -mx-3">
+                <div class="w-full {% if module.mediaWidth == '12' %}md:w-7/12{% elseif module.mediaWidth == '13' %}md:w-5/12{% elseif module.mediaWidth == '23' %}md:w-7/12{% endif %} {% if module.order == 'mediaLeft' %}order-first{% elseif module.order == 'mediaRight' %}order-last{% endif %}"></div>
+                <div class="w-full {% if module.mediaWidth == '12' %}md:w-5/12{% elseif module.mediaWidth == '13' %}md:w-7/12{% elseif module.mediaWidth == '23' %}md:w-5/12{% endif %} px-3 {% if module.order == 'lmediaLefteft' %}order-last{% elseif module.order == 'mediaRight' %}order-first{% endif %}"> 
+                    {{ module.richText }}
+                    {% include '_partials/_module/buttons' %}
+                </div>
+            </div> 
+        </div>
+    </div> 
+{% endif %} 

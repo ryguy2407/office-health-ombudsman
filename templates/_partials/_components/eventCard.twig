@@ -1,0 +1,21 @@
+<a href="{{ entry.url }}">
+    <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg  transition-all rounded overflow-hidden">
+        
+      <div class="p-6">
+        <div class="-mx-3 flex items-center">
+            <div class="w-1/3 px-3 ">
+                <div class="bg-navy-500 aspect-ratio-square rounded relative">
+                  <div class="p-3 absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+                    <span class="block text-3xl">{{ entry.details.startDate | date('d') }}</span>
+                    <span class="block text-xs font-bold uppercase">{{ entry.details.startDate | date('F') }}</span>
+                  </div>
+                </div>
+            </div>
+            <div class="w-2/3 px-3">
+                <h5 class="mb-1">{{ entry.title }}</h5>
+                <p>Hosted by {{ entry.hostOrganisation }}</p>
+            </div>
+        </div>
+      </div>
+    </article>
+</a>
