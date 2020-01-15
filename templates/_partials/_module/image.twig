@@ -1,9 +1,9 @@
-{% if block.type.handle == 'image' %}
-    {% if block.image.one() %}
+{% if module.type.handle == 'image' %}
+    {% if module.image.one() %}
     <div class="container relative">
         <div class="md:max-w-4xl mx-auto "> 
             <figure>
-                {% set image = block.image.one() %}
+                {% set image = module.image.one() %}
                 
                 <img class="lazyload rounded object-cover w-full h-full"
                      src="{{ image.getUrl() }}"
@@ -18,9 +18,9 @@
                      alt="{{ image.title }}"
                 >
                 
-                {% if block.caption %}
+                {% if module.caption %}
                 <figcaption class="text-sm text-gray-500 mt-4">
-                    {{ block.caption }}
+                    {{ module.caption }}
                 </figcaption>
                 {% endif %}
             </figure>   

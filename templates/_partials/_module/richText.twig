@@ -1,7 +1,7 @@
-{% if block.type.handle == 'richText' %}
+{% if module.type.handle == 'richText' %}
     <div class="container relative">
         <div class="md:max-w-2xl mx-auto richtext"> 
-            {{ block.richText | markdown }}
+            {{ module.richText | markdown }}
         </div>
     </div>
 {% endif %}     

@@ -1,18 +1,49 @@
 {% if entry is defined %}
 
+{#    Run a query to get all the blocks from super table #}
     {% set blocks = entry.pageBuilder.all() %}
-    {% for block in blocks %}
 
-        {% set pageSections = block.pageSection.all() %}
-        <section class="section relative py-10 md:py-24 overflow-hidden">
-            {% for block in pageSections %}
+    {% for block in blocks %}
+        <section class="py-8">
+
+            {# Get all the static sections such as rich text and images #}
+            {% set staticSections = block.staticContent.all() %}
+
+            {% for module in staticSections %}
                 <div class="mb-8">
-                    {% include ('/_partials/_module/' ~ block.type) %}
+                    {% include ('/_partials/_module/' ~ module.type) %}
                 </div>
             {% endfor %}
+
+            {# Get all the dynamic sections such as cards, tiles and buttons #}
+            {% set dynamicSections = block.dynamicContent.all() %}
+
+            <div class="container">
+                <div class="-mx-4 flex justify-between">
+                    {% for module in dynamicSections %}
+                        {% include ('/_partials/_module/' ~ module.type) %}
+                {% endfor %}
+                </div>
+            </div>
+
         </section>
 
     {% endfor %}
+
+
+{#    {% set blocks = entry.pageBuilder.all() %}#}
+{#    {% for block in blocks %}#}
+
+{#        {% set pageSections = block.pageSection.all() %}#}
+{#        <section class="section relative py-10 md:py-24 overflow-hidden">#}
+{#            {% for module in pageSections %}#}
+{#                <div class="mb-8">#}
+{#                    {% include ('/_partials/_module/' ~ module.type) %}#}
+{#                </div>#}
+{#            {% endfor %}#}
+{#        </section>#}
+
+{#    {% endfor %}#}
 
 
 {% endif %}
