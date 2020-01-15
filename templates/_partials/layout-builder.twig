@@ -4,7 +4,13 @@
     {% set blocks = entry.pageBuilder.all() %}
 
     {% for block in blocks %}
-        <section class="py-8">
+        <section class="py-16 {% if block.backgroundColour %}{{ block.backgroundColour }}{% endif %}">
+
+            {% if block.sectionDivider %}
+                <div class="container text-center mb-4">
+                    <img src="/assets/img/divider.svg" class="mx-auto" alt="">
+                </div>
+            {% endif %}
 
             {# Get all the static sections such as rich text and images #}
             {% set staticSections = block.staticContent.all() %}
@@ -18,17 +24,22 @@
             {# Get all the dynamic sections such as cards, tiles and buttons #}
             {% set dynamicSections = block.dynamicContent.all() %}
 
+
             <div class="container">
-                <div class="-mx-4 flex justify-between">
-                    {% for module in dynamicSections %}
-                        {% include ('/_partials/_module/' ~ module.type) %}
-                {% endfor %}
+                <div class="px-4">
+                    <div class="-mx-8 flex">
+                        {% for module in dynamicSections %}
+                            {% include ('/_partials/_module/' ~ module.type) %}
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
 
         </section>
 
     {% endfor %}
+
+{% endif %}
 
 
 {#    {% set blocks = entry.pageBuilder.all() %}#}
@@ -44,9 +55,6 @@
 {#        </section>#}
 
 {#    {% endfor %}#}
-
-
-{% endif %}
 
 
 {#{% if entry is defined %}#}

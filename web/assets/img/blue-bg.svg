@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="552px" height="368px" viewBox="0 0 552 368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-156.000000, -1241.000000)">
+            <g id="Group-5" transform="translate(156.000000, 1241.000000)">
+                <rect id="Rectangle" fill="#004B7E" x="0" y="0" width="552" height="368" rx="3"></rect>
+                <path d="M491,122 L552,122 L552,123 C552,156.68937 524.68937,184 491,184 L491,184 L491,184 L491,122 Z" id="Rectangle-Copy-45" fill="#79A899" transform="translate(521.500000, 153.000000) scale(-1, -1) translate(-521.500000, -153.000000) "></path>
+                <rect id="Rectangle-Copy-47" fill="#ED8750" transform="translate(460.000000, 337.500000) scale(-1, -1) translate(-460.000000, -337.500000) " x="429" y="307" width="62" height="61"></rect>
+                <path d="M552,245 L552,245 L552,245 L552,306 L491,306 C491,272.31063 518.31063,245 552,245 Z" id="Rectangle-Copy-50" fill="#EAB45B" transform="translate(521.500000, 275.500000) scale(-1, -1) translate(-521.500000, -275.500000) "></path>
+                <path d="M429,0 L491,0 L491,61 L490,61 C456.31063,61 429,33.6893697 429,0 L429,0 L429,0 Z" id="Rectangle-Copy-53" fill="#012345" transform="translate(460.000000, 30.500000) scale(-1, -1) translate(-460.000000, -30.500000) "></path>
+                <path d="M368,184 L429,184 L429,245 C395.31063,245 368,217.68937 368,184 L368,184 L368,184 Z" id="Rectangle-Copy-54" fill="#EAB45B" transform="translate(398.500000, 214.500000) scale(-1, -1) translate(-398.500000, -214.500000) "></path>
+                <path d="M429,184 L491,184 C491,217.68937 463.68937,245 430,245 L429,245 L429,245 L429,184 Z" id="Rectangle-Copy-55" fill="#F2F6F8" transform="translate(460.000000, 214.500000) scale(-1, -1) translate(-460.000000, -214.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

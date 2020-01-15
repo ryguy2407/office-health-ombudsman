@@ -51,6 +51,7 @@ module.exports = {
       },
       colors: {
         'light': '#f1f6f5',
+        'orange': '#DE6A45',
         'navy': {
           100: '#E6ECF0',
           200: '#BFCFDA',
@@ -81,6 +82,7 @@ module.exports = {
         '1px': '1px',
         '2px': '2px',
         '60%': '60%',
+        '756px': '756px',
       },
       spacing: {
         '96': '24rem',

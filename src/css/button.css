@@ -2,6 +2,13 @@
     @apply font-bold inline-block px-5 py-3 rounded-sm text-base transition-all;
 }
 
+.btn-white {
+    @apply bg-white text-navy-800;
+&:hover {
+     @apply bg-navy-700 shadow-md text-white;
+ }
+}
+
 .btn-solid {
     @apply bg-navy-500 border border-navy-500 text-white;
     &:hover {

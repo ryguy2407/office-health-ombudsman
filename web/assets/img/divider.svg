@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="18px" viewBox="0 0 66 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-687.000000, -955.000000)">
+            <g id="Group-2" transform="translate(687.000000, 955.000000)">
+                <rect id="Rectangle-Copy-33" fill="#79A899" x="36" y="12" width="6" height="6"></rect>
+                <rect id="Rectangle-Copy-22" fill="#DE6A45" x="12" y="0" width="6" height="6"></rect>
+                <rect id="Rectangle-Copy-34" fill="#004B7E" x="60" y="0" width="6" height="6"></rect>
+                <path d="M30,12 L30,12 L30,12 L30,18 L24,18 C24,14.6862915 26.6862915,12 30,12 Z" id="Rectangle-Copy-28" fill="#EAB45B"></path>
+                <path d="M30,0 L30,0 L30,0 L30,6 L24,6 C24,2.6862915 26.6862915,6.08718376e-16 30,0 Z" id="Rectangle-Copy-29" fill="#79A899"></path>
+                <path d="M0,12 L6,12 L6,18 C2.6862915,18 4.05812251e-16,15.3137085 0,12 L0,12 L0,12 Z" id="Rectangle-Copy-30" fill="#004B7E"></path>
+                <path d="M48,12 L54,12 L54,18 C50.6862915,18 48,15.3137085 48,12 L48,12 L48,12 Z" id="Rectangle-Copy-35" fill="#DE6A45"></path>
+                <path d="M36,0 L42,0 L42,6 C38.6862915,6 36,3.3137085 36,0 L36,0 L36,0 Z" id="Rectangle-Copy-32" fill="#EAB45B"></path>
+            </g>
+        </g>
+    </g>
+</svg>

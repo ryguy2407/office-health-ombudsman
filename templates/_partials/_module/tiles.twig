@@ -1,48 +1,25 @@
 {% if module.type.handle == 'tiles' %}
-    <div class="container relative">
-        <div class="flex flex-wrap justify-center -mx-3"> 
-            {% set relatedEntries = module.entry.with(['featureImage'],['title'],['url']).all() %}
-                {% if relatedEntries|length %}
-                    
-                        {% for rel in relatedEntries %}
-                            <div class="w-full {% if module.columnsPerRow == "3" %}md:w-1/3{% endif %}{% if module.columnsPerRow == "2" %}md:w-1/2{% endif %}{% if module.columnsPerRow == "4" %}md:w-1/4{% endif %} p-3">
-                            <a href="{{ rel.url }}"  aria-label="{{ rel.title }}">
-                                <article class="group relative h-0 {% if module.aspectRatio == 'landscape' %}aspect-ratio-landscape{% elseif module.aspectRatio == 'square' %}aspect-ratio-square{% elseif module.aspectRatio == 'portrait' %}aspect-ratio-portrait{% endif %} w-full rounded bg-navy-500 rounded overflow-hidden shadow hover:shadow-lg  transition-all">
-                                 {% if rel.featureImage %}
-           
-                                         {% set image = rel.featureImage[0] %}
-                                         {% set transformedImages = craft.imager.transformImage(image,
-                                             [
-                                                 { width: 1000 },
-                                                 { width: 700 },
-                                                 { width: 400 },
-                                             ],
-                                             {
-                                                 format: 'jpg',
-                                                 allowUpscale: true,
-                                                 mode: 'crop',
-                                                 jpegQuality: 80,
-                                                 interlace: true,
-                                                 position: image.getFocalPoint()
-                                             }
-                                             )
-                                         %}
-                                        <img class="lazyload absolute inset-0 object-cover w-full h-full scale-100 group-hover:scale-110 transition-all"
-                                             src="{{ craft.imager.base64Pixel(2,1) }}"
-                                             data-sizes="100vw"
-                                             data-srcset="{{ craft.imager.srcset(transformedImages) }}"
-                                             alt="{{ image.title }}"
-                                        >
-                                    {% endif %}
-                                    <div class="bg-navy-800 opacity-25 group-hover:opacity-70 absolute inset-0 transition-all"></div>
-                                    <div class="p-6 absolute inset-0 flex items-end">
-                                        <h5 class="text-white">{{ rel.title }}</h5>
-                                    </div>
-                                </article>
-                            </a>
-                            </div>
-                        {% endfor %}
-                {% endif %}
+
+    <div class="w-full px-4">
+        <div class="w-full relative" style="height: 368px;">
+            <div class="flex flex-col flex-stretch items-start p-8 w-1/2 h-full">
+                <p class="relative text-sm text-white z-10">{{ module.tileSubTitle }}</p>
+                <h3 class="relative font-bold text-white z-10">
+                    {{ module.tileTitle }}
+                </h3>
+                <a {% if module.tileNewWindow %}target="_blank"{% endif %} href="{{ module.tileUrl }}" class="btn btn-white mt-auto align-bottom relative z-10 align-bottom">
+                    {{ module.tileButtonText }}
+                </a>
+            </div>
+
+            {% set image = module.image.one() %}
+            <img class="lazyload w-full h-full object-cover absolute inset-0 z-0"
+                 src="{{ image.getUrl() }}"
+                 data-sizes="100vw"
+                 data-srcset="{{ image.getUrl('lg') }} 1000w, {{ image.getUrl('md') }} 700w,"
+                 alt="{{ image.title }}"
+            >
         </div>
     </div>
+
 {% endif %}    
