@@ -12,27 +12,25 @@
                 </div>
             {% endif %}
 
-            {# Get all the static sections such as rich text and images #}
-            {% set staticSections = block.staticContent.all() %}
-
-            {% for module in staticSections %}
-                <div class="mb-8">
-                    {% include ('/_partials/_module/' ~ module.type) %}
-                </div>
-            {% endfor %}
-
-            {# Get all the dynamic sections such as cards, tiles and buttons #}
-            {% set dynamicSections = block.dynamicContent.all() %}
-
-
+            {# Get the page builder instance #}
+            {% set layout = block.layout.all() %}
             <div class="container">
-                <div class="px-4">
-                    <div class="-mx-8 flex">
-                        {% for module in dynamicSections %}
+
+                {% for module in layout %}
+                    {% switch module.type %}
+
+                        {% case "richText" or "image" %}
+                            <div class="mb-8">
+                                {% include ('/_partials/_module/' ~ module.type) %}
+                            </div>
+
+                        {% case "cards" %}
                             {% include ('/_partials/_module/' ~ module.type) %}
-                        {% endfor %}
-                    </div>
-                </div>
+
+                        {% default %}
+                            <p>Nothing was loaded :(</p>
+                    {% endswitch %}
+                {% endfor %}
             </div>
 
         </section>

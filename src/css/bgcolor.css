@@ -20,6 +20,10 @@
 .section-bg-navy {
     @apply bg-navy-700;
 }
+.section-bg-orange {
+    @apply bg-orange;
+}
+
 .section {
 
     

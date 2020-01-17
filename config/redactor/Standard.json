@@ -2,5 +2,15 @@
   "buttons": ["formatting", "align", "bold", "italic", "unorderedlist", "orderedlist", "link", "image", "video"],
   "plugins": ["fullscreen", "video", "alignment"],
   "linkNewTab": true,
-  "toolbarFixed": true
+  "toolbarFixed": true,
+  "formattingAdd": {
+    "lead-p-add": {
+      "title": "Lead Paragraph",
+      "api": "module.block.format",
+      "args": {
+        "tag": "p",
+        "class": "text-xl text-navy-500"
+      }
+    }
+  }
 }

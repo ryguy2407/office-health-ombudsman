@@ -14,8 +14,8 @@
 
             {% set image = module.image.one() %}
             <img class="lazyload w-full h-full object-cover absolute inset-0 z-0"
-                 src="{{ image.getUrl() }}"
-                 data-sizes="100vw"
+                 data-src="{{ image.getUrl() }}"
+                 data-sizes="auto"
                  data-srcset="{{ image.getUrl('lg') }} 1000w, {{ image.getUrl('md') }} 700w,"
                  alt="{{ image.title }}"
             >
