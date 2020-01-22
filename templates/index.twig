@@ -1,6 +1,63 @@
-{% extends "/_layouts/site" %}
+{% extends "/_layouts/site" %} {% block main %}
 
-{% block main %}
+<section class="theme-light relative border-b-8 border-orange">
+    {% if entry.backgroundImage.one() %}
+    <div class="absolute inset-0">
+        {% set image = entry.backgroundImage.one() %}
+        {% set transformedImages = craft.imager.transformImage(image,
+            [
+                { width: 3000 },
+                { width: 1020, jpegQuality: 80 },
+            ],
+            {
+                format: 'jpg',
+                allowUpscale: true,
+                mode: 'crop',
+                jpegQuality: 80,
+                interlace: true,
+                position: image.getFocalPoint()
+            }
+            ) %}
+        <img class="lazyload object-cover w-full h-full pointer-events-none"
+             src="{{ craft.imager.base64Pixel(2,1) }}"
+             data-sizes="auto"
+             data-srcset="{{ craft.imager.srcset(transformedImages) }}"
+             alt="{{ image.title }}"
+        >
+    </div>  
+    {% endif %}
+    {% if entry.featureImage.one() %}
+    <div class="relative md:absolute w-full inset-y-0 right-0 bg-navy-400">
+        {% set image = entry.featureImage.one() %}
+        {% set transformedImages = craft.imager.transformImage(image,
+            [
+                { width: 2000 },
+                { width: 1020, jpegQuality: 80 },
+            ],
+            {
+                format: 'jpg',
+                allowUpscale: true,
+                mode: 'crop',
+                jpegQuality: 80,
+                interlace: true,
+                position: image.getFocalPoint()
+            }
+            ) %}
+        <img class="object-cover w-full h-full pointer-events-none scale-with-grid lazyload"
+             src="{{ craft.imager.base64Pixel(2,1) }}"
+             data-sizes="auto"
+             data-srcset="{{ craft.imager.srcset(transformedImages) }}"
+             alt="{{ image.title }}"
+        >
+    </div>
+    <div class="container mx-auto py-10 md:py-24 px-4 relative">
+        <div class="md:w-1/2 md:pr-24">
+            <h1 class="text-4xl lg:text-6xl font-bold leading-none mb-8">{{ entry.pageIntroduction }}</h1>
+            <a href="#" class="btn btn-solid">Make a complaint</a>
+        </div>
+    </div>
+    {% endif %}
+</section>
 
 {% include '/_partials/layout-builder' %}
 

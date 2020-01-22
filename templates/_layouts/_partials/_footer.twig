@@ -1,68 +1,82 @@
-<footer id="footer" class="my-16">
-    <div class="container">
-        <div class="flex justify-between items-center mb-16">
-            <img src="/assets/img/logo-icon.svg" alt="">
-            <div>
-                <a href="#" class="btn btn-solid mr-2">Make a complaint</a>
-                <a href="#" class="btn btn-solid">133 OHO (133 646)</a>
+{% cache globally for 7 days %}
+    <footer id="footer" class="bg-white theme-light">
+        <div class="container py-10">
+            <div class="-mx-3 flex tems-center justify-between">
+                <div class="mb-4 md:mb-0 flex items-center flex-col md:flex-row">
+                    <img class="h-10 md:h-20" src="/assets/img/logo.svg" alt="Office of the health ombudsman"/>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="btn btn-orange mr-4">Make a complaint</a>
+                    <a href="#" class="btn btn-solid">133 OHO (133 646)</a>
+                </div>
             </div>
         </div>
-        <div class="flex justify-between">
-            <div class="footerNav">
-                <p><strong>ABOUT</strong></p>
-                <ul>
-                    <li><a href="#">The health ombudsman</a></li>
-                    <li><a href="#">Governance</a></li>
-                    <li><a href="#">Our performance</a></li>
-                    <li><a href="#">Work for the OHO</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footerNav">
-                <p><strong>ABOUT</strong></p>
-                <ul>
-                    <li><a href="#">The health ombudsman</a></li>
-                    <li><a href="#">Governance</a></li>
-                    <li><a href="#">Our performance</a></li>
-                    <li><a href="#">Work for the OHO</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footerNav">
-                <p><strong>ABOUT</strong></p>
-                <ul>
-                    <li><a href="#">The health ombudsman</a></li>
-                    <li><a href="#">Governance</a></li>
-                    <li><a href="#">Our performance</a></li>
-                    <li><a href="#">Work for the OHO</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footerNav">
-                <p><strong>ABOUT</strong></p>
-                <ul>
-                    <li><a href="#">The health ombudsman</a></li>
-                    <li><a href="#">Governance</a></li>
-                    <li><a href="#">Our performance</a></li>
-                    <li><a href="#">Work for the OHO</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+
+        <div class="container py-8">
+            <div class="-mx-3 flex flex-wrap">
+
+            {% for block in footer.footerNavigation.level(1).all() %}
+                {% switch block.type.handle %}
+                {% case 'footerColumn' %}
+                    <div class="px-3 md:flex-1 w-1/2 md:w-full">
+                         {% for footerMenu in block.children.all() %}
+                            {% switch footerMenu.type.handle %}
+                                {% case 'footerMenu' %}
+                                    {% set nodes = craft.navigation.nodes(footerMenu.navigation).level(1).all() %}
+
+                                    <ul  class=" mb-4 text-sm">
+                                        {% nav node in nodes %}
+                                            <li class="mb-2">
+
+                                                <a class="inline-block text-base uppercase font-bold hover:opacity-75 mb-2" href="{{ node.url }}">{{ node.title }}</a>
+
+                                                {% if node.hasDescendants() %}
+                                                    <ul class="">
+                                                        {% set children = node.children.all() %}
+                                                        {% for child in children %}
+                                                            <li class="mb-1">
+                                                                <a class="inline-block text-base font-normal hover:opacity-75" href="{{ child.url }}">{{ child.title }}</a>
+                                                            </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif %}
+
+                                            </li>
+                                        {% endnav %}
+                                    </ul>
+                             {% endswitch %}
+                        {% endfor %}
+                    </div>
+                {% endswitch %}
+            {% endfor %}
             </div>
         </div>
-    </div>
-</footer>
-<div class="bottomFooter py-8 bg-light">
-    <div class="container flex justify-between">
-        <div>
-            <ul class="flex">
-                <li class="mr-4"><a href="#">&copy; Office of the Health Ombudsman</a></li>
-                <li class="mr-4"><a href="#">Privacy policy</a></li>
-                <li class="mr-4"><a href="#">Disclaimer</a></li>
-                <li class="mr-4"><a href="#">Right to information</a></li>
+    </footer>
+
+    <div class="bottomFooter bg-light py-8">
+        <div class="container flex items-center justify-between">
+            {% set secondaryNodes = craft.navigation.nodes(header.secondaryMenu).level(1).all() %}
+            <ul class="md:flex">
+                <li class="my-2 mx-1 group relative">
+                    <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="/">&copy; Office of the Health Ombudsman</a></li>
+                {% nav node in secondaryNodes %}
+                    <li class="my-2 mx-1 group relative">
+                        <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="{{ node.url }}">{{ node.title }}</a>
+
+                        {% if node.hasDescendants() %}
+                            <ul class="hidden p-1 absolute right-0 hover:flex group-hover:flex flex-col bg-white w-48 rounded overflow-hidden shadow-lg">
+                                {% set children = node.children.all() %}
+                                {% for child in children %}
+                                    <li class="w-full ">
+                                        <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-sm block" href="{{ child.url }}">{{ child.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endnav %}
             </ul>
-        </div>
-        <div>
-            <a href="https://newwordorder.com.au">Website by NWO</a>
+            <p class="justify-end"><a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="http://newwordorder.com.au" target="_blank">Site by NWO</a></p>
         </div>
     </div>
-</div>
+{% endcache %}

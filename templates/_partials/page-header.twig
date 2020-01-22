@@ -1,0 +1,17 @@
+<section class="border-b-8 border-orange {% if entry.pageHeadingType == "publicPage" %}section-bg-dark{% endif %} {% if entry.pageHeadingType == "providerPage" %}section-bg-green{% endif %} relative">
+    <div class="relative py-10 md:py-24 z-10">
+        <div class="container">
+            <div class="md:w-1/2 lg:pr-32">
+                {% include '_partials/_breadcrums' %}
+                <h1 class="text-6xl md:text-6xl font-bold mb-4 text-white">{{ entry.title }}</h1>
+                {% if entry.pageIntroduction %}
+                    <p class="text-white md:text-xl {% if entry.type.handle == "primary" %}md:text-2xl{% endif %} mt-4">{{ entry.pageIntroduction }}</p>
+                {% endif %}
+            </div> 
+        </div>
+        <img class="hidden md:block absolute right-0 top-0 h-full" src="/assets/img/header-shapes.svg" alt="">
+    </div>
+    {% if entry.type.handle == "primary" %}
+        <div class="overlay opacity-50 absolute inset-0"></div>
+    {% endif %}
+</section>

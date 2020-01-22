@@ -1,0 +1,10 @@
+<a href="{{ entry.url }}">
+  <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg  transition-all rounded overflow-hidden">
+      
+      <div class="p-6">
+          <h5>{{ entry.title }}</h5>
+          <p class="text-sm">{{ entry.postDate | date("M d, Y") }}</p>
+          <p>{{ entry.jobDescription[:96] ~ (entry.jobDescription|length > 96 ? '…') }}</p>
+      </div>
+  </article>
+</a>

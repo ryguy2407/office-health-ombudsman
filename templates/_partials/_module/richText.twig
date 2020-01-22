@@ -1,7 +1,8 @@
 {% if module.type.handle == 'richText' %}
     <div class="container relative">
-        <div class="md:max-w-2xl mx-auto richtext">
-            {{ module.richText }}
+        <div class="md:max-w-2xl mx-auto richtext"> 
+            {{ module.richText | markdown }}
+            {% include '_partials/_module/buttons' %}
         </div>
     </div>
 {% endif %}     

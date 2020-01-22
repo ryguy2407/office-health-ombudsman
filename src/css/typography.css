@@ -1,5 +1,5 @@
 body {
-    @apply text-gray-700;
+    @apply text-dark;
 }
 
 h1 {
@@ -67,7 +67,7 @@ p {
     
     h1, h2, h3, h4, h5, h6 {
         &:not(.text-white) {
-            @apply text-navy-700;
+            @apply text-dark;
         }
     }
 

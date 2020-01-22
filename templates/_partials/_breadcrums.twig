@@ -1,54 +1,52 @@
-        
+{# settings #}
+{% set nonElementLinks = false %}
 
-                {# settings #}
-                {% set nonElementLinks = false %}
-
-                {# populate breadcrumbLinks array if no array of links was provided #}
-                {% if breadcrumbLinks is not defined %}
-                    {% set breadcrumbLinks = [] %}
-                    {# home #}
-                    {% set home = craft.app.getElements().getElementByUri('__home__', currentSite.id) %}
-                    {% set breadcrumbLinks = breadcrumbLinks|merge([{
-                        url: home.url ?? alias(currentSite.baseUrl),
-                        title: home.title ?? 'homepage'|t,
-                    }]) %}
-                    
-                    {# get elements #}
-                    {% set segments = craft.app.request.segments %}
-                    {% for segment in segments %}
-                            {% set uriPart = segments[0:loop.index]|join('/')|literal %}
-                            {% set element = craft.app.elements.getElementByUri(uriPart, currentSite.id) %}
-                            {% if element %}
-                                {% set breadcrumbLinks = breadcrumbLinks|merge([{
-                                    url: element.url,
-                                    title: element.title,
-                                }]) %}
-                            {% elseif nonElementLinks %}
-                                {% set breadcrumbLinks = breadcrumbLinks|merge([{
-                                    url: url(uriPart),
-                                    title: segment|t,
-                                }]) %}
-                            {% endif %}
-                    {% endfor %}
-                {% endif %}
-
-                {# render breadcrumb #}
-                {% if breadcrumbLinks|length > 1 %}
-
+{# populate breadcrumbLinks array if no array of links was provided #}
+{% if breadcrumbLinks is not defined %}
+    {% set breadcrumbLinks = [] %}
+    {# home #}
+    {% set home = craft.app.getElements().getElementByUri('__home__', currentSite.id) %}
+    {% set breadcrumbLinks = breadcrumbLinks|merge([{
+        url: home.url ?? alias(currentSite.baseUrl),
+        title: home.title ?? 'homepage'|t,
+    }]) %}
     
-                        <nav class="breadcrumb mb-4" aria-label="{{'breadcrumbs'|t}}">
-                            <ul class="flex" itemscope itemtype="http://schema.org/BreadcrumbList">
-                                {% for link in breadcrumbLinks %}
-                                    <li class="{{loop.last ? 'hidden'}} uppercase font-bold text-sm text-navy-800 flex" {{loop.last ? 'aria-current="page"' }} itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                        <a class="mr-2 opacity-70 hover:opacity-100 transition-all" href="{{link.url}}" itemtype="http://schema.org/Thing" itemprop="item">
-                                            <span itemprop="name">{{ link.title }}</span>
-                                        </a>
-                                        {% if not loop.last %}<span class="mr-2 opacity-70">/</span>{% endif %}
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </nav>
-                        
-                {% endif %}
+    {# get elements #}
+    {% set segments = craft.app.request.segments %}
+    {% for segment in segments %}
+            {% set uriPart = segments[0:loop.index]|join('/')|literal %}
+            {% set element = craft.app.elements.getElementByUri(uriPart, currentSite.id) %}
+            {% if element %}
+                {% set breadcrumbLinks = breadcrumbLinks|merge([{
+                    url: element.url,
+                    title: element.title,
+                }]) %}
+            {% elseif nonElementLinks %}
+                {% set breadcrumbLinks = breadcrumbLinks|merge([{
+                    url: url(uriPart),
+                    title: segment|t,
+                }]) %}
+            {% endif %}
+    {% endfor %}
+{% endif %}
+
+{# render breadcrumb #}
+{% if breadcrumbLinks|length > 1 %}
+
+
+        <nav class="breadcrumb mb-4" aria-label="{{'breadcrumbs'|t}}">
+            <ul class="flex" itemscope itemtype="http://schema.org/BreadcrumbList">
+                {% for link in breadcrumbLinks %}
+                    <li class="{{loop.last ? 'hidden'}} uppercase font-bold text-sm text-white flex" {{loop.last ? 'aria-current="page"' }} itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a class="mr-2 opacity-70 hover:opacity-100 transition-all" href="{{link.url}}" itemtype="http://schema.org/Thing" itemprop="item">
+                            <span itemprop="name">{{ link.title }}</span>
+                        </a>
+                        {% if not loop.last %}<span class="mr-2 opacity-70">/</span>{% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        
+{% endif %}
 
                 

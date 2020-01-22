@@ -1,34 +1,58 @@
-<header>
-    <div class="container flex items-center justify-between w-full py-8">
-        <div class="logo">
-            <img src="/assets/img/logo.svg" alt="">
-        </div>
-        <nav>
-            <ul class="flex justify-end mb-4">
-                <li class="ml-4"><a class="font-bold" href="#">LANGUAGE</a></li>
-                <li class="ml-4"><a class="font-bold" href="#">NEWS & UPDATES</a></li>
-                <li class="ml-4"><a class="font-bold" href="#">CONTACT</a></li>
-            </ul>
-            <ul class="flex justify-end items-center">
-                <li class="ml-4 text-xl"><a href="#">For the public</a></li>
-                <li class="ml-4 text-xl"><a href="#">For the providers</a></li>
-                <li class="ml-4 text-xl"><a class="btn btn-solid" href="#">Make a complaint</a></li>
-            </ul>
+{% cache globally for 7 days %}
+<header class="z-40 sticky md:relative w-full top-0 shadow-lg"> 
+
+    {# TOP BANNER #}
+
+    <div class="py-4 z-10 bg-white relative">
+    
+    {# SECONDARY MENU #}
+
+        <nav class="container mx-auto px-3 flex items-center justify-between">
+            <a class="block mr-3" href="/">
+                <img class="h-10 md:h-20" src="/assets/img/logo.svg" alt="Office of the health ombudsman"/>
+            </a>
+            <div class="flex flex-col">
+                {% set secondaryNodes = craft.navigation.nodes(header.secondaryMenu).level(1).all() %}
+                <ul class="hidden md:flex ml-auto justify-end">
+                    {% nav node in secondaryNodes %}
+                        <li class="my-2 mx-1 group relative">
+                            <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="{{ node.url }}">{{ node.title }}</a>
+
+                            {% if node.hasDescendants() %}
+                                <ul class="hidden p-1 absolute right-0 hover:flex group-hover:flex flex-col bg-white w-48 rounded overflow-hidden shadow-lg">
+                                    {% set children = node.children.all() %}
+                                    {% for child in children %}
+                                        <li class="w-full ">
+                                            <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-sm block" href="{{ child.url }}">{{ child.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endnav %}
+                </ul>
+
+                {% set nodes = craft.navigation.nodes(header.primaryMenu).level(1).all() %}
+                <ul class="hidden md:flex ml-auto justify-end">
+                    {% nav node in nodes %}
+                        <li class="my-2 mx-1 group relative">
+                            <a class="py-1 px-2 block hover:bg-light rounded-sm text-lg relative" href="{{ node.url }}">{{ node.title }}</a>
+
+                            {% if node.hasDescendants() %}
+                                <ul class="hidden p-1 absolute right-0 hover:flex group-hover:flex flex-col bg-white w-48 rounded overflow-hidden shadow-lg">
+                                    {% set children = node.children.all() %}
+                                    {% for child in children %}
+                                        <li class="w-full ">
+                                            <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-lg block" href="{{ child.url }}">{{ child.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endnav %}
+                </ul>
+            </div>
         </nav>
     </div>
-
 </header>
-
-<section class="relative">
-    <div class="bg-scroll border-b-4 border-orange h-756px" style="background-image: url('/assets/img/banner.jpg');background-repeat: no-repeat;background-size: cover">
-        <div class="container flex items-center h-full">
-            <div class="w-1/2">
-                <h1>
-                    Resolving complaints for safe and fair Queensland healthcare
-                </h1>
-                <a href="#" class="btn btn-solid mr-2">Make a complaint</a>
-            </div>
-        </div>
-    </div>
-</section>
-
+{% endcache %}

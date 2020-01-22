@@ -15,6 +15,15 @@
         @apply bg-navy-700 border-navy-700 shadow-md;
     }
 }
+
+.btn-orange {
+    @apply bg-orange border-orange text-white;
+&:hover {
+     @apply bg-red border-red shadow-md;
+ }
+}
+
+
 .btn-outline {
     @apply bg-transparent border border-navy-500 text-navy-500;
     &:hover {

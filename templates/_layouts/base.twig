@@ -9,6 +9,12 @@
       {% if entry.title is defined %}{{ entry.title }} - {% endif %}{{ siteName }}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+    
+    {% cache globally for 3 weeks %}
+        {% if trackingCodes.headerCodes %}
+          {{ trackingCodes.headerCodes|raw }}
+        {% endif %}
+    {% endcache %}
 
     {% do view.registerCssFile("/dist/styles.css") %}
 
@@ -18,11 +24,89 @@
 
  </head>
  <body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %} font-body">
-
+  
+  {% cache globally for 3 weeks %}
+    {% if trackingCodes.bodyCodes %}
+      {{ trackingCodes.bodyCodes|raw }}
+    {% endif %}
+  {% endcache %}
    {% block body %}{% endblock %}  
 
    {% do view.registerJsFile("/dist/main.js") %}
+   <script src="../dist/swiper.js"></script>
    {% block foot %}{% endblock %}
+
+  
+  {% cache globally for 3 weeks %}
+    {% if trackingCodes.footerCodes %}
+      {{ trackingCodes.footerCodes }}
+    {% endif %}
+  {% endcache %}
+<script>
+  
+var mySwiper = new Swiper ('.program-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 24,
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1280: {
+      slidesPerView: 4,
+    }
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '#program-next',
+    prevEl: '#program-prev',
+  },
+})
+
+var mySwiper = new Swiper ('.entry-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 24,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      allowTouchMove: true
+    },
+    768: {
+      slidesPerView: 2,
+      allowTouchMove: true
+      
+    },
+    1024: {
+      slidesPerView: 3,
+      allowTouchMove: false
+    }
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '#program-next',
+    prevEl: '#program-prev',
+  },
+})
+</script>
 
  </body> 
 </html>

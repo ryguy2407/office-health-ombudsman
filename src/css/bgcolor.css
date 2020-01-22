@@ -5,21 +5,26 @@
     border-top: 1px solid #F1F6F5;
 }
  
-.section-bg-lightGrey {
-    background-color: #F1F6F5;
-} 
-
-.section-bg-teal {
-    @apply bg-teal-500;
+.section-bg-light {
+    @apply bg-light;
 }
 
-.section-bg-blue {
-    @apply bg-navy-500;
+.section-bg-dark {
+    @apply bg-dark;
 }
 
 .section-bg-navy {
-    @apply bg-navy-700;
+    @apply bg-navy-500;
 }
+
+.section-bg-blue {
+    @apply bg-blue;
+}
+
+.section-bg-green {
+    @apply bg-green;
+}
+
 .section-bg-orange {
     @apply bg-orange;
 }

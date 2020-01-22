@@ -1,9 +1,13 @@
-{% if module.type.handle == 'buttons' %}
-    <div class="container">
-        <a class="btn btn-{{ module.style }}" href="{{ module.buttonUrl }}" {% if module.newWindow %}target="_blank" rel="noopener"{% endif %}>
-            {{ module.buttonText }}
+{% if module.buttons|length %}
+    <div>
+    {% for block in module.buttons.all() %}
+        {% set rel = block.entry.one() %}
+
+        <a class="btn btn-{{ block.style }}" href="{% if rel %}{{ rel.url }}{% else %}{{ block.buttonUrl }}{% endif %}" {% if block.newWindow %}target="_blank" rel="noopener"{% endif %}>
+            {{ block.buttonText }}
         </a>
 
+    {% endfor %}
     </div>
 {% endif %}
 

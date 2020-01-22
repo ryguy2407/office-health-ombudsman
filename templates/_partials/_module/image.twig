@@ -1,14 +1,29 @@
-{% if module.type.handle == 'image' %}
+{% if module.type.handle == 'image' %}   
     {% if module.image.one() %}
     <div class="container relative">
         <div class="md:max-w-4xl mx-auto "> 
             <figure>
                 {% set image = module.image.one() %}
+                {% set transformedImages = craft.imager.transformImage(image,
+                    [
+                        { width: 2000 },
+                        { width: 1020, jpegQuality: 80 },
+                    ],
+                    {
+                        format: 'jpg',
+                        allowUpscale: true,
+                        mode: 'crop',
+                        jpegQuality: 80,
+                        interlace: true,
+                        position: image.getFocalPoint()
+                    }
+                    )
+                %}
                 
                 <img class="lazyload rounded object-cover w-full h-full"
-                     data-src="{{ image.getUrl() }}"
-                     data-sizes="auto"
-                     data-srcset="{{ image.getUrl('xl') }} 2000w, {{ image.getUrl('lg') }} 1000w, {{ image.getUrl('md') }} 700w, {{ image.getUrl('sm') }} 500w, {{ image.getUrl('xs') }} 250w"
+                     src="{{ craft.imager.base64Pixel(2,1) }}"
+                     data-sizes="100vw"
+                     data-srcset="{{ craft.imager.srcset(transformedImages) }}"
                      alt="{{ image.title }}"
                 >
                 

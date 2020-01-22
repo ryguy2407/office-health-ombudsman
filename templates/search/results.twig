@@ -24,14 +24,30 @@
 </section>
 <section class="section theme-light section-bg-white py-10 md:py-24 ">
 
-    <div class="relative container mx-auto px-3">
+    <div class="relative max-w-4xl mx-auto px-3">
  
         {% if entries|length %}
             
 
             <ul>
                 {% for entry in entries %}
-                    <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+                    <li class="mb-3">
+                        <a class="block p-8 shadow hover:shadow-lg transition-all" href="{{ entry.url }}">
+                            <h4>{{ entry.title }}</h4>
+                            {% if entry.pageIntroduction %}
+                            <p class="text-base mt-4">{{ entry.pageIntroduction }}</p>
+                            {% endif %}
+                            {% if entry.hostOrganisation %}
+                                <p class="text-base   mt-4"> Hosted by {{ entry.hostOrganisation }}</p>
+                            {% endif %}
+                            {% if entry.organisationName %}
+                                <p class="text-base   mt-4">{{ entry.organisationName }}</p>
+                            {% endif %}
+                            {% if entry.type.handle == "news"  %}
+                                <p class="text-base  mt-4">{{ entry.postDate | date("M d, Y") }}</p>
+                            {% endif %}
+                        </a>
+                    </li>
                 {% endfor %}
             </ul>
         {% else %}
