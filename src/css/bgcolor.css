@@ -29,8 +29,8 @@
     @apply bg-orange;
 }
 
-.section {
-
+.section-bg-primary {
+    @apply bg-primary
     
 }
 
