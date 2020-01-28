@@ -1,0 +1,22 @@
+{% extends "/_layouts/site" %}
+
+{% block main %}
+    {% include '/_partials/page-header' %}
+    <div class="container mx-auto relative py-16">
+        {% include '/_partials/_breadcrums.twig' %}
+        <div class="mb-16"></div>
+        <div class="md:max-w-2xl mx-auto">
+            <h2>{{ entry.title }}</h2>
+            {% set rel = entry.mediaDownload.one() %}
+            {% if rel %}
+                <a class="btn btn-primary text-white mb-8" href="{{ rel.url }}" target="_blank">Download report</a>
+            {% endif %}
+            <p>{{ entry.postDate | date('d F Y') }}</p>
+            <hr class="my-8">
+            <div class="richtext">
+                {{ entry.richText }}
+            </div>
+        </div>
+    </div>
+    {% include '/_partials/complaints' %}
+{% endblock %}

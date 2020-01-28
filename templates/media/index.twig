@@ -1,0 +1,41 @@
+{% extends "/_layouts/site" %}
+
+{% block main %}
+    {% include '/_partials/page-header' %}
+    <div class="container mx-auto relative py-16">
+        {% include '/_partials/_breadcrums.twig' %}
+        <h1>Media releases</h1>
+
+        <div class="flex flex-wrap -mx-2">
+            {% set myEntryQuery = craft.entries()
+                .section('mediaReleases')
+                .limit(9) %}
+
+            {# Fetch the entries #}
+            {% set entries = myEntryQuery.all() %}
+
+            {% for entry in entries %}
+                <div class="w-full md:w-1/3 p-3">
+                    <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg transition-all rounded overflow-hidden">
+                        <div class="p-6 flex flex-col items-start h-full">
+                            {% set relatedCategories = entry.mediaCategories.all() %}
+                            {% if relatedCategories|length %}
+                                <div class="flex mb-4">
+                                    {% for rel in relatedCategories %}
+                                        <a href="{{ rel.url }}" class="inline-block uppercase text-red text-sm mr-4 mb-4">{{ rel.title }}</a>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            <h5><a href="{{ entry.url }}">{{ entry.title }}</a></h5>
+                            <p class="text-sm text-grey">{{ entry.postDate | date("M d, Y") }}</p>
+                            <a href="{{ entry.url }}" class="uppercase text-blue text-sm font-bold mt-auto">
+                                Read more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% include '/_partials/complaints' %}
+{% endblock %}

@@ -1,47 +1,22 @@
-<section class="bg-primary py-8">
+<section class="bg-primary py-10 md:py-24">
     <div class="container relative">
         <div class="px-2">
             <div class="flex -mx-2 items-stretch">
-                <div class="px-2 w-1/4 flex flex-col">
-                    <h2>How to make a complaint</h2>
-                    <p>
-                        Not sure how to make a health service
-                        complaint? We will work with you to
-                        make the process as simple as possible.
-                    </p>
-                </div>
+                {% for block in complaints.complaintsColumns.type('columns').all() %}
                 <div class="px-2 w-1/4 flex">
-                    <div class="bg-white p-8 rounded rounded-sm flex flex-col">
-                        <h3>Online</h3>
-                        <p>
-                            Fill in and submit the online health service
-                            complaint form, OR fill in a health service
-                            complaint form and email it to:
-                        </p>
-                        <a href="#">complaints@oho.qld.gov.au</a>
+                    <div class="{% if block.backgroundColour != '' %}bg-{{ block.backgroundColour }} p-8{% endif %} rounded rounded-sm flex flex-col items-start">
+                        {% set image = block.icon.one() %}
+                        {% if image|length %}
+                            <img height="50" class="mb-4" src="{{ image.getUrl() }}" alt="{{ image.title }}">
+                        {% endif %}
+                        {{ block.text }}
+                        {% if block.buttonText %}
+                            <a class="btn btn-solid" href="{{ block.buttonLink }}">{{ block.buttonText }}</a>
+                        {% endif %}
                     </div>
                 </div>
-                <div class="px-2 w-1/4 flex">
-                    <div class="bg-white p-8 rounded rounded-sm flex flex-col">
-                        <h3>Online</h3>
-                        <p>
-                            Fill in and submit the online health service
-                            complaint form, OR fill in a health service
-                            complaint form and email it to:
-                        </p>
-                        <a href="#">complaints@oho.qld.gov.au</a>
-                    </div>
-                </div>
-                <div class="px-2 w-1/4 flex">
-                    <div class="bg-white p-8 rounded rounded-sm flex flex-col">
-                        <h3>Online</h3>
-                        <p>
-                            Fill in and submit the online health service
+                {% endfor %}
 
-                        </p>
-                        <a href="#">complaints@oho.qld.gov.au</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -16,9 +16,11 @@
         {% endif %}
     {% endcache %}
 
-    {% do view.registerCssFile("/dist/styles.css") %}
+      {% do view.registerCssFile("/dist/styles.css") %}
+      {% do view.registerCssFile("/fontawesome/css/all.css") %}
+      {% do view.registerJsFile('/fontawesome/js/all.js') %}
 
-    <link rel="stylesheet" href="https://use.typekit.net/iwi6una.css">
+      <link rel="stylesheet" href="https://use.typekit.net/iwi6una.css">
 
     {% block head %}{% endblock %} 
 
@@ -33,7 +35,7 @@
    {% block body %}{% endblock %}  
 
    {% do view.registerJsFile("/dist/main.js") %}
-   <script src="../dist/swiper.js"></script>
+
    {% block foot %}{% endblock %}
 
   
@@ -42,72 +44,22 @@
       {{ trackingCodes.footerCodes }}
     {% endif %}
   {% endcache %}
-<script>
-  
-var mySwiper = new Swiper ('.program-swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
-  spaceBetween: 24,
-  breakpoints: {
-    0: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 4,
-    },
-    1280: {
-      slidesPerView: 4,
-    }
-  },
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '#program-next',
-    prevEl: '#program-prev',
-  },
-})
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,zh-CN,hr,tl,de,el,hi,it,mk,pl,sr,tr,vi'}, 'google_translate_element');
+      }
+  </script>
+  <style>
+      .goog-logo-link {
+          display:none !important;
+      }
 
-var mySwiper = new Swiper ('.entry-swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
-  spaceBetween: 24,
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      allowTouchMove: true
-    },
-    768: {
-      slidesPerView: 2,
-      allowTouchMove: true
-      
-    },
-    1024: {
-      slidesPerView: 3,
-      allowTouchMove: false
-    }
-  },
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '#program-next',
-    prevEl: '#program-prev',
-  },
-})
-</script>
-
+      .goog-te-gadget{
+          color: transparent !important;
+      }
+  </style>
  </body> 
 </html>
 {% endspaceless %}

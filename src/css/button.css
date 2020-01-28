@@ -10,14 +10,21 @@
 }
 
 .btn-solid {
-    @apply bg-navy-500 border border-navy-500 text-white;
+    @apply bg-blue border border-blue text-white;
     &:hover {
-        @apply bg-navy-700 border-navy-700 shadow-md;
+        @apply bg-navy-500 border-navy-500 shadow-md;
     }
 }
 
 .btn-orange {
     @apply bg-orange border-orange text-white;
+&:hover {
+     @apply bg-red border-red shadow-md !important;
+ }
+}
+
+.btn-primary {
+    @apply bg-primary border-primary text-white;
 &:hover {
      @apply bg-red border-red shadow-md;
  }
