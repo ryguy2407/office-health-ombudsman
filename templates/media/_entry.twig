@@ -5,7 +5,7 @@
     <div class="container mx-auto relative py-16">
         {% include '/_partials/_breadcrums.twig' %}
         <div class="mb-16"></div>
-        <div class="md:max-w-2xl mx-auto">
+        <div class="md:max-w-3xl mx-auto">
             <h2>{{ entry.title }}</h2>
             {% set rel = entry.mediaDownload.one() %}
             {% if rel %}

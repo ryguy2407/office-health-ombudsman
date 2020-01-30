@@ -1,15 +1,14 @@
 {
   "require": {
     "aelvan/imager": "v2.3.1",
-    "craftcms/cms": "3.3.20.1",
-    "craftcms/redactor": "2.4.0",
+    "craftcms/cms": "3.4.1",
+    "craftcms/redactor": "2.5.0",
     "dgrigg/craft-migration-assistant": "3.1.6",
     "ether/seo": "3.6.3",
     "luwes/craft3-codemirror": "1.0.2",
-    "spicyweb/craft-neo": "2.5.10",
+    "spicyweb/craft-neo": "2.6.0",
     "topshelfcraft/wordsmith": "3.1.1",
-    "verbb/navigation": "1.2.7",
-    "verbb/super-table": "2.3.3",
+    "verbb/super-table": "2.4.0",
     "vlucas/phpdotenv": "^3.4.0",
     "youandmedigital/breadcrumb": "^1.1"
   },

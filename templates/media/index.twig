@@ -4,11 +4,11 @@
     {% include '/_partials/page-header' %}
     <div class="container mx-auto relative py-16">
         {% include '/_partials/_breadcrums.twig' %}
-        <h1>Media releases</h1>
+        <h1>Latest updates</h1>
 
         <div class="flex flex-wrap -mx-2">
             {% set myEntryQuery = craft.entries()
-                .section('mediaReleases')
+                .section('latestUpdates')
                 .limit(9) %}
 
             {# Fetch the entries #}

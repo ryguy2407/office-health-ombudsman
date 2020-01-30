@@ -129,3 +129,16 @@ h1, h2, h3, h4, h5, h6, p {
         @apply border-solid border-teal-500;
     }
 }
+
+.richtext {
+    li {
+        @apply text-lg;
+    }
+    hr {
+        @apply my-8;
+    }
+
+    blockquote {
+        @apply border-l-4 pl-8 mb-6;
+    }
+}

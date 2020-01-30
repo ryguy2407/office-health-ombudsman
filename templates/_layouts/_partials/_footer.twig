@@ -14,66 +14,72 @@
 
         <div class="container py-8">
             <div class="-mx-3 flex flex-wrap">
-
-            {% for block in footer.footerNavigation.level(1).all() %}
-                {% switch block.type.handle %}
-                {% case 'footerColumn' %}
-                    <div class="px-3 md:flex-1 w-1/2 md:w-full">
-                         {% for footerMenu in block.children.all() %}
-                            {% switch footerMenu.type.handle %}
-                                {% case 'footerMenu' %}
-                                    {% set nodes = craft.navigation.nodes(footerMenu.navigation).level(1).all() %}
-
-                                    <ul  class=" mb-4 text-sm">
-                                        {% nav node in nodes %}
-                                            <li class="mb-2">
-
-                                                <a class="inline-block text-base uppercase font-bold hover:opacity-75 mb-2" href="{{ node.url }}">{{ node.title }}</a>
-
-                                                {% if node.hasDescendants() %}
-                                                    <ul class="">
-                                                        {% set children = node.children.all() %}
-                                                        {% for child in children %}
-                                                            <li class="mb-1">
-                                                                <a class="inline-block text-base font-normal hover:opacity-75" href="{{ child.url }}">{{ child.title }}</a>
-                                                            </li>
-                                                        {% endfor %}
-                                                    </ul>
-                                                {% endif %}
-
-                                            </li>
-                                        {% endnav %}
-                                    </ul>
-                             {% endswitch %}
-                        {% endfor %}
-                    </div>
-                {% endswitch %}
-            {% endfor %}
+                <div class="px-3 md:flex-1 w-1/2 md:w-full">
+                    {% set pages = craft.entries.section('pages').all() %}
+                    <ul class="">
+                        {% nav node in pages %}
+                            {% if node.footerColumnOneNavigation %}
+                                <li class="w-full">
+                                    <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-base block {% if node.footerNavigationClasses %}{{ node.footerNavigationClasses }}{% endif %}" href="{{ node.url }}">
+                                        {{ node.title }}
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endnav %}
+                    </ul>
+                </div>
+                <div class="px-3 md:flex-1 w-1/2 md:w-full">
+                    <ul class="">
+                    {% nav node in pages %}
+                        {% if node.footerColumnTwoNavigation %}
+                            <li class="w-full">
+                                <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-base block {% if node.footerNavigationClasses %}{{ node.footerNavigationClasses }}{% endif %}" href="{{ node.url }}">
+                                    {{ node.title }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endnav %}
+                    </ul>
+                </div>
+                <div class="px-3 md:flex-1 w-1/2 md:w-full">
+                    {% nav node in pages %}
+                        {% if node.footerColumnThreeNavigation %}
+                            <li class="w-full">
+                                <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-base block {% if node.footerNavigationClasses %}{{ node.footerNavigationClasses }}{% endif %}" href="{{ node.url }}">
+                                    {{ node.title }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endnav %}
+                </div>
+                <div class="px-3 md:flex-1 w-1/2 md:w-full">
+                    {% nav node in pages %}
+                        {% if node.footerColumnFourNavigation %}
+                            <li class="w-full">
+                                <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-base block {% if node.footerNavigationClasses %}{{ node.footerNavigationClasses }}{% endif %}" href="{{ node.url }}">
+                                    {{ node.title }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endnav %}
+                </div>
             </div>
         </div>
     </footer>
 
     <div class="bottomFooter bg-light py-8">
         <div class="container flex items-center justify-between">
-            {% set secondaryNodes = craft.navigation.nodes(header.secondaryMenu).level(1).all() %}
+            {% set pages = craft.entries.section('pages').all() %}
             <ul class="md:flex">
                 <li class="my-2 mx-1 group relative">
-                    <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="/">&copy; Office of the Health Ombudsman</a></li>
-                {% nav node in secondaryNodes %}
-                    <li class="my-2 mx-1 group relative">
-                        <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="{{ node.url }}">{{ node.title }}</a>
-
-                        {% if node.hasDescendants() %}
-                            <ul class="hidden p-1 absolute right-0 hover:flex group-hover:flex flex-col bg-white w-48 rounded overflow-hidden shadow-lg">
-                                {% set children = node.children.all() %}
-                                {% for child in children %}
-                                    <li class="w-full ">
-                                        <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-sm block" href="{{ child.url }}">{{ child.title }}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                    </li>
+                    <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="/">&copy; Office of the Health Ombudsman</a>
+                </li>
+                {% nav node in pages %}
+                    {% if node.bottomFooterNavigation %}
+                        <li class="my-2 mx-1 group relative">
+                            <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="{{ node.url }}">{{ node.title }}</a>
+                        </li>
+                    {% endif %}
                 {% endnav %}
             </ul>
             <p class="justify-end"><a class="py-1 px-2 block hover:bg-light rounded-sm text-sm relative" href="http://newwordorder.com.au" target="_blank">Site by NWO</a></p>

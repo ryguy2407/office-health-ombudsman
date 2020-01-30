@@ -12,44 +12,27 @@
                 <img class="h-10 md:h-20" src="/assets/img/logo.svg" alt="Office of the health ombudsman"/>
             </a>
             <div class="flex flex-col">
-                {% set secondaryNodes = craft.navigation.nodes(header.secondaryMenu).level(1).all() %}
+                {% set pages = craft.entries.section('pages').all() %}
+
                 <ul class="hidden md:flex ml-auto justify-end content-center">
                     <div id="google_translate_element" style="margin-top: 10px;"></div>
-                    {% nav node in secondaryNodes %}
-                        <li class="my-2 mx-1 group relative">
-                            <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm uppercase relative" href="{{ node.url }}">{{ node.title }}</a>
-
-                            {% if node.hasDescendants() %}
-                                <ul class="hidden p-1 absolute right-0 hover:flex group-hover:flex flex-col bg-white w-48 rounded overflow-hidden shadow-lg">
-                                    {% set children = node.children.all() %}
-                                    {% for child in children %}
-                                        <li class="w-full ">
-                                            <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-sm block" href="{{ child.url }}">{{ child.title }}</a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            {% endif %}
-                        </li>
+                    {% nav node in pages %}
+                        {% if node.secondaryNavigation %}
+                            <li class="my-2 mx-1 group relative">
+                                <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm uppercase relative" href="{{ node.url }}">{{ node.title }}</a>
+                            </li>
+                        {% endif %}
                     {% endnav %}
                 </ul>
 
-                {% set nodes = craft.navigation.nodes(header.primaryMenu).level(1).all() %}
+                {% set pages = craft.entries.section('pages').all() %}
                 <ul class="hidden md:flex ml-auto justify-end items-center my-2">
-                    {% nav node in nodes %}
-                        <li class="group relative mr-4">
-                            <a class="{% if not node.classes %}py-1 px-2{% endif %} block hover:bg-light rounded-sm text-xl relative font-bold {{ node.classes }}" href="{{ node.url }}">{{ node.title }}</a>
-
-                            {% if node.hasDescendants() %}
-                                <ul class="hidden p-1 absolute right-0 hover:flex group-hover:flex flex-col bg-white w-48 rounded overflow-hidden shadow-lg">
-                                    {% set children = node.children.all() %}
-                                    {% for child in children %}
-                                        <li class="w-full ">
-                                            <a class="w-full py-2 px-3 hover:bg-light rounded-sm text-lg block" href="{{ child.url }}">{{ child.title }}</a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            {% endif %}
-                        </li>
+                    {% nav node in pages %}
+                        {% if node.primaryNavigation %}
+                            <li class="group relative mr-4">
+                                <a class="block hover:bg-light rounded-sm text-xl relative font-bold {% if node.headerNavigationClasses %}{{ node.headerNavigationClasses }}{% else %} py-1 px-2{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+                            </li>
+                        {% endif %}
                     {% endnav %}
                 </ul>
             </div>

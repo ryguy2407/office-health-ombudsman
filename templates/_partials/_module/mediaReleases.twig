@@ -9,7 +9,7 @@
         </div>
     {% endif %}
     {% if module.mediaReleaseEntries is empty %}
-        {% set mediaEntries = craft.entries().section('mediaReleases').limit(3).all() %}
+        {% set mediaEntries = craft.entries().section('latestUpdates').limit(3).all() %}
     {% else %}
         {% set mediaEntries = module.mediaReleaseEntries %}
     {% endif %}
@@ -60,7 +60,7 @@
     </div>
 
     <div class="container relative mt-8 text-center">
-        <a class="btn btn-solid" href="/media">Read all media releases</a>
+        <a class="btn btn-solid" href="/latest-updates">Read all media releases</a>
     </div>
 
 {% endif %}     

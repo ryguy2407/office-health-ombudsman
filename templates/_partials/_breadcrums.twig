@@ -7,18 +7,18 @@
             {% for crumb in breadcrumb  %}
                 {% if loop.last %}
                     <li class="c-breadcrumb__item uppercase font-bold text-sm flex">
-                        <span>{{ crumb.title }}</span>
+                        <span class="{% if text is defined %}text-white{% endif %}">{{ crumb.title }}</span>
                     </li>
                 {% else %}
                     <li class="c-breadcrumb__item uppercase font-bold text-sm flex">
-                        <a class="mr-2 opacity-70 hover:opacity-100 transition-all" href="{{ crumb.url }}">
+                        <a class="mr-2 opacity-70 hover:opacity-100 transition-all {% if text is defined %}text-white{% endif %}" href="{{ crumb.url }}">
                             {% if crumb.title == 'Home' %}
                                 <i class="far fa-home-alt"></i>
                             {% else %}
-                                <span>{{ crumb.title }}</span>
+                                <span class="{% if text is defined %}text-white{% endif %}">{{ crumb.title }}</span>
                             {% endif %}
                         </a>
-                        <span class="mr-2 opacity-70">/</span>
+                        <span class="mr-2 opacity-70 {% if text is defined %}text-white{% endif %}">/</span>
                     </li>
                 {% endif %}
             {% endfor %}
