@@ -1,0 +1,16 @@
+.accordion {
+    background: rgba(0,75,126,0.05);
+    @apply p-4 mb-4 rounded-sm;
+}
+
+.accordion > .panel {
+    display: none;
+}
+.accordion > .panel.show {
+    display: block;
+}
+
+.accordionTrigger:hover {
+    cursor: pointer;
+}
+

@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .richtext a {
-    @apply border-b border-dotted text-navy-500 transition-all; 
+    @apply border-b border-dotted text-navy-500;
     &:hover {
         @apply border-solid border-teal-500;
     }
@@ -140,5 +140,17 @@ h1, h2, h3, h4, h5, h6, p {
 
     blockquote {
         @apply border-l-4 pl-8 mb-6;
+    }
+}
+
+.card {
+    ul {
+
+        @apply mb-4;
+
+        li {
+            @apply text-lg list-disc list-outside leading-relaxed ml-8;
+        }
+
     }
 }

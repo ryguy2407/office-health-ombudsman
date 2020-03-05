@@ -1,0 +1,33 @@
+{% if module.type.handle == 'accordion' %}
+
+    <div class="container mx-auto relative">
+        {% for block in module.accordionMatrix.all() %}
+
+            <div class="topLevel accordion transition duration-500 ease-in-out hover:bg-navy-100">
+                <div class="accordionTrigger flex">
+                    <img class="mr-4" src="/assets/img/closed.svg" alt="Accordion icon">
+                    <h4 class="mb-0 font-bold">
+                        {{ block.accordionHeading }}
+                    </h4>
+                </div>
+                <div class="panel my-8" style="display: none;">
+                    {{ block.accordionContent }}
+
+                    {% for nested in block.nestedAccordion %}
+                        <div class="nestedLevel accordion">
+                            <div class="accordionTrigger flex">
+                                <img class="mr-4" src="/assets/img/closed.svg" alt="Accordion icon">
+                                <h4 class="mb-0 font-bold">{{ nested.nestedAccordionHeading }}</h4>
+                            </div>
+                            <div class="panel my-8" style="display: none;">
+                                {{ nested.nestedAccordionContent }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        {% endfor %}
+    </div>
+
+{% endif %}

@@ -22,10 +22,21 @@
 
       <link rel="stylesheet" href="https://use.typekit.net/iwi6una.css">
 
-    {% block head %}{% endblock %} 
+      <script
+              src="https://code.jquery.com/jquery-3.4.1.min.js"
+              integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+
+    {% block head %}{% endblock %}
 
  </head>
  <body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %} font-body">
+
+ {% if alerts.alertText %}
+     <div class="w-full text-center bg-red text-white text-lg p-4">
+         <p class="mb-0 leading-none">{{ alerts.alertText }}</p>
+     </div>
+ {% endif %}
   
   {% cache globally for 3 weeks %}
     {% if trackingCodes.bodyCodes %}

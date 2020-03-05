@@ -1,5 +1,5 @@
 .btn {
-    @apply font-bold inline-block px-5 py-3 rounded-sm text-base transition-all;
+    @apply font-bold inline-block px-5 py-3 rounded-sm text-base;
 }
 
 .btn-white {
@@ -10,9 +10,9 @@
 }
 
 .btn-solid {
-    @apply bg-blue border border-blue text-white;
+    @apply bg-primary-500 text-white;
     &:hover {
-        @apply bg-navy-500 border-navy-500 shadow-md;
+        @apply bg-primary-400 shadow-md text-navy-500;
     }
 }
 
@@ -24,7 +24,7 @@
 }
 
 .btn-primary {
-    @apply bg-primary border-primary text-white;
+    @apply bg-primary-500 border-primary-500 text-white;
 &:hover {
      @apply bg-red border-red shadow-md;
  }

@@ -52,7 +52,17 @@ module.exports = {
       colors: {
         light: '#F2F6F8',
         orange: '#DE6A45',
-        primary: '#EAB45B',
+        'primary': {
+          100: '#FDF8EF',
+          200: '#FAECD6',
+          300: '#F7E1BD',
+          400: '#F0CB8C',
+          500: '#EAB45B',
+          600: '#D3A252',
+          700: '#8C6C37',
+          800: '#695129',
+          900: '#46361B',
+        },
         dark: '#012345',
         white: '#ffffff',
         green: '#4C7F7A',

@@ -11,6 +11,7 @@ const brotli = require('gulp-brotli');
 const replace = require('gulp-replace');
 const nested = require('postcss-nested');
 var cssimport = require('gulp-cssimport');
+var jquery = require('jquery');
 
 function css() {
   const plugins = [nested(), require('tailwindcss'), autoprefixer(), cssnano()];

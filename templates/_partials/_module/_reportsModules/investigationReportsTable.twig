@@ -1,0 +1,53 @@
+<div class="flex justify-end">
+    <input type="text" class="tableSearch w-1/3" placeholder="Search for names..">
+</div>
+<table class="w-full searchTable">
+    <tbody>
+    <tr>
+        <th class="text-left font-bold border-b-2 border-light p-4">
+            <div class="flex justify-between items-center uppercase">
+                Publication date
+                <i class="fas fa-sort"></i>
+            </div>
+        </th>
+        <th class="text-left font-bold border-b-2 border-light p-4">
+            <div class="flex justify-between items-center uppercase">
+                Report title
+                <i class="fas fa-sort"></i>
+            </div>
+        </th>
+        <th class="text-left font-bold border-b-2 border-light p-4">
+            <div class="flex justify-between items-center uppercase">
+                Report summary
+                <i class="fas fa-sort"></i>
+            </div>
+        </th>
+        <th class="text-left font-bold border-b-2 border-light p-4">
+            <div class="flex justify-between items-center uppercase">
+                Report type
+                <i class="fas fa-sort"></i>
+            </div>
+        </th>
+    </tr>
+    {% for entry in entries %}
+        <tr class="searchable">
+            <td class="p-4 border-b border-light">{{ entry.publicationDate | datetime('short') }}</td>
+            <td class="p-4 border-b border-light">
+                {% set download = entry.report.first() %}
+                <a {% if download|length %}target="_blank" href="{{ download.url }}"{% endif %}>
+                    {{ entry.title }}
+                </a>
+            </td>
+            <td class="p-4 border-b border-light">{{ entry.reportSummary }}</td>
+            <td class="p-4 border-b border-light">
+                {% set categories = entry.reportCategories.all() %}
+                {% if categories|length %}
+                    {% for category in categories %}
+                        <a href="#" class="mr-4">{{ category.title }}</a>
+                    {% endfor %}
+                {% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

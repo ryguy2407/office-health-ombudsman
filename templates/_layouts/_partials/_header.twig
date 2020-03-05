@@ -12,12 +12,12 @@
                 <img class="h-10 md:h-20" src="/assets/img/logo.svg" alt="Office of the health ombudsman"/>
             </a>
             <div class="flex flex-col">
-                {% set pages = craft.entries.section('pages').all() %}
+                {% set nodes = craft.navigation.nodes(header.secondaryMenu).level(1).all() %}
 
                 <ul class="hidden md:flex ml-auto justify-end content-center">
                     <div id="google_translate_element" style="margin-top: 10px;"></div>
-                    {% nav node in pages %}
-                        {% if node.secondaryNavigation %}
+                    {% nav node in nodes %}
+                        {% if node %}
                             <li class="my-2 mx-1 group relative">
                                 <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm uppercase relative" href="{{ node.url }}">{{ node.title }}</a>
                             </li>
@@ -25,12 +25,12 @@
                     {% endnav %}
                 </ul>
 
-                {% set pages = craft.entries.section('pages').all() %}
+                {% set nodes = craft.navigation.nodes(header.primaryMenu).level(1).all() %}
                 <ul class="hidden md:flex ml-auto justify-end items-center my-2">
-                    {% nav node in pages %}
-                        {% if node.primaryNavigation %}
+                    {% nav node in nodes %}
+                        {% if node %}
                             <li class="group relative mr-4">
-                                <a class="block hover:bg-light rounded-sm text-xl relative font-bold {% if node.headerNavigationClasses %}{{ node.headerNavigationClasses }}{% else %} py-1 px-2{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+                                <a class="block hover:bg-light rounded-sm text-xl relative font-bold {% if node.classes %}{{ node.classes }}{% else %}py-1 px-2{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
                             </li>
                         {% endif %}
                     {% endnav %}

@@ -1,7 +1,7 @@
 
 <a href="{{ card.url }}" aria-label="{{ card.title }}">
-    <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg  transition-all rounded overflow-hidden">    
-        
+    <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg  transition-all rounded overflow-hidden">
+
         {% if card.featureImage[0] %}
 
             {% set image = card.featureImage[0] %}
@@ -16,15 +16,15 @@
                     data-sizes="(min-width: {{ half + 1 }}px) {{ full }}px,
                             (min-width: {{ fourth + 1 }}px) {{ half }}px,
                             100vw"
-                > 
+                >
             </div>
         {% endif %}
 
         <div class="p-6">
-            
+
                 <h4>{{ card.title }}</h4>
                 <p>{{ card.pageIntroduction }}</p>
-            
+
         </div>
     </article>
 </a>

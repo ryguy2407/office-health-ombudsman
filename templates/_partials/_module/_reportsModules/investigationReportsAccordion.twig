@@ -1,0 +1,23 @@
+
+{% for entry in entries %}
+    <div class="topLevel accordion transition duration-500 ease-in-out hover:bg-navy-100">
+        <div class="accordionTrigger flex">
+            <img class="mr-4" src="/assets/img/closed.svg" alt="Accordion icon">
+            <h4 class="mb-0 font-bold">
+                {{ entry.title }}
+            </h4>
+        </div>
+        <div class="panel my-8" style="display: none;">
+            <p>Publication date: {{ entry.publicationDate | datetime('d F Y') }}</p>
+            {% set categories = entry.reportCategories.all() %}
+            {% if categories|length %}
+                <p>Report type: {% for category in categories %}<a href="#" class="mr-4">{{ category.title }}</a>{% endfor %}</p>
+            {% endif %}
+            <p>{{ entry.reportSummary }}</p>
+            {% set download = entry.report.first() %}
+            {% if download|length %}
+                <a class="btn btn-solid" href="{{ download.url }}">Download the report [{{ download.size|filesize }}]</a>
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}

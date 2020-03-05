@@ -30,7 +30,7 @@
 }
 
 .section-bg-primary {
-    @apply bg-primary
+    @apply bg-primary-500;
     
 }
 

@@ -1,0 +1,25 @@
+{% if module.type.handle == 'reports' %}
+
+    <div class="container mx-auto relative">
+        {% set entries = craft.entries()
+            .section('reports')
+            .type(module.reportType)
+            .all()
+        %}
+        {% if module.reportType == 'investigationReports' and module.reportDisplay == 'table' %}
+            {% include "_partials/_module/_reportsModules/investigationReportsTable" %}
+        {% endif %}
+        {% if module.reportType == 'annualReports' and module.reportDisplay == 'table' %}
+            {% include "_partials/_module/_reportsModules/annualReportsTable" %}
+        {% endif %}
+
+
+        {% if module.reportType == 'investigationReports' and module.reportDisplay == 'accordion' %}
+            {% include "_partials/_module/_reportsModules/investigationReportsAccordion" %}
+        {% endif %}
+        {% if module.reportType == 'annualReports' and module.reportDisplay == 'accordion' %}
+            {% include "_partials/_module/_reportsModules/annualReportsAccordion" %}
+        {% endif %}
+    </div>
+
+{% endif %}
