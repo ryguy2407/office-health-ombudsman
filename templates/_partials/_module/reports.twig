@@ -1,6 +1,6 @@
 {% if module.type.handle == 'reports' %}
 
-    <div class="container mx-auto relative">
+    <div class="md:max-w-3xl mx-auto relative">
         {% set entries = craft.entries()
             .section('reports')
             .type(module.reportType)
