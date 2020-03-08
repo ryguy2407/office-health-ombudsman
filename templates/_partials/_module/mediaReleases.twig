@@ -39,7 +39,7 @@
                             </div>
                         {% endif %}
                         <div class="p-6 flex flex-col items-start h-full">
-                            {% set relatedCategories = entry.mediaCategories.all() %}
+                            {% set relatedCategories = entry.latestReleasesCategories.all() %}
                             {% if relatedCategories|length %}
                                 {% for rel in relatedCategories %}
                                     <a href="{{ rel.url }}" class="inline-block uppercase text-red text-sm mb-4">{{ rel.title }}</a></li>
