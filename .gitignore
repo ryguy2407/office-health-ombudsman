@@ -4,3 +4,4 @@
 .DS_Store
 /web/assets/uploads/*
 /web/assets/cpresources/*
+/scripts/.env.sh
