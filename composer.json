@@ -1,6 +1,7 @@
 {
   "require": {
     "aelvan/imager": "v2.4.0",
+    "craftcms/aws-s3": "^1.2",
     "craftcms/cms": "3.4.9",
     "craftcms/feed-me": "4.2.0.1",
     "craftcms/redactor": "2.6.0.1",
