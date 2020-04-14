@@ -11,7 +11,7 @@
                 <p>Publication date: {{ entry.publicationDate | datetime('d F Y') }}</p>
                 <p>Report period: {{ entry.reportPeriod.label }}</p>
                 <p>{{ entry.reportSummary }}</p>
-                {% set download = entry.report.first() %}
+                {% set download = entry.report.one() %}
                 {% if download|length %}
                     <a target="_blank" class="btn btn-solid" href="{{ download.url }}">Download the report [{{ download.size|filesize }}]</a>
                 {% endif %}

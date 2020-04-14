@@ -3,9 +3,12 @@
     <div class="md:max-w-3xl mx-auto relative">
         {% set entries = craft.entries()
             .section('reports')
+            .limit(20)
             .type(module.reportType)
-            .all()
         %}
+        {% paginate entries as pageInfo, pageEntries %}
+
+        <div id="reportModules">
         {% if module.reportType == 'investigationReports' and module.reportDisplay == 'table' %}
             {% include "_partials/_module/_reportsModules/investigationReportsTable" %}
         {% endif %}
@@ -20,6 +23,23 @@
         {% if module.reportType == 'annualReports' and module.reportDisplay == 'accordion' %}
             {% include "_partials/_module/_reportsModules/annualReportsAccordion" %}
         {% endif %}
+        </div>
+
+        <div class="flex my-4 w-full">
+            <a class="p-4" href="{{ pageInfo.firstUrl }}#reportModules">First Page</a>
+
+            {% for page, url in pageInfo.getPrevUrls(5) %}
+                <a class="p-4 border border-1 mr-4" href="{{ url }}#reportModules">{{ page }}</a>
+            {% endfor %}
+
+            <span class="current p-4 border border-1 bg-light mr-4">{{ pageInfo.currentPage }}</span>
+
+            {% for page, url in pageInfo.getNextUrls(5) %}
+                <a class="p-4 border border-1" href="{{ url }}#reportModules">{{ page }}</a>
+            {% endfor %}
+
+            <a class="p-4 ml-auto" href="{{ pageInfo.lastUrl }}#reportModules">Last Page</a>
+        </div>
     </div>
 
 {% endif %}

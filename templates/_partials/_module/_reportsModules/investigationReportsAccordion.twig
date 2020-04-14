@@ -14,7 +14,7 @@
                 <p>Report type: {% for category in categories %}<a href="#" class="mr-4">{{ category.title }}</a>{% endfor %}</p>
             {% endif %}
             <p>{{ entry.reportSummary }}</p>
-            {% set download = entry.report.first() %}
+            {% set download = entry.report.one() %}
             {% if download|length %}
                 <a class="btn btn-solid" href="{{ download.url }}">Download the report [{{ download.size|filesize }}]</a>
             {% endif %}

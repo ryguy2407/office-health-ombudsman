@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c84291d5168c42d3450ad09cbab9aca",
+    "content-hash": "f6b1410c99194b7201f398904492b304",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -72,11 +72,11 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.27",
+            "version": "3.133.42",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5527195465ac42cb5127a60b84eb2d8dc3b0d5c9",
-                "reference": "5527195465ac42cb5127a60b84eb2d8dc3b0d5c9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4f0259689e66237e429f9fc1d879b2bcdce6dadb",
+                "reference": "4f0259689e66237e429f9fc1d879b2bcdce6dadb",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-03-02T19:20:19+00:00"
+            "time": "2020-03-23T18:17:07+00:00"
         },
         {
             "name": "cakephp/core",
@@ -537,6 +537,57 @@
                 "git"
             ],
             "time": "2016-04-19T16:12:33+00:00"
+        },
+        {
+            "name": "craftcms/aws-s3",
+            "version": "1.2.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/5d588959ae9c9f3850606b9ade061a815dc65829",
+                "reference": "5d588959ae9c9f3850606b9ade061a815dc65829",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.5",
+                "league/flysystem-aws-s3-v3": "^1.0.13"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Amazon S3",
+                "handle": "aws-s3",
+                "documentationUrl": "https://github.com/craftcms/aws-s3/blob/master/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\awss3\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Amazon S3 integration for Craft CMS",
+            "keywords": [
+                "aws",
+                "cms",
+                "craftcms",
+                "flysystem",
+                "s3",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/aws-s3/issues?state=open",
+                "source": "https://github.com/craftcms/aws-s3",
+                "docs": "https://github.com/craftcms/aws-s3/blob/master/README.md",
+                "rss": "https://github.com/craftcms/aws-s3/commits/master.atom"
+            },
+            "time": "2020-01-10T13:01:52+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -2491,11 +2542,11 @@
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.12.0",
+            "version": "2.12.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/64d25e18a6ea3db90c27fe2d6b95630daa1bf602",
-                "reference": "64d25e18a6ea3db90c27fe2d6b95630daa1bf602",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/c9356994eb80d0f6b46d7e12ba048d450bf0cd72",
+                "reference": "c9356994eb80d0f6b46d7e12ba048d450bf0cd72",
                 "shasum": ""
             },
             "require": {
@@ -2538,7 +2589,7 @@
                 "feed",
                 "laminas"
             ],
-            "time": "2019-12-31T16:46:54+00:00"
+            "time": "2020-03-23T10:40:31+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -2670,11 +2721,11 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.64",
+            "version": "1.0.66",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/d13c43dbd4b791f815215959105a008515d1a2e0",
-                "reference": "d13c43dbd4b791f815215959105a008515d1a2e0",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/021569195e15f8209b1c4bebb78bd66aa4f08c21",
+                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21",
                 "shasum": ""
             },
             "require": {
@@ -2740,7 +2791,44 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-02-05T18:14:17+00:00"
+            "time": "2020-03-17T18:58:12+00:00"
+        },
+        {
+            "name": "league/flysystem-aws-s3-v3",
+            "version": "1.0.24",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4382036bde5dc926f9b8b337e5bdb15e5ec7b570",
+                "reference": "4382036bde5dc926f9b8b337e5bdb15e5ec7b570",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": "^3.0.0",
+                "league/flysystem": "^1.0.40",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\AwsS3v3\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frenky.net"
+                }
+            ],
+            "description": "Flysystem adapter for the AWS S3 SDK v3.x",
+            "time": "2020-02-23T13:31:58+00:00"
         },
         {
             "name": "league/oauth2-client",

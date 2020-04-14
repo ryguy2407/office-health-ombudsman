@@ -33,7 +33,7 @@
         <tr class="searchable">
             <td class="p-4 border-b border-light">{{ entry.publicationDate | datetime('short') }}</td>
             <td class="p-4 border-b border-light">
-                {% set download = entry.report.first() %}
+                {% set download = entry.report.one() %}
                 <a {% if download|length %}target="_blank" href="{{ download.url }}"{% endif %}>
                     {{ entry.title }}
                 </a>
