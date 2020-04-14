@@ -3,5 +3,6 @@
 /vendor
 .DS_Store
 /web/assets/uploads/*
+/web/imager/*
 /web/assets/cpresources/*
 /scripts/.env.sh
