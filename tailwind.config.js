@@ -81,6 +81,7 @@ module.exports = {
           900: '#000B15',
         },
       },
+      linearGradientColors: theme => theme('colors'),
       height: {
         '1px': '1px',
         '2px': '2px',
@@ -173,5 +174,6 @@ module.exports = {
     }),
     require('tailwindcss-blend-mode')(), // no options to configure
     require('tailwindcss-aspect-ratio')(),
+    require('tailwindcss-gradients'),
   ],
 };

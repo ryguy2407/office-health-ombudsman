@@ -13,7 +13,7 @@
                         {% set heading = false %}
                     {% endif %}
                     <tr {% if not heading %}class="searchable"{% endif %}>
-                        {% for column in block.tableColumns %}
+                        {% for column in block.tableColumns.all() %}
                             {% if heading %}
                                 <th class="text-left font-bold border-b-2 border-light p-4">
                                     <div class="flex justify-between items-center uppercase">

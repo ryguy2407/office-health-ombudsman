@@ -27,6 +27,8 @@ return [
         // (see https://docs.craftcms.com/v3/project-config.html)
         'useProjectConfigFile' => false,
 
+        'allowUpdates' => false,
+
         'aliases' => [
             '@rootUrl' => getenv('DEFAULT_SITE_URL'),
             '@baseAssetPath' => getenv('BASE_ASSET_PATH'),

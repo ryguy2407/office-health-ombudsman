@@ -1,0 +1,41 @@
+{
+    "name": "ryanmurraynwo/entry-dropdown",
+    "description": "A dropdown that will get the current entries",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "entry dropdown"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Murray",
+            "homepage": "http://newwordorder.com.au"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "ryanmurraynwo\\entrydropdown\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Entry dropdown",
+        "handle": "entry-dropdown",
+        "developer": "Ryan Murray",
+        "developerUrl": "http://newwordorder.com.au",
+        "documentationUrl": "???",
+        "changelogUrl": "???",
+        "class": "ryanmurraynwo\\entrydropdown\\EntryDropdown"
+    }
+}

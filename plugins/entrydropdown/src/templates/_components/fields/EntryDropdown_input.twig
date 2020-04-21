@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Entry dropdown plugin for Craft CMS 3.x
+ *
+ * EntryDropdown Field Input
+ *
+ * @author    Ryan Murray
+ * @copyright Copyright (c) 2020 Ryan Murray
+ * @link      http://newwordorder.com.au
+ * @package   EntryDropdown
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+        label: 'Some Field',
+        instructions: 'Enter some text here.',
+        id: name,
+        name: name,
+        value: value})
+}}

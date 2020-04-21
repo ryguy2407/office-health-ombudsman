@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Entry dropdown plugin for Craft CMS
+ *
+ * EntryDropdown Field Settings
+ *
+ * @author    Ryan Murray
+ * @copyright Copyright (c) 2020 Ryan Murray
+ * @link      http://newwordorder.com.au
+ * @package   EntryDropdown
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("ryanmurraynwo\\entrydropdown\\assetbundles\\entrydropdown\\EntryDropdownAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}

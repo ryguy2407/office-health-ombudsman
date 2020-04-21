@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf9898678f42394742ba8ad0bcf31863",
+    "content-hash": "8b9088dedb9d83097fe4a32c3932740d",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -1323,11 +1323,11 @@
         },
         {
             "name": "ether/seo",
-            "version": "3.6.3",
+            "version": "3.6.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ethercreative/seo/zipball/9f491fd107192c78f6565298520635b3889c2a27",
-                "reference": "9f491fd107192c78f6565298520635b3889c2a27",
+                "url": "https://api.github.com/repos/ethercreative/seo/zipball/58de8d61979ce2e3030303f72fff92229118388f",
+                "reference": "58de8d61979ce2e3030303f72fff92229118388f",
                 "shasum": ""
             },
             "require": {
@@ -1354,7 +1354,7 @@
                 "issues": "https://github.com/ethercreative/seo",
                 "docs": "https://github.com/ethercreative/seo/blob/v3/README.md"
             },
-            "time": "2019-12-18T16:52:52+00:00"
+            "time": "2020-04-15T15:17:16+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -4967,11 +4967,11 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "3.6.6",
+            "version": "3.6.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/76426119cb6d28c111034270d0ca13f2972483bd",
-                "reference": "76426119cb6d28c111034270d0ca13f2972483bd",
+                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/e3267d630064b5f2a99149fb876b42eb9531fcd0",
+                "reference": "e3267d630064b5f2a99149fb876b42eb9531fcd0",
                 "shasum": ""
             },
             "require": {
@@ -5011,7 +5011,7 @@
                 }
             ],
             "description": "The most reliable, intuitive and powerful form builder for Craft.",
-            "time": "2020-04-01T17:59:54+00:00"
+            "time": "2020-04-17T16:46:40+00:00"
         },
         {
             "name": "solspace/craft3-commons",
@@ -5039,11 +5039,11 @@
         },
         {
             "name": "spicyweb/craft-neo",
-            "version": "2.7.6",
+            "version": "2.7.7.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/14dc638e197b98b726ca60fc92cc45140068a60f",
-                "reference": "14dc638e197b98b726ca60fc92cc45140068a60f",
+                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/307e2a25468cd0a3a1811d5bda09db19c249b4dd",
+                "reference": "307e2a25468cd0a3a1811d5bda09db19c249b4dd",
                 "shasum": ""
             },
             "require": {
@@ -5087,7 +5087,7 @@
                 "docs": "https://github.com/spicywebau/craft-neo/wiki",
                 "rss": "https://github.com/spicywebau/craft-neo/commits/master.atom"
             },
-            "time": "2020-04-11T00:22:41+00:00"
+            "time": "2020-04-17T05:12:01+00:00"
         },
         {
             "name": "ssnepenthe/color-utils",
@@ -6537,11 +6537,11 @@
         },
         {
             "name": "verbb/base",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/c95545f2b86db0791294a4b25e967a007f1dbf57",
-                "reference": "c95545f2b86db0791294a4b25e967a007f1dbf57",
+                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/85a11791c811c90ea58a3718488af0e60e12ba2c",
+                "reference": "85a11791c811c90ea58a3718488af0e60e12ba2c",
                 "shasum": ""
             },
             "require": {
@@ -6563,19 +6563,20 @@
                 }
             ],
             "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
-            "time": "2020-01-23T22:22:44+00:00"
+            "time": "2020-04-14T23:40:29+00:00"
         },
         {
             "name": "verbb/field-manager",
-            "version": "2.1.1",
+            "version": "2.1.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/field-manager/zipball/026cc5d6c030e509158d7525d8764514e7da3a79",
-                "reference": "026cc5d6c030e509158d7525d8764514e7da3a79",
+                "url": "https://api.github.com/repos/verbb/field-manager/zipball/2b301c84f2531b7ace5194f439d1710f3f3551e0",
+                "reference": "2b301c84f2531b7ace5194f439d1710f3f3551e0",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.1.0"
+                "craftcms/cms": "^3.1.0",
+                "verbb/base": "^1.0.2"
             },
             "type": "craft-plugin",
             "extra": {
@@ -6613,20 +6614,20 @@
                 "docs": "https://github.com/verbb/field-manager",
                 "rss": "https://github.com/verbb/field-manager/commits/v2.atom"
             },
-            "time": "2019-11-27T06:04:29+00:00"
+            "time": "2020-04-18T05:33:21+00:00"
         },
         {
             "name": "verbb/navigation",
-            "version": "1.3.8",
+            "version": "1.3.12",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/cdafb4bc9778804ba166968f0e1605059b96bfb3",
-                "reference": "cdafb4bc9778804ba166968f0e1605059b96bfb3",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/c7e76850755d54ab2cc5a3c3ad8772842788e1df",
+                "reference": "c7e76850755d54ab2cc5a3c3ad8772842788e1df",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.4.0",
-                "verbb/base": "^1.0.0"
+                "verbb/base": "^1.0.2"
             },
             "type": "craft-plugin",
             "extra": {
@@ -6665,20 +6666,20 @@
                 "docs": "https://github.com/verbb/navigation",
                 "rss": "https://github.com/verbb/navigation/commits/v2.atom"
             },
-            "time": "2020-04-01T13:13:13+00:00"
+            "time": "2020-04-18T06:08:11+00:00"
         },
         {
             "name": "verbb/super-table",
-            "version": "2.4.7",
+            "version": "2.4.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/33c1586bc153c03579087d9f1e88daef180c2200",
-                "reference": "33c1586bc153c03579087d9f1e88daef180c2200",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/cf3237d0e5be608561bfcf02d77e9bef03855a69",
+                "reference": "cf3237d0e5be608561bfcf02d77e9bef03855a69",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.4.8",
-                "verbb/base": "^1.0.0"
+                "verbb/base": "^1.0.2"
             },
             "type": "craft-plugin",
             "extra": {
@@ -6718,7 +6719,7 @@
                 "docs": "https://github.com/verbb/super-table",
                 "rss": "https://github.com/verbb/super-table/commits/v2.atom"
             },
-            "time": "2020-04-02T10:16:04+00:00"
+            "time": "2020-04-15T22:45:13+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -7740,9 +7741,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],

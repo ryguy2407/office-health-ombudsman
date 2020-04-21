@@ -1,0 +1,124 @@
+{% set myCategoryQuery = craft.categories()
+    .slug(module.categoryName.value) %}
+{% set category = myCategoryQuery.one() %}
+
+{% if(module.categoryName.value) %}
+    {%
+        set myEntryQuery = craft.entries()
+        .section(module.entryName.value)
+        .relatedTo(category)
+    %}
+{% else %}
+    {% set myEntryQuery = craft.entries()
+        .section(module.entryName.value) %}
+{% endif %}
+
+{% if (module.displayType.value == 'cards') %}
+    {% set entries = myEntryQuery.limit(9) %}
+
+    <div class="container mx-auto relative md:flex md:flex-wrap">
+        {% for entry in entries %}
+            <div class="w-full md:w-1/3 p-3">
+                <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg transition-all rounded overflow-hidden">
+                    <div class="p-6 flex flex-col items-start h-full">
+
+                        {% if entry.actionsTakenCategory %}
+                            {% set relatedCategories = entry.actionsTakenCategory.all() %}
+                            {% if relatedCategories|length %}
+                                <div class="flex mb-4">
+                                    {% for rel in relatedCategories %}
+                                        <p class="inline-block uppercase text-red text-sm mr-4 mb-4">{{ rel.title }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endif %}
+
+                        {% if entry.mediaReleaseCategories %}
+                            {% set relatedCategories = entry.mediaReleaseCategories.all() %}
+                            {% if relatedCategories|length %}
+                                <div class="flex mb-4">
+                                    {% for rel in relatedCategories %}
+                                        <p class="inline-block uppercase text-red text-sm mr-4 mb-4">{{ rel.title }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endif %}
+
+                        <h5><a href="{{ entry.url }}">{{ entry.title }}</a></h5>
+                        <p class="text-sm text-grey">{{ entry.postDate | date("M d, Y") }}</p>
+                        <a href="{{ entry.url }}" class="uppercase text-blue text-sm font-bold mt-auto">
+                            Read more
+                        </a>
+                    </div>
+                </article>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endif %}
+
+{% if (module.displayType.value == 'table') %}
+
+    {% set entries = myEntryQuery.all() %}
+
+    <div class="container mx-auto relative">
+        <div class="flex justify-end">
+            <input type="text" class="tableSearch w-1/3" placeholder="Search for names..">
+        </div>
+        <table class="w-full searchTable">
+            <tbody>
+            <tr>
+                <th class="text-left font-bold border-b-2 border-light p-4">
+                    <div class="flex justify-between items-center uppercase">
+                        Date order took effect
+                        <i class="fas fa-sort"></i>
+                    </div>
+                </th>
+                <th class="text-left font-bold border-b-2 border-light p-4">
+                    <div class="flex justify-between items-center uppercase">
+                        Name of practitioner
+                        <i class="fas fa-sort"></i>
+                    </div>
+                </th>
+                <th class="text-left font-bold border-b-2 border-light p-4">
+                    <div class="flex justify-between items-center uppercase">
+                        Type of practitioner
+                        <i class="fas fa-sort"></i>
+                    </div>
+                </th>
+                <th class="text-left font-bold border-b-2 border-light p-4">
+                    <div class="flex justify-between items-center uppercase">
+                        Details of the prohibition order
+                        <i class="fas fa-sort"></i>
+                    </div>
+                </th>
+                <th class="text-left font-bold border-b-2 border-light p-4">
+                    <div class="flex justify-between items-center uppercase">
+                        Prohibition type
+                        <i class="fas fa-sort"></i>
+                    </div>
+                </th>
+            </tr>
+            {% for entry in entries %}
+                <tr class="searchable">
+                    <td class="p-4 border-b border-light">
+                        {{ entry.dateOfAction|date('d F, Y') }}
+                    </td>
+                    <td class="p-4 border-b border-light">
+                        {{ entry.nameOfPractitioner }}
+                    </td>
+                    <td class="p-4 border-b border-light">
+                        {{ entry.typeOfPractitioner }}
+                    </td>
+                    <td class="p-4 border-b border-light">
+                        {{ entry.details }}
+                    </td>
+                    <td class="p-4 border-b border-light">
+                        {{ entry.prohibitionType }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endif %}

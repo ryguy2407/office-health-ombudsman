@@ -1,0 +1,26 @@
+<nav class="breadcrumb mb-4" aria-label="{{'breadcrumbs'|t}}">
+    <ul class="flex" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li class="c-breadcrumb__item uppercase font-bold text-sm flex">
+            <a class="mr-2 opacity-70 hover:opacity-100 transition-all {% if text is defined %}text-white{% endif %}" href="/">
+                <i class="far fa-home-alt"></i>
+            </a>
+        </li>
+        <span class="mr-2 opacity-70 {% if text is defined %}text-white{% endif %}">/</span>
+        <li class="c-breadcrumb__item uppercase font-bold text-sm flex">
+            {% if(category.groupId) == 3 %}
+                <a class="mr-2 opacity-70 hover:opacity-100 transition-all {% if text is defined %}text-white{% endif %}" href="/reports">
+                    <span class="">Reports</span>
+                </a>
+            {% endif %}
+            {% if(category.groupId) == 4 %}
+                <a class="mr-2 opacity-70 hover:opacity-100 transition-all {% if text is defined %}text-white{% endif %}" href="/actions-taken">
+                    <span class="">Actions Taken</span>
+                </a>
+            {% endif %}
+        </li>
+        <span class="mr-2 opacity-70 {% if text is defined %}text-white{% endif %}">/</span>
+        <li class="c-breadcrumb__item uppercase font-bold text-sm flex">
+            <span class="{% if text is defined %}text-white{% endif %}">{{ category.title }}</span>
+        </li>
+    </ul>
+</nav>
