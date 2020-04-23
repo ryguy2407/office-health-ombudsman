@@ -14,7 +14,11 @@
 {% endif %}
 
 {% if (module.displayType.value == 'cards') %}
-    {% set entries = myEntryQuery.limit(9) %}
+    {% if (module.numberOfEntries) %}
+        {% set entries = myEntryQuery.limit(module.numberOfEntries) %}
+    {% else %}
+        {% set entries = myEntryQuery %}
+    {% endif %}
 
     {% paginate entries as pageInfo, pageEntries %}
 
@@ -57,10 +61,12 @@
         {% endfor %}
     </div>
 
-    <div class="container relative flex justify-between">
-        {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}#relatedMatrixCards">Previous Page</a>{% endif %}
-        {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}#relatedMatrixCards">Next Page</a>{% endif %}
-    </div>
+    {% if module.includePagination %}
+        <div class="container relative flex justify-between">
+            {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}#relatedMatrixCards">Previous Page</a>{% endif %}
+            {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}#relatedMatrixCards">Next Page</a>{% endif %}
+        </div>
+    {% endif %}
 
 {% endif %}
 
