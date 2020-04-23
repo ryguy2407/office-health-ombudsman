@@ -26,7 +26,7 @@
         <div class="relative py-10 md:py-24 z-10">
             <div class="container">
                 <div class="md:w-1/2 lg:pr-32">
-                    {% include '_partials/_breadcrumbs' %}
+                    {% include '_partials/_breadcrumbs' with {'textColour': 'dark'} %}
                     <h1 class="text-6xl md:text-6xl font-bold mb-4 text-base">{{ entry.title }}</h1>
                     {% if entry.pageIntroduction %}
                         <p class="text-base md:text-xl {% if entry.type.handle == "primary" %}md:text-2xl{% endif %} mt-4">{{ entry.pageIntroduction }}</p>
