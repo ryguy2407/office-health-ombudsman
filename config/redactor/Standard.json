@@ -1,5 +1,5 @@
 {
-  "buttons": ["formatting", "align", "bold", "italic", "unorderedlist", "orderedlist", "link", "image", "video", "line", "html"],
+  "buttons": ["formatting", "align", "bold", "italic", "unorderedlist", "orderedlist", "link", "image", "file", "video", "line", "html"],
   "plugins": ["fullscreen", "video", "alignment"],
   "linkNewTab": true,
   "toolbarFixed": true,
