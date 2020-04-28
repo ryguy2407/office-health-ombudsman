@@ -1,6 +1,6 @@
 {% if module.type.handle == 'cards' %}
     <div class="container relative">
-        <div class="flex flex-wrap -mx-2">
+        <div class="flex flex-wrap -mx-2 justify-center">
             {% set relatedEntries = module.entry.with(['featureImage'],['icon'],['pageIntroduction'],['title'],['url']).all() %}
                 {% if relatedEntries|length %}
 
