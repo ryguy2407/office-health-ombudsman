@@ -9,9 +9,7 @@
             <p>{{ entry.postDate | date('d F Y') }}</p>
             <hr class="my-8">
             <div class="richtext mb-8">
-                <p>
-                {{ entry.reportSummary }}
-                </p>
+                {{ entry.richText }}
             </div>
             {% set rel = entry.report.one() %}
             {% if rel %}
