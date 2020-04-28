@@ -2,15 +2,21 @@
 
 {% block main %}
     <div class="container mx-auto relative py-16">
-        {% include '/_partials/_breadcrumbs.twig' %}
+        {% include '/_partials/_breadcrumbs.twig' with {'textColour': 'dark'} %}
         <div class="mb-16"></div>
         <div class="md:max-w-3xl mx-auto">
             <h2>{{ entry.title }}</h2>
             <p>{{ entry.postDate | date('d F Y') }}</p>
             <hr class="my-8">
-            <div class="richtext">
-                {{ entry.details }}
+            <div class="richtext mb-8">
+                <p>
+                {{ entry.reportSummary }}
+                </p>
             </div>
+            {% set rel = entry.report.one() %}
+            {% if rel %}
+                <a href="{{ rel.url }}" class="btn btn-solid">Read the report</a>
+            {% endif %}
         </div>
     </div>
 {% endblock %}
