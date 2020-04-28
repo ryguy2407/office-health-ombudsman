@@ -13,7 +13,7 @@
             </div>
             {% set rel = entry.report.one() %}
             {% if rel %}
-                <a href="{{ rel.url }}" class="btn btn-solid">Read the report</a>
+                <a target="_blank" href="{{ rel.url }}" class="btn btn-solid">Read the report</a>
             {% endif %}
         </div>
     </div>
