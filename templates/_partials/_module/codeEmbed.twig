@@ -1,7 +1,7 @@
 {% if module.type.handle == 'codeEmbed' %}
     <div class="container relative">
         <div class="md:max-w-3xl mx-auto richtext">
-            {{ module.codeEmbed }}
+            {{ module.codeEmbed|raw }}
         </div>
     </div>
 {% endif %}
