@@ -51,6 +51,17 @@
                             {% endif %}
                         {% endif %}
 
+                        {% if entry.reportCategories %}
+                            {% set relatedCategories = entry.reportCategories.all() %}
+                            {% if relatedCategories|length %}
+                                <div class="flex mb-4">
+                                    {% for rel in relatedCategories %}
+                                        <p class="inline-block uppercase text-red text-sm mr-4 mb-4">{{ rel.title }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endif %}
+
                         <h5><a href="{{ entry.url }}">{{ entry.title }}</a></h5>
                         <p class="text-sm text-grey">{{ entry.postDate | date("M d, Y") }}</p>
                         <a href="{{ entry.url }}" class="uppercase text-blue text-sm font-bold mt-auto">
