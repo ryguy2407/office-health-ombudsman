@@ -1,7 +1,10 @@
 {% extends "/_layouts/site" %} {% block main %}
 
-    <div class="swiper-container theme-light relative border-b-8 border-orange">
-        <div class="swiper-wrapper h-full" style="height: 795px;">
+    <div class="swiper-container theme-light relative border-b-8 border-orange h-72 lg:h-128">
+
+        <img class="hidden lg:block absolute z-10 right-0" style="top:100px;" src="/assets/img/slideshow-shapes.svg">
+
+        <div class="swiper-wrapper h-full">
             <!-- Slides -->
             {% for block in entry.slideshow.all() %}
                 {% if block.type == "slideshow" %}
@@ -42,8 +45,8 @@
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev hidden md:block"></div>
+        <div class="swiper-button-next hidden md:block"></div>
 
         <!-- If we need scrollbar -->
     </div>

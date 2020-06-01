@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="299px" height="596px" viewBox="0 0 299 596" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-1141.000000, -238.000000)">
+            <g id="Group" transform="translate(1141.000000, 238.000000)">
+                <path d="M199.667785,197.331092 L299,197.331092 L299,198.166945 C299,253.026612 254.527453,297.49916 199.667785,297.49916 L199.667785,297.49916 L199.667785,297.49916 L199.667785,197.331092 Z" id="Rectangle-Copy-45" fill="#79A899" transform="translate(249.333893, 247.415126) scale(-1, -1) translate(-249.333893, -247.415126) "></path>
+                <rect id="Rectangle-Copy-47" fill="#DE6A45" transform="translate(149.500000, 546.416807) scale(-1, -1) translate(-149.500000, -546.416807) " x="99.3322148" y="496.833613" width="100.33557" height="99.1663866"></rect>
+                <path d="M298.834172,396.665546 L299,396.665546 L299,396.665546 L299,495.831933 L199.667785,495.831933 C199.667785,441.06385 244.066089,396.665546 298.834172,396.665546 Z" id="Rectangle-Copy-50" fill="#EAB45B" transform="translate(249.333893, 446.248739) scale(-1, -1) translate(-249.333893, -446.248739) "></path>
+                <path d="M99.3322148,0 L199.667785,0 L199.667785,99.1663866 L198.498601,99.1663866 C143.730518,99.1663866 99.3322148,54.768083 99.3322148,0 L99.3322148,0 L99.3322148,0 Z" id="Rectangle-Copy-53" fill="#004B7E" transform="translate(149.500000, 49.583193) scale(-1, -1) translate(-149.500000, -49.583193) "></path>
+                <path d="M0,297.49916 L99.3322148,297.49916 L99.3322148,396.665546 L99.1663866,396.665546 C44.3983036,396.665546 6.70715575e-15,352.267243 0,297.49916 L0,297.49916 L0,297.49916 Z" id="Rectangle-Copy-54" fill="#EAB45B" transform="translate(49.666107, 347.082353) scale(-1, -1) translate(-49.666107, -347.082353) "></path>
+                <path d="M99.3322148,297.49916 L199.667785,297.49916 C199.667785,352.267243 155.269482,396.665546 100.501399,396.665546 L99.3322148,396.665546 L99.3322148,396.665546 L99.3322148,297.49916 Z" id="Rectangle-Copy-55" fill="#F2F6F8" transform="translate(149.500000, 347.082353) scale(-1, -1) translate(-149.500000, -347.082353) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
