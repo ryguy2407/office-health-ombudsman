@@ -56,7 +56,8 @@
         <!-- If we need scrollbar -->
     </div>
 
-{% include '/_partials/layout-builder' %}
+    {% set childPage = false %}
+    {% include '/_partials/layout-builder' with { childPage: childPage } %}
 
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
