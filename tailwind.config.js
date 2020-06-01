@@ -50,6 +50,7 @@ module.exports = {
         '16': '4rem',
       },
       colors: {
+        white: '#ffffff',
         light: '#F2F6F8',
         orange: '#DE6A45',
         'primary': {
