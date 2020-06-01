@@ -1,6 +1,6 @@
 {% extends "/_layouts/site" %} {% block main %}
 
-    <div class="swiper-container theme-light relative border-b-8 border-orange h-72 lg:h-128">
+    <div class="swiper-container theme-light relative border-b-8 border-orange h-72 lg:h-96">
 
         <img class="hidden lg:block absolute z-10 right-0" style="top:100px;" src="/assets/img/slideshow-shapes.svg">
 
@@ -45,8 +45,13 @@
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev hidden md:block"></div>
-        <div class="swiper-button-next hidden md:block"></div>
+        <!-- If we need navigation buttons -->
+        <div class="prev hidden md:block absolute z-10 left-0" style="top:50%;left:20px;">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="next hidden md:block absolute right-0 z-10" style="top:50%;right:20px;">
+            <i class="fas fa-chevron-right"></i>
+        </div>
 
         <!-- If we need scrollbar -->
     </div>
@@ -66,8 +71,8 @@
 
             // Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.next',
+                prevEl: '.prev',
             },
 
         })
