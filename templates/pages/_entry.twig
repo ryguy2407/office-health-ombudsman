@@ -26,5 +26,32 @@
         {% set childPage = true %}
     {% endif %}
 
-    {% include '/_partials/layout-builder' with { childPage: childPage } %}
+    {% if entry.type == 'contactUs' %}
+
+        <section class="bg-light py-24">
+            <div class="md:max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-center">Contact us</h2>
+                {% set blocks = entry.contactUsMatrix.all() %}
+                {% if blocks|length %}
+                    {% for block in blocks %}
+                        <div class="flex flex-row py-8">
+                            <i class="{{ block.icon.value }} text-6xl mr-8 mt-4"></i>
+                            <div>
+                                <h3>{{ block.heading }}</h3>
+                                <div class="richText">
+                                    {{ block.text }}
+                                </div>
+                            </div>
+                        </div>
+                        {% if not loop.last %}
+                            <div class="bg-dark" style="height: 1px;"></div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </section>
+
+    {% else %}
+        {% include '/_partials/layout-builder' with { childPage: childPage } %}
+    {% endif %}
 {% endblock %}
