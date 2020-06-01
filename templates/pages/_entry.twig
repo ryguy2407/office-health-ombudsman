@@ -5,18 +5,22 @@
     {% include '/_partials/page-header' %}
 
     {% set childPage = false %}
+    {% set prev = entry.prevSibling %}
+    {% set next = entry.nextSibling %}
+
     {% if entry.getParent | length %}
         <section class="bg-white border-none">
             <div class="md:max-w-3xl mx-auto pt-8 flex justify-between space-x-8">
-                {% set entries = craft.entries()
-                    .siblingOf(entry)
-                    .limit(2)
-                    .all() %}
-                {% for entry in entries %}
-                    <a class="btn btn-solid flex items-center" href="{{ entry.url }}">
-                        {% if loop.first %}<i class="fas fa-chevron-circle-left mr-4"></i>{% endif %}{{ entry.title }} {% if loop.last %}<i class="fas fa-chevron-circle-right ml-4"></i>{% endif %}
+                {% if prev | length and prev.enabled %}
+                    <a class="btn btn-solid flex items-center" href="{{ prev.url }}">
+                        <i class="fas fa-chevron-circle-left mr-4"></i>{{ prev.title }}
                     </a>
-                {% endfor %}
+                {% endif %}
+                {% if next | length and next.enabled %}
+                    <a class="btn btn-solid flex items-center" href="{{ next.url }}">
+                        {{ next.title }}<i class="fas fa-chevron-circle-right ml-4"></i>
+                    </a>
+                {% endif %}
             </div>
         </section>
         {% set childPage = true %}
