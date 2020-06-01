@@ -5,7 +5,7 @@
     {% switch block.type.handle %}
         {% case 'pageSection' %}
         {% set layoutCount = layoutCount + 1 %}
-        <section {% if block.sectionId %}id="{{ block.sectionId }}"{% endif %} class="section theme-{{ block.theme }} section-bg-{{ block.bgColor }} relative {% if loop.first %}pt-8{% else %} py-10 md:py-24 {% endif %} overflow-hidden">
+        <section {% if block.sectionId %}id="{{ block.sectionId }}"{% endif %} class="section theme-{{ block.theme }} section-bg-{{ block.bgColor }} relative {% if childPage %}pt-8 pb-10 md:pb-24{% else %} py-10 md:py-24 {% endif %} overflow-hidden">
             {% if block.backgroundImage.one() %}
                 <div class="absolute inset-0">
                     {% set image = block.backgroundImage.one() %}

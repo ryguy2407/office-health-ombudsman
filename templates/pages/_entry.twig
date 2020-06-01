@@ -4,6 +4,7 @@
 
     {% include '/_partials/page-header' %}
 
+    {% set childPage = false %}
     {% if entry.getParent | length %}
         <section class="bg-white border-none">
             <div class="md:max-w-3xl mx-auto pt-8 flex justify-between space-x-8">
@@ -18,7 +19,8 @@
                 {% endfor %}
             </div>
         </section>
+        {% set childPage = true %}
     {% endif %}
 
-    {% include '/_partials/layout-builder' %}
+    {% include '/_partials/layout-builder' with { childPage: childPage } %}
 {% endblock %}
