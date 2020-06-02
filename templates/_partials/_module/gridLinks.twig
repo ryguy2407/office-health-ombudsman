@@ -1,7 +1,7 @@
 {% if module.type.handle == 'gridLinks' %}
 
     <div class="container mx-auto relative">
-        <div class="flex flex-col md:grid md:grid-cols-4 md:gap-8">
+        <div class="flex flex-col md:grid md:grid-cols-{{ module.columnsPerRow }} md:gap-8">
             {% for block in module.gridMatrix.all() %}
 
                 {% if block.type == "column" %}
