@@ -14,7 +14,7 @@
 
                 {% set nodes = craft.navigation.nodes(header.secondaryMenu).level(1).all() %}
 
-                <ul class="hidden md:flex ml-auto justify-end content-center">
+                <ul class="md:flex ml-auto justify-end content-center">
                     <div id="google_translate_element" style="margin-top: 10px;"></div>
                     {% nav node in nodes %}
                         {% if node %}
@@ -55,6 +55,18 @@
                     {% if node %}
                         <li class="group relative">
                             <a class="block hover:bg-light rounded-sm text-xl relative font-bold {% if node.classes %}{{ node.classes }}{% else %}py-1 px-2{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endnav %}
+            </ul>
+            {% set nodes = craft.navigation.nodes(header.secondaryMenu).level(1).all() %}
+
+            <ul class="md:flex ml-auto justify-end content-center">
+                <div id="google_translate_element" style="margin-top: 10px;"></div>
+                {% nav node in nodes %}
+                    {% if node %}
+                        <li class="my-2 mx-1 group relative">
+                            <a class="py-1 px-2 block hover:bg-light rounded-sm text-sm uppercase relative" href="{{ node.url }}">{{ node.title }}</a>
                         </li>
                     {% endif %}
                 {% endnav %}
