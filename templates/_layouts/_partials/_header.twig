@@ -1,4 +1,3 @@
-{% cache globally for 7 days %}
 <header class="z-40 sticky md:relative w-full top-0 shadow-lg"> 
 
     {# TOP BANNER #}
@@ -7,11 +6,12 @@
     
     {# SECONDARY MENU #}
 
-        <nav class="container mx-auto px-3 flex items-center justify-between">
-            <a class="block mr-3" href="/">
+        <nav class="hidden lg:flex container mx-auto px-3 items-center justify-between">
+            <a class="mr-3" href="/">
                 <img class="h-10 md:h-20" src="/assets/img/logo.svg" alt="Office of the health ombudsman"/>
             </a>
             <div class="flex flex-col">
+
                 {% set nodes = craft.navigation.nodes(header.secondaryMenu).level(1).all() %}
 
                 <ul class="hidden md:flex ml-auto justify-end content-center">
@@ -37,6 +37,29 @@
                 </ul>
             </div>
         </nav>
+        {# Mobile NAV #}
+        <div class="flex block lg:hidden justify-between px-8 items-center">
+            <a href="/">
+                <img class="h-15 md:h-20 mx-auto" src="/assets/img/logo.svg" alt="Office of the health ombudsman"/>
+            </a>
+            <button style="outline:0;" class="hamburger hamburger--collapse outline-none" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button> 
+        </div>
+        <nav class="hidden px-8 mobileNav">
+            {% set nodes = craft.navigation.nodes(header.primaryMenu).level(1).all() %}
+            <ul class="flex flex-col my-2">
+                {% nav node in nodes %}
+                    {% if node %}
+                        <li class="group relative">
+                            <a class="block hover:bg-light rounded-sm text-xl relative font-bold {% if node.classes %}{{ node.classes }}{% else %}py-1 px-2{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endnav %}
+            </ul>
+        </nav>
     </div>
 </header>
-{% endcache %}
+
