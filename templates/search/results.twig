@@ -4,9 +4,6 @@
     <div class="relative py-10  md:py-24 z-10">
         <div class="container mx-auto px-3">
             <div class="md:w-1/2 md:pr-20 lg:pr-32">
-                <ul class="flex mb-3 text-xs uppercase font-bold text-navy-800">
-                    <li ><a href="/" class="opacity-70 hover:opacity-100">Home</a><span class="px-2 opacity-50">/</span></li> 
-                </ul>
                 <h1 class="text-3xl md:text-5xl font-bold mb-4">Search results</h1>
                 <span class="block bg-teal-500 h-2px w-20 border-0 m-0" ></span>
                 {% set searchQuery = craft.app.request.getParam('q') %}
@@ -32,16 +29,10 @@
             <ul>
                 {% for entry in entries %}
                     <li class="mb-3">
-                        <a class="block p-8 shadow hover:shadow-lg transition-all" href="{{ entry.url }}">
+                        <a class="block bg-light p-8 shadow hover:shadow-lg transition-all" href="{{ entry.url }}">
                             <h4>{{ entry.title }}</h4>
                             {% if entry.pageIntroduction %}
                             <p class="text-base mt-4">{{ entry.pageIntroduction }}</p>
-                            {% endif %}
-                            {% if entry.hostOrganisation %}
-                                <p class="text-base   mt-4"> Hosted by {{ entry.hostOrganisation }}</p>
-                            {% endif %}
-                            {% if entry.organisationName %}
-                                <p class="text-base   mt-4">{{ entry.organisationName }}</p>
                             {% endif %}
                             {% if entry.type.handle == "news"  %}
                                 <p class="text-base  mt-4">{{ entry.postDate | date("M d, Y") }}</p>
