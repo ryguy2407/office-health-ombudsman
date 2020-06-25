@@ -7,3 +7,4 @@
 /web/assets/cpresources/*
 /scripts/.env.sh
 /node_modules
+scripts/*
