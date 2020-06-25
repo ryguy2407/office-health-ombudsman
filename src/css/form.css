@@ -1,0 +1,11 @@
+.richtext {
+    form {
+
+        button {
+            @apply bg-primary-500 border-primary-500 text-white;
+            &:hover {
+                @apply bg-red border-red shadow-md;
+            }
+        }
+    }
+}
