@@ -9,7 +9,7 @@
       "api": "module.block.format",
       "args": {
         "tag": "p",
-        "class": "text-xl text-blue"
+        "class": "text-xl text-navy-500"
       }
     }
   }

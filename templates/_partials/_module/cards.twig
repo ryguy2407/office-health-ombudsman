@@ -6,7 +6,7 @@
 
                         {% for rel in relatedEntries %}
                             <div class="w-full {% if module.columnsPerRow == "3" %}md:w-1/3{% endif %}{% if module.columnsPerRow == "2" %}md:w-1/2{% endif %}{% if module.columnsPerRow == "4" %}md:w-1/4{% endif %} p-3">
-                                <article class="group w-full h-full rounded bg-white shadow hover:shadow-lg  transition-all rounded overflow-hidden">
+                                <article class="group w-full h-full rounded {{ module.cardBackground}} shadow hover:shadow-lg  transition-all rounded overflow-hidden">
                                     {% if module.cardMedia == "image" %}
 
                                         {% if rel.featureImage %}

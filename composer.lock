@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7c5a6431ee34f4e81be3f22172be4c5",
+    "content-hash": "eb62751da117d7d71b6c08e7dc178b60",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -686,11 +686,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.25",
+            "version": "3.4.27",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b5fdef81023c831ddd4f2d7de6063b4f64d1a020",
-                "reference": "b5fdef81023c831ddd4f2d7de6063b4f64d1a020",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/68d7e40efc7630fc319a27e0536426028d7baa50",
+                "reference": "68d7e40efc7630fc319a27e0536426028d7baa50",
                 "shasum": ""
             },
             "require": {
@@ -771,7 +771,7 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2020-06-23T23:04:43+00:00"
+            "time": "2020-07-03T19:20:14+00:00"
         },
         {
             "name": "craftcms/feed-me",
@@ -1392,11 +1392,11 @@
         },
         {
             "name": "ether/seo",
-            "version": "3.6.5.2",
+            "version": "3.6.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ethercreative/seo/zipball/f2de784268f43ca190e08bd6199dd22f3ccc05eb",
-                "reference": "f2de784268f43ca190e08bd6199dd22f3ccc05eb",
+                "url": "https://api.github.com/repos/ethercreative/seo/zipball/cfacc65fbea87ace4a40c0c0e5d35ce2e1167e60",
+                "reference": "cfacc65fbea87ace4a40c0c0e5d35ce2e1167e60",
                 "shasum": ""
             },
             "require": {
@@ -1423,22 +1423,19 @@
                 "issues": "https://github.com/ethercreative/seo",
                 "docs": "https://github.com/ethercreative/seo/blob/v3/README.md"
             },
-            "time": "2020-06-24T08:19:35+00:00"
+            "time": "2020-06-30T13:44:29+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.12.0",
+            "version": "v4.13.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/a617e55bc62a87eec73bd456d146d134ad716f03",
-                "reference": "a617e55bc62a87eec73bd456d146d134ad716f03",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
+                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
-            },
-            "require-dev": {
-                "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
             },
             "type": "library",
             "autoload": {
@@ -1447,9 +1444,11 @@
                 },
                 "files": [
                     "library/HTMLPurifier.composer.php"
+                ],
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1-or-later"
             ],
@@ -1465,7 +1464,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2019-10-28T03:44:26+00:00"
+            "time": "2020-06-29T00:56:53+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -3677,11 +3676,11 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.5.0",
+            "version": "v4.6.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/53c2753d756f5adb586dca79c2ec0e2654dd9463",
-                "reference": "53c2753d756f5adb586dca79c2ec0e2654dd9463",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c346bbfafe2ff60680258b631afb730d186ed864",
+                "reference": "c346bbfafe2ff60680258b631afb730d186ed864",
                 "shasum": ""
             },
             "require": {
@@ -3715,7 +3714,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-06-03T07:24:19+00:00"
+            "time": "2020-07-02T17:12:47+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -4904,11 +4903,11 @@
         },
         {
             "name": "seld/phar-utils",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/8800503d56b9867d43d9c303b9cbcc26016e82f0",
-                "reference": "8800503d56b9867d43d9c303b9cbcc26016e82f0",
+                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
+                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
                 "shasum": ""
             },
             "require": {
@@ -4938,15 +4937,15 @@
             "keywords": [
                 "phar"
             ],
-            "time": "2020-02-14T15:25:33+00:00"
+            "time": "2020-07-07T18:42:57+00:00"
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "3.6.12",
+            "version": "3.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/e81e270e17f43c77c46a096e6af1baf8d78637fe",
-                "reference": "e81e270e17f43c77c46a096e6af1baf8d78637fe",
+                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/c303554d8a306a92c626d6cc0ec2ca69a8ce3490",
+                "reference": "c303554d8a306a92c626d6cc0ec2ca69a8ce3490",
                 "shasum": ""
             },
             "require": {
@@ -4963,7 +4962,7 @@
             },
             "type": "craft-plugin",
             "extra": {
-                "schemaVersion": "3.0.6",
+                "schemaVersion": "3.0.7",
                 "handle": "freeform",
                 "class": "Solspace\\Freeform\\Freeform",
                 "name": "Freeform",
@@ -4986,7 +4985,7 @@
                 }
             ],
             "description": "The most reliable, intuitive and powerful form builder for Craft.",
-            "time": "2020-06-11T15:08:01+00:00"
+            "time": "2020-07-03T05:54:33+00:00"
         },
         {
             "name": "solspace/craft3-commons",
@@ -5014,11 +5013,11 @@
         },
         {
             "name": "spicyweb/craft-neo",
-            "version": "2.7.20",
+            "version": "2.7.22",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/9b24ed13bc257356490f1a4193a20cdd95096585",
-                "reference": "9b24ed13bc257356490f1a4193a20cdd95096585",
+                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/ea1e6d8ac55f877c2e04573044f8d8504663250a",
+                "reference": "ea1e6d8ac55f877c2e04573044f8d8504663250a",
                 "shasum": ""
             },
             "require": {
@@ -5062,7 +5061,7 @@
                 "docs": "https://github.com/spicywebau/craft-neo/wiki",
                 "rss": "https://github.com/spicywebau/craft-neo/commits/master.atom"
             },
-            "time": "2020-06-24T14:17:26+00:00"
+            "time": "2020-07-12T10:46:58+00:00"
         },
         {
             "name": "ssnepenthe/color-utils",
@@ -5120,11 +5119,11 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.37.2",
+            "version": "v7.40.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/da9ae0906966f344dba9530e25ea4e432bcafd64",
-                "reference": "da9ae0906966f344dba9530e25ea4e432bcafd64",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/04aedea5ad95b9722aa394a41787751b2b478310",
+                "reference": "04aedea5ad95b9722aa394a41787751b2b478310",
                 "shasum": ""
             },
             "require": {
@@ -5160,7 +5159,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-06-23T23:07:25+00:00"
+            "time": "2020-07-06T17:51:30+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -7182,15 +7181,15 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/9dc4f203e36f2b486149058bade43c851dd97451",
-                "reference": "9dc4f203e36f2b486149058bade43c851dd97451",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0",
+                "php": "^5.3.3 || ^7.0 || ^8.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
@@ -7218,7 +7217,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2020-06-16T10:16:42+00:00"
+            "time": "2020-07-08T17:02:28+00:00"
         },
         {
             "name": "webonyx/graphql-php",
@@ -7404,11 +7403,11 @@
         },
         {
             "name": "yiisoft/yii2-composer",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/d191176c4f8372e397a9e3df27360dca6a70efaa",
-                "reference": "d191176c4f8372e397a9e3df27360dca6a70efaa",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/94bb3f66e779e2774f8776d6e1bdeab402940510",
+                "reference": "94bb3f66e779e2774f8776d6e1bdeab402940510",
                 "shasum": ""
             },
             "require": {
@@ -7445,7 +7444,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2020-04-20T18:47:46+00:00"
+            "time": "2020-06-24T00:04:01+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",

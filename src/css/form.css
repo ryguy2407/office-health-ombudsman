@@ -2,10 +2,14 @@
     form {
 
         button {
-            @apply bg-primary-500 border-primary-500 text-white;
+            @apply block rounded-sm text-xl relative font-bold btn btn-orange py-3;
             &:hover {
                 @apply bg-red border-red shadow-md;
             }
         }
     }
+}
+
+.goog-te-combo {
+    @apply w-full bg-white border border-navy-200 text-grey py-3 px-2 pr-8 rounded leading-tight;
 }

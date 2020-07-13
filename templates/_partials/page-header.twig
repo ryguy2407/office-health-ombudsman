@@ -1,7 +1,11 @@
 {# If no entry is defined then we must be on an index page #}
 {% if entry is defined %}
     {% if entry.type.handle == "primary" %}
-        <section class="border-b-8 border-orange {% if entry.pageHeadingType == "publicPage" %}section-bg-dark{% endif %} {% if entry.pageHeadingType == "providerPage" %}section-bg-green{% endif %} relative">
+        <section class="border-b-8
+                {% if entry.pageHeadingType == "publicPage" %}section-bg-dark border-orange{% endif %}
+                {% if entry.pageHeadingType == "providerPage" %}section-bg-green border-orange{% endif %}
+                {% if entry.pageHeadingType == "redBackground" %}bg-red border-primary-500{% endif %}
+                {% if entry.pageHeadingType == "orangeBackground" %}bg-orange border-red{% endif %} relative">
             <div class="relative py-10 md:py-24 z-10">
                 <div class="container">
                     <div class="md:w-2/3 lg:pr-32">
@@ -9,7 +13,7 @@
                         {% include '_partials/_breadcrumbs' %}
 
                         <h1 class="{% if entry.headerFontSize == 'small' %} text-5xl {% else %}text-6xl md:text-6xl{% endif %} font-bold mb-4 text-white">{{ entry.title }}</h1>
-                        {% if entry.pageIntroduction %}
+                        {% if entry.pageIntroduction and entry.headerFontSize == 'large' %}
                             <p class="text-white md:text-xl {% if entry.type.handle == "primary" %}md:text-2xl{% endif %} mt-4">{{ entry.pageIntroduction }}</p>
                         {% endif %}
                     </div>

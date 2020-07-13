@@ -8,24 +8,6 @@
     {% set prev = entry.prevSibling %}
     {% set next = entry.nextSibling %}
 
-    {% if entry.getParent | length %}
-        <section class="bg-white border-none">
-            <div class="md:max-w-3xl mx-auto pt-8 flex justify-between space-x-8">
-                {% if prev | length and prev.enabled %}
-                    <a class="btn btn-solid flex items-center" href="{{ prev.url }}">
-                        <i class="fas fa-chevron-circle-left mr-4"></i>{{ prev.title }}
-                    </a>
-                {% endif %}
-                {% if next | length and next.enabled %}
-                    <a class="btn btn-solid flex items-center ml-auto" href="{{ next.url }}">
-                        {{ next.title }}<i class="fas fa-chevron-circle-right ml-4"></i>
-                    </a>
-                {% endif %}
-            </div>
-        </section>
-        {% set childPage = true %}
-    {% endif %}
-
     {% if entry.type == 'contactUs' %}
 
         <section class="bg-light py-24">
@@ -34,9 +16,11 @@
                 {% set blocks = entry.contactUsMatrix.all() %}
                 {% if blocks|length %}
                     {% for block in blocks %}
-                        <div class="flex flex-row py-8">
-                            <i class="{{ block.icon.value }} text-6xl mr-8 mt-4"></i>
-                            <div>
+                        <div class="flex flex-row justify-between py-8">
+                            <div class="w-1/12">
+                                <i class="{{ block.icon.value }} text-4xl mt-4"></i>
+                            </div>
+                            <div class="w-11/12">
                                 <h3>{{ block.heading }}</h3>
                                 <div class="richText">
                                     {{ block.text }}
@@ -53,5 +37,25 @@
 
     {% else %}
         {% include '/_partials/layout-builder' with { childPage: childPage } %}
+    {% endif %}
+
+    {% set entries = craft.entries()
+        .siblingOf(entry)
+        .all() %}
+
+    {% if entries | length and entry.level >= 2 %}
+    <section class="py-8 lg:py-16">
+        <div class="container mx-auto">
+            <h3>Related pages</h3>
+            <div class="flex flex-wrap justify-between space-x-8">
+                {% for entry in entries %}
+                    <a href="{{ entry.url }}" class="w-1/4 flex-grow group rounded bg-white shadow hover:shadow-lg p-8 transition-all rounded overflow-hidden">
+                        <h5><strong>{{ entry.title }}</strong></h5>
+                        <p>{{ entry.pageIntroduction }}</p>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
     {% endif %}
 {% endblock %}

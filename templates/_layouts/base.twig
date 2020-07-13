@@ -9,7 +9,7 @@
       {% if entry.title is defined %}{{ entry.title }} - {% endif %}{{ siteName }}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
-    
+
     {% cache globally for 3 weeks %}
         {% if trackingCodes.headerCodes %}
           {{ trackingCodes.headerCodes|raw }}
@@ -20,15 +20,22 @@
       {% do view.registerCssFile("/fontawesome/css/all.css") %}
       {% do view.registerJsFile('/fontawesome/js/all.js') %}
 
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+
       <link rel="stylesheet" href="https://use.typekit.net/iwi6una.css">
 
       <script
               src="https://code.jquery.com/jquery-3.4.1.min.js"
               integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
               crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+      <link rel="stylesheet" href="/dist/swiper.css">
 
-      <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+      <script src="/dist/js/swiper.js"></script>
+
+      <link rel="stylesheet" href="/dist/swiper.css">
 
       <script src="https://kit.fontawesome.com/636c179e8c.js" crossorigin="anonymous"></script>
 
@@ -43,19 +50,19 @@
          <p class="mb-0 leading-none">{{ alerts.alertText }}</p>
      </div>
  {% endif %}
-  
+
   {% cache globally for 3 weeks %}
     {% if trackingCodes.bodyCodes %}
       {{ trackingCodes.bodyCodes|raw }}
     {% endif %}
   {% endcache %}
-   {% block body %}{% endblock %}  
+   {% block body %}{% endblock %}
 
    {% do view.registerJsFile("/dist/main.js") %}
 
    {% block foot %}{% endblock %}
 
-  
+
   {% cache globally for 3 weeks %}
     {% if trackingCodes.footerCodes %}
       {{ trackingCodes.footerCodes }}
@@ -63,21 +70,6 @@
   {% endcache %}
 
  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,zh-CN,hr,tl,de,el,hi,it,mk,pl,sr,tr,vi'}, 'google_translate_element');
-      }
-
-      jQuery(document).ready(function($){
-         $('.triggerSearch').on('click', function(e){
-             e.preventDefault();
-            $('.searchContainer').stop().slideToggle();
-         });
-         $('.closeSearch').on('click', function() {
-             $('.searchContainer').slideUp();
-         })
-      });
-    </script>
 
  <style>
           .goog-logo-link {
@@ -88,6 +80,6 @@
               color: transparent !important;
           }
       </style>
- </body> 
+ </body>
 </html>
 {% endspaceless %}

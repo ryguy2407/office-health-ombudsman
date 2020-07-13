@@ -2,12 +2,10 @@
     <a href="/"><i class="far fa-home-alt"></i></a>
 </span>
 {% for segment in craft.request.segments %}
-    {% set segmentEntries = craft.entries.slug(segment).find() %}
+    {% set segmentEntries = craft.entries.slug(segment).all() %}
     <span class="{% if textColour is defined %}text-{{ textColour }}{% else %}text-white{% endif %} %} mx-2">/</span>
     {% for segmentEntry in segmentEntries %}
-        {% if segmentEntry.id == entry.id %}
-            <span class="breadcrumb-item {% if textColour is defined %}text-{{ textColour }}{% else %}text-white{% endif %} %} uppercase text-sm font-bold">{{ segmentEntry.title }}</span>
-        {% else %}
+        {% if loop.first %}
             <span class="breadcrumb-item {% if textColour is defined %}text-{{ textColour }}{% else %}text-white{% endif %} %} uppercase text-sm font-bold"><a href="{{ segmentEntry.url }}">{{ segmentEntry.title }}</a></span>
         {% endif %}
     {% endfor %}
