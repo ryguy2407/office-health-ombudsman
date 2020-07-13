@@ -12,7 +12,7 @@
 
                         {% include '_partials/_breadcrumbs' %}
 
-                        <h1 class="{% if entry.headerFontSize == 'small' %} text-5xl {% else %}text-6xl md:text-6xl{% endif %} font-bold mb-4 text-white">{{ entry.title }}</h1>
+                        <h1 class="{% if entry.headerFontSize == 'small' %}text-3xl lg:text-5xl {% else %}text-3xl md:text-6xl{% endif %} font-bold mb-4 text-white">{{ entry.title }}</h1>
                         {% if entry.pageIntroduction and entry.headerFontSize == 'large' %}
                             <p class="text-white md:text-xl {% if entry.type.handle == "primary" %}md:text-2xl{% endif %} mt-4">{{ entry.pageIntroduction }}</p>
                         {% endif %}
