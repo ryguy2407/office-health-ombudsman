@@ -5,20 +5,29 @@
                 {% if entry.pageHeadingType == "publicPage" %}section-bg-dark border-orange{% endif %}
                 {% if entry.pageHeadingType == "providerPage" %}section-bg-green border-orange{% endif %}
                 {% if entry.pageHeadingType == "redBackground" %}bg-red border-primary-500{% endif %}
-                {% if entry.pageHeadingType == "orangeBackground" %}bg-orange border-red{% endif %} relative">
+                {% if entry.pageHeadingType == "orangeBackground" %}bg-orange border-red{% endif %}
+                {% if entry.pageHeadingType == "greyBackground" %}bg-light border-white{% endif %}
+                relative">
             <div class="relative py-10 md:py-24 z-10">
                 <div class="container">
                     <div class="md:w-2/3 lg:pr-32">
 
-                        {% include '_partials/_breadcrumbs' %}
+                        {% if entry.pageHeadingType == "greyBackground" %}
+                            {% set textColour = 'dark' %}
+                        {% else %}
+                            {% set textColour = 'white' %}
+                        {% endif %}
+                        {% include '_partials/_breadcrumbs' with { textColour: textColour } %}
 
-                        <h1 class="{% if entry.headerFontSize == 'small' %}text-3xl lg:text-5xl {% else %}text-3xl md:text-6xl{% endif %} font-bold mb-4 text-white">{{ entry.title }}</h1>
+                        <h1 class="{% if entry.headerFontSize == 'small' %}text-3xl lg:text-5xl {% else %}text-3xl md:text-6xl{% endif %} font-bold mb-4 {% if entry.pageHeadingType == "greyBackground" %}text-dark{% else %}text-white{% endif %}">{{ entry.title }}</h1>
                         {% if entry.pageIntroduction and entry.headerFontSize == 'large' %}
-                            <p class="text-white md:text-xl {% if entry.type.handle == "primary" %}md:text-2xl{% endif %} mt-4">{{ entry.pageIntroduction }}</p>
+                            <p class="{% if entry.pageHeadingType == "greyBackground" %}text-dark{% else %}text-white{% endif%} md:text-xl {% if entry.type.handle == "primary" %}md:text-2xl{% endif %} mt-4">{{ entry.pageIntroduction }}</p>
                         {% endif %}
                     </div>
                 </div>
-                <img class="hidden lg:block absolute right-0 top-0 h-full" src="/assets/img/header-shapes.svg" alt="">
+                {% if entry.pageHeadingType != "greyBackground" %}
+                    <img class="hidden lg:block absolute right-0 top-0 h-full" src="/assets/img/header-shapes.svg" alt="">
+                {% endif %}
             </div>
             {% if entry.type.handle == "primary" %}
                 <div class="overlay opacity-50 absolute inset-0"></div>
