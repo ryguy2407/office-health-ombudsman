@@ -1,0 +1,9 @@
+contentColumnType: text
+fieldGroup: 688e907c-4d09-4524-8f81-91c62976ee13
+handle: primaryMenu
+instructions: ''
+name: 'Primary menu'
+searchable: true
+translationKeyFormat: null
+translationMethod: none
+type: verbb\navigation\fields\NavigationField

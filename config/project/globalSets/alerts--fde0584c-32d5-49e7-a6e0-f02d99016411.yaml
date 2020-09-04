@@ -1,0 +1,12 @@
+fieldLayouts:
+  6f30f7bd-ef24-4bc9-9aad-ac02ece47ab4:
+    tabs:
+      -
+        fields:
+          02704d64-0a90-4b03-b54b-e71cfe28e1e0:
+            required: false
+            sortOrder: 1
+        name: Alerts
+        sortOrder: 1
+handle: alerts
+name: Alerts

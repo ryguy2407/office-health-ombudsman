@@ -1,0 +1,133 @@
+contentColumnType: string
+fieldGroup: 27c20eea-7252-47e8-a74b-cc91af2f962e
+handle: overlay
+instructions: ''
+name: Overlay
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - '0'
+        -
+          - value
+          - '0'
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - '10'
+        -
+          - value
+          - '10'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '20'
+        -
+          - value
+          - '20'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '30'
+        -
+          - value
+          - '30'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '40'
+        -
+          - value
+          - '40'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '50'
+        -
+          - value
+          - '50'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '60'
+        -
+          - value
+          - '60'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '70'
+        -
+          - value
+          - '70'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '80'
+        -
+          - value
+          - '80'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '90'
+        -
+          - value
+          - '90'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '100'
+        -
+          - value
+          - '100'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

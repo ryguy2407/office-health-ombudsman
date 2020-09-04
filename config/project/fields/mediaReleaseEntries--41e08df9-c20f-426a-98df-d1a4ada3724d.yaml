@@ -1,0 +1,19 @@
+contentColumnType: string
+fieldGroup: 66479900-8161-4ee8-a366-479c2428c023
+handle: mediaReleaseEntries
+instructions: 'Leave this blank and the latest 3 latest updates will automatically be pulled in'
+name: 'Latest updates entries'
+searchable: true
+settings:
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  source: null
+  sources:
+    - 'section:58ca8e9f-0410-437f-bb4b-2e4878cdf643'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

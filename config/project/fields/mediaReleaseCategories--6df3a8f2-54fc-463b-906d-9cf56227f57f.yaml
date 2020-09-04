@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 66479900-8161-4ee8-a366-479c2428c023
+handle: mediaReleaseCategories
+instructions: ''
+name: 'Media release categories'
+searchable: true
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  source: 'group:317659da-a839-432a-9463-7aefe44b2f92'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

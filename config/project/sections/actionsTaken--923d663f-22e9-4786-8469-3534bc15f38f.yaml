@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: actionsTaken
+name: 'Actions Taken Entries'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  693a5f5f-5f4e-40ad-b3b4-228d13f6dfc9:
+    enabledByDefault: true
+    hasUrls: true
+    template: actions-taken/_entry
+    uriFormat: 'actions-taken/{slug}'
+type: channel

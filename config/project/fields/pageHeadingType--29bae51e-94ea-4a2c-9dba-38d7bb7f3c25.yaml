@@ -1,0 +1,67 @@
+contentColumnType: string
+fieldGroup: 1363d3d4-fc9b-40c8-a7c7-2cf1cdf71cb8
+handle: pageHeadingType
+instructions: ''
+name: 'Page heading type'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Public Page'
+        -
+          - value
+          - publicPage
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Provider Page'
+        -
+          - value
+          - providerPage
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Red background'
+        -
+          - value
+          - redBackground
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Orange background'
+        -
+          - value
+          - orangeBackground
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Grey background'
+        -
+          - value
+          - greyBackground
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

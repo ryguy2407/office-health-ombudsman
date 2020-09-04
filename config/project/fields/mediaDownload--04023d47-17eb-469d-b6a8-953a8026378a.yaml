@@ -1,0 +1,28 @@
+contentColumnType: string
+fieldGroup: 66479900-8161-4ee8-a366-479c2428c023
+handle: mediaDownload
+instructions: ''
+name: 'Media Download'
+searchable: true
+settings:
+  allowedKinds:
+    - pdf
+  defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add a download'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  singleUploadLocationSource: 'volume:a79acc78-bd1f-42f1-8da9-00fe13e44785'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

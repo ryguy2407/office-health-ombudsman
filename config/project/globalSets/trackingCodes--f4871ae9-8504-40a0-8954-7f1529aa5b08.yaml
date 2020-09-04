@@ -1,0 +1,18 @@
+fieldLayouts:
+  c8dd9fb0-cc3d-4e0d-91c8-77b8f4057c1e:
+    tabs:
+      -
+        fields:
+          21ac1b7c-95f0-4a31-ba4a-5f5344e23e40:
+            required: false
+            sortOrder: 1
+          519daa33-d2ee-40dd-94a9-a764b282c9b7:
+            required: false
+            sortOrder: 3
+          c81a2791-464d-482f-91e8-d335bc34776b:
+            required: false
+            sortOrder: 2
+        name: 'Tracking codes'
+        sortOrder: 1
+handle: trackingCodes
+name: 'Tracking codes'

@@ -1,0 +1,33 @@
+fieldLayouts:
+  3269bec8-a424-4a99-94d9-cc7973da0a14:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 7ee27f08-2478-478b-98ce-f9804530ff21
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 6df3a8f2-54fc-463b-906d-9cf56227f57f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 6fccf17e-901d-49a5-93e9-adbb06106018
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 04023d47-17eb-469d-b6a8-953a8026378a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+handle: mediaReleases
+hasTitleField: true
+name: 'Media Releases'
+section: 0cb17afc-cf1b-4a70-b436-02f6a5719699
+sortOrder: 1
+titleFormat: ''

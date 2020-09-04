@@ -1,0 +1,9 @@
+handle: footerColumnOne
+instructions: ''
+maxNodes: ''
+name: 'Footer - Column One'
+propagateNodes: false
+sortOrder: 3
+structure:
+  maxLevels: null
+  uid: 90859114-59df-4fe7-9de8-8eb30efc8621

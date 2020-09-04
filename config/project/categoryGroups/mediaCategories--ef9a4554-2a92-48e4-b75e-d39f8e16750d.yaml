@@ -1,0 +1,32 @@
+fieldLayouts:
+  19eb0ecf-1950-4dd4-82c2-fe2697da3270:
+    tabs:
+      -
+        fields:
+          15396392-b2d0-4259-b386-ff3bf7a2da20:
+            required: false
+            sortOrder: 4
+          4f2ceb84-b609-4765-8a3c-1bb92e61e08f:
+            required: false
+            sortOrder: 3
+          7bf738e1-3bb2-45f6-ac54-c9385d07d952:
+            required: false
+            sortOrder: 1
+          8275cae2-520b-4aa3-ad6e-e436d430c6bf:
+            required: false
+            sortOrder: 2
+          ac7a53bb-d5a3-45b5-b06d-13719eaae4eb:
+            required: false
+            sortOrder: 5
+        name: 'SEO Fields'
+        sortOrder: 1
+handle: mediaCategories
+name: 'Latest release categories'
+siteSettings:
+  693a5f5f-5f4e-40ad-b3b4-228d13f6dfc9:
+    hasUrls: true
+    template: media-categories/index
+    uriFormat: 'latest-updates/{slug}'
+structure:
+  maxLevels: null
+  uid: 85eee545-0b60-49dc-bb64-b954042c0581

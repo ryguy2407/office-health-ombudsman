@@ -1,0 +1,45 @@
+fieldLayouts:
+  09bdd1eb-8b23-4e82-ae0e-8a5f135a939e:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: b1567a16-e716-4948-9b1b-e644e0c925c3
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Contact us'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 7bf738e1-3bb2-45f6-ac54-c9385d07d952
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8275cae2-520b-4aa3-ad6e-e436d430c6bf
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4f2ceb84-b609-4765-8a3c-1bb92e61e08f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 15396392-b2d0-4259-b386-ff3bf7a2da20
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ac7a53bb-d5a3-45b5-b06d-13719eaae4eb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'SEO Fields'
+        sortOrder: 2
+handle: contactUs
+hasTitleField: true
+name: 'Contact us'
+section: 739c043d-cdbd-4681-8d30-f919a424604a
+sortOrder: 8
+titleFormat: ''

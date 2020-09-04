@@ -1,0 +1,20 @@
+contentColumnType: text
+fieldGroup: 27c20eea-7252-47e8-a74b-cc91af2f962e
+handle: richText
+instructions: ''
+name: 'Rich text'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Standard.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

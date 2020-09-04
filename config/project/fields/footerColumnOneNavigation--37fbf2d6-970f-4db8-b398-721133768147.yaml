@@ -1,0 +1,11 @@
+contentColumnType: boolean
+fieldGroup: 905b04a9-6392-4043-9b56-6a0a92518b39
+handle: footerColumnOneNavigation
+instructions: 'Select this option to display this page in the first column in the footer navigation'
+name: 'Footer column one navigation'
+searchable: true
+settings:
+  default: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

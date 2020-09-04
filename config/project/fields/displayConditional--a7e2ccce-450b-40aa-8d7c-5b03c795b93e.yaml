@@ -1,0 +1,17 @@
+contentColumnType: string
+fieldGroup: c0b4eec9-4c5d-4eab-a8d0-c04917ed2d40
+handle: displayConditional
+instructions: ''
+name: 'Display conditional'
+searchable: true
+settings:
+  conditionalOnField: categoryName
+  conditionalShow: '1'
+  conditionalShowOrHideFields:
+    - displayType
+  conditionalShowOrHideTabs: ''
+  conditionalValue: conditional-exactly
+  exactlyValue: prohibition-order
+translationKeyFormat: null
+translationMethod: none
+type: billythekid\conditionalfields\fields\Conditional

@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 9b82b716-6440-436e-af42-13367f3f4ee7
+handle: reportSummary
+instructions: ''
+name: 'Report summary'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

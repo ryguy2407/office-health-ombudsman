@@ -1,0 +1,9 @@
+handle: secondaryNavigation
+instructions: ''
+maxNodes: ''
+name: 'Secondary Navigation'
+propagateNodes: false
+sortOrder: 2
+structure:
+  maxLevels: null
+  uid: 93c47d41-2c5a-4d04-b716-39a912d0b137

@@ -1,0 +1,22 @@
+handle: staff
+name: Staff
+permissions:
+  - accesscp
+  - 'createentries:923d663f-22e9-4786-8469-3534bc15f38f'
+  - 'publishentries:923d663f-22e9-4786-8469-3534bc15f38f'
+  - 'deleteentries:923d663f-22e9-4786-8469-3534bc15f38f'
+  - 'editentries:923d663f-22e9-4786-8469-3534bc15f38f'
+  - 'createentries:0cb17afc-cf1b-4a70-b436-02f6a5719699'
+  - 'publishentries:0cb17afc-cf1b-4a70-b436-02f6a5719699'
+  - 'deleteentries:0cb17afc-cf1b-4a70-b436-02f6a5719699'
+  - 'editentries:0cb17afc-cf1b-4a70-b436-02f6a5719699'
+  - 'createentries:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'publishentries:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'deleteentries:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'publishpeerentries:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'deletepeerentries:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'editpeerentries:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'publishpeerentrydrafts:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'deletepeerentrydrafts:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'editpeerentrydrafts:739c043d-cdbd-4681-8d30-f919a424604a'
+  - 'editentries:739c043d-cdbd-4681-8d30-f919a424604a'

@@ -1,0 +1,56 @@
+field: cd75a4bf-04fe-4ab6-9e1b-b3fb1036ba0c
+fieldLayouts:
+  fac5a7d9-6846-44ba-bf2b-f7bad53adcb6:
+    tabs:
+      -
+        fields:
+          fb4eda8c-1a91-4c27-83d0-fc950ec424db:
+            required: false
+            sortOrder: 1
+          fb9ca748-3142-41f9-b099-2a2239d075c6:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  fb4eda8c-1a91-4c27-83d0-fc950ec424db:
+    contentColumnType: text
+    fieldGroup: null
+    handle: nestedAccordionHeading
+    instructions: ''
+    name: 'Nested accordion heading'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fb9ca748-3142-41f9-b099-2a2239d075c6:
+    contentColumnType: text
+    fieldGroup: null
+    handle: nestedAccordionContent
+    instructions: ''
+    name: 'Nested accordion content'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: ''
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: ''
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field

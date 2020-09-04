@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 31fd5a7c-bcf2-4d96-a0b2-43ede4b08688
+handle: contactUsMatrix
+instructions: ''
+name: 'Contact us matrix'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_contactusmatrix}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,9 @@
+format: jpg
+handle: sm
+height: null
+interlace: none
+mode: crop
+name: sm
+position: center-center
+quality: 82
+width: 500

@@ -1,0 +1,23 @@
+fieldLayouts:
+  07daf93f-4af9-4863-84cc-0d72f13e7cf5:
+    tabs:
+      -
+        fields:
+          c0c064fa-7cee-4723-b1a3-6f5399de2e43:
+            required: false
+            sortOrder: 1
+          fb4bae98-1902-4611-9b1c-635f478d5575:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+handle: reportCategories
+name: 'Report Categories'
+siteSettings:
+  693a5f5f-5f4e-40ad-b3b4-228d13f6dfc9:
+    hasUrls: true
+    template: report-categories/_entry
+    uriFormat: 'report-categories/{slug}'
+structure:
+  maxLevels: null
+  uid: 1a18527b-b82f-4eb3-b647-8d4418aca2a0

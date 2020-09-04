@@ -1,0 +1,40 @@
+childBlocks: ''
+field: fb4bae98-1902-4611-9b1c-635f478d5575
+fieldLayouts:
+  efff30fa-ca5c-4da0-bc11-2ee3b6b10ef6:
+    tabs:
+      -
+        fields:
+          5b618481-4f4f-443f-bb9c-8c1adb19fd00:
+            required: false
+            sortOrder: 2
+          8b9abfd9-2323-4bc0-82af-602eb5678044:
+            required: false
+            sortOrder: 4
+          a33e935d-4337-4822-b1d4-32f7aa0bff48:
+            required: false
+            sortOrder: 6
+          a7e2ccce-450b-40aa-8d7c-5b03c795b93e:
+            required: false
+            sortOrder: 3
+          d0a07a1f-8e66-4fbc-acae-a6adb5da0361:
+            required: false
+            sortOrder: 1
+          da3eac1b-7ebb-4dbd-9393-4811ef39685a:
+            required: false
+            sortOrder: 5
+        name: 'Related Entries Matrix'
+        sortOrder: 1
+      -
+        fields:
+          551b101c-e6ad-4e6a-bd88-38e0cf071257:
+            required: false
+            sortOrder: 1
+        name: Settings
+        sortOrder: 2
+handle: relatedMatrix
+maxBlocks: 0
+maxChildBlocks: 0
+name: 'Related Matrix'
+sortOrder: 17
+topLevel: false

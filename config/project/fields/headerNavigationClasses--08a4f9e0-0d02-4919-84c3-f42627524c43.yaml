@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 905b04a9-6392-4043-9b56-6a0a92518b39
+handle: headerNavigationClasses
+instructions: 'Enter and custom classes you want your nav item to have here'
+name: 'Header navigation classes'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,137 @@
+field: 900919f1-9e83-4ba0-8c29-1877804aeee2
+fieldLayouts:
+  31f7ce96-0bef-41e1-b6ac-1f6054719ed5:
+    tabs:
+      -
+        fields:
+          1a03642e-9b0a-4548-9434-b58e01c08c6d:
+            required: false
+            sortOrder: 3
+          73e23131-5ff1-4d34-928e-0aad87c75d90:
+            required: false
+            sortOrder: 2
+          7b13ec1f-b6a8-472e-9703-ea46d0fb12a1:
+            required: false
+            sortOrder: 1
+          c52e99d3-3345-4d60-a6ee-91108e884323:
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  1a03642e-9b0a-4548-9434-b58e01c08c6d:
+    contentColumnType: string
+    fieldGroup: null
+    handle: enabledFeed
+    instructions: 'If this is selected, a feed of all the latest media entries will be generated and will override the selected entries above'
+    name: 'Enabled feed'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Please select'
+            -
+              - value
+              - pleaseSelect
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Media Releases'
+            -
+              - value
+              - mediaReleases
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  73e23131-5ff1-4d34-928e-0aad87c75d90:
+    contentColumnType: string
+    fieldGroup: null
+    handle: entriesPerRow
+    instructions: ''
+    name: 'Entries per row'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - '1'
+            -
+              - value
+              - '1'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - '2'
+            -
+              - value
+              - '2'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - '3'
+            -
+              - value
+              - '3'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  7b13ec1f-b6a8-472e-9703-ea46d0fb12a1:
+    contentColumnType: string
+    fieldGroup: null
+    handle: relatedEntries
+    instructions: ''
+    name: 'Related Entries'
+    searchable: false
+    settings:
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources:
+        - 'section:58ca8e9f-0410-437f-bb4b-2e4878cdf643'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  c52e99d3-3345-4d60-a6ee-91108e884323:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: linkToEntriesPage
+    instructions: ''
+    name: 'Link to entries page'
+    searchable: false
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: cards
+name: 'Related entries'
+sortOrder: 1

@@ -1,0 +1,57 @@
+fieldLayouts:
+  10a638f7-8def-4ecc-a5a8-2d9a0a0a0f69:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 555a0fdf-7ddb-419a-a41e-1fc5561877d5
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 5a39aec0-dd22-403a-adaa-95157ed5d665
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a9c3453c-51e6-4212-9203-6e79b75e6b4c
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a0927c76-1303-4900-b52c-593f75dceb4a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Report Content'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 7bf738e1-3bb2-45f6-ac54-c9385d07d952
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8275cae2-520b-4aa3-ad6e-e436d430c6bf
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4f2ceb84-b609-4765-8a3c-1bb92e61e08f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 15396392-b2d0-4259-b386-ff3bf7a2da20
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ac7a53bb-d5a3-45b5-b06d-13719eaae4eb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'SEO Fields'
+        sortOrder: 2
+handle: reports
+hasTitleField: true
+name: Reports
+section: 9100f018-86ae-4404-9e3b-ea4edb287788
+sortOrder: 1
+titleFormat: ''

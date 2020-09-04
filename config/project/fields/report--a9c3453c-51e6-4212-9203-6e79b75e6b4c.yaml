@@ -1,0 +1,28 @@
+contentColumnType: string
+fieldGroup: 27c20eea-7252-47e8-a74b-cc91af2f962e
+handle: report
+instructions: ''
+name: Report
+searchable: true
+settings:
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: ''
+  selectionLabel: 'Add a report file'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:a79acc78-bd1f-42f1-8da9-00fe13e44785'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:a79acc78-bd1f-42f1-8da9-00fe13e44785'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

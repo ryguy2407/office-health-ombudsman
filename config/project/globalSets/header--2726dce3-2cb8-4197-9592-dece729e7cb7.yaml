@@ -1,0 +1,18 @@
+fieldLayouts:
+  547882bd-73a5-4563-8102-26d7f6c14cb8:
+    tabs:
+      -
+        fields:
+          0dc21c0c-05d5-44d4-a92d-967938c01434:
+            required: false
+            sortOrder: 2
+          707e6138-4ca9-44a7-9bbc-42f2f37d24e3:
+            required: false
+            sortOrder: 1
+          b14dc28c-feea-40d9-a504-5046e8deb6bb:
+            required: false
+            sortOrder: 3
+        name: Header
+        sortOrder: 1
+handle: header
+name: Header

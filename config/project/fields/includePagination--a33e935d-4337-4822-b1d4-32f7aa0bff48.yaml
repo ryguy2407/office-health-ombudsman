@@ -1,0 +1,11 @@
+contentColumnType: boolean
+fieldGroup: c0b4eec9-4c5d-4eab-a8d0-c04917ed2d40
+handle: includePagination
+instructions: ''
+name: 'Include pagination'
+searchable: true
+settings:
+  default: '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

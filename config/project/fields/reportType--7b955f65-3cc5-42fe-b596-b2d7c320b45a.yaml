@@ -1,0 +1,33 @@
+contentColumnType: string
+fieldGroup: 9b82b716-6440-436e-af42-13367f3f4ee7
+handle: reportType
+instructions: ''
+name: 'Report Type'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Investigation Reports'
+        -
+          - value
+          - investigationReports
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Annual reports'
+        -
+          - value
+          - annualReports
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

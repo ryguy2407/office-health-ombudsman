@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 9b82b716-6440-436e-af42-13367f3f4ee7
+handle: reportCategories
+instructions: ''
+name: 'Report categories'
+searchable: true
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  source: 'group:1c82849a-811a-44e5-9d70-cc4546454e6e'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

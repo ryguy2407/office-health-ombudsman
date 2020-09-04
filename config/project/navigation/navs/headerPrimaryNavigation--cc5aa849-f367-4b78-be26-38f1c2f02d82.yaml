@@ -1,0 +1,9 @@
+handle: headerPrimaryNavigation
+instructions: ''
+maxNodes: ''
+name: 'Header - Primary navigation'
+propagateNodes: false
+sortOrder: 1
+structure:
+  maxLevels: null
+  uid: fae45de7-9db3-45f4-ad6a-4914aa894a7e

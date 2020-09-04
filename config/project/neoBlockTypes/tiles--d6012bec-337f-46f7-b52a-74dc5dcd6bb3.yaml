@@ -1,0 +1,28 @@
+childBlocks: ''
+field: fb4bae98-1902-4611-9b1c-635f478d5575
+fieldLayouts:
+  5de58d62-1f94-4c50-8863-f6810cf54dc2:
+    tabs:
+      -
+        fields:
+          aea0f145-e645-4cc0-a527-40ec2aa6a934:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+      -
+        fields:
+          b72a0aa0-a735-453e-ba24-81c3bbf38be2:
+            required: false
+            sortOrder: 2
+          e7b2fe6b-98c7-4eb1-a270-83d982092073:
+            required: false
+            sortOrder: 1
+        name: Settings
+        sortOrder: 2
+handle: tiles
+maxBlocks: 0
+maxChildBlocks: 0
+name: Tiles
+sortOrder: 19
+topLevel: false

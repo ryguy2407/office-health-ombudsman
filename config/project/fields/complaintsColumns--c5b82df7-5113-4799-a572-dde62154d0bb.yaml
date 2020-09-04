@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: d54f53b8-5d66-4b73-8026-a6df4fd0cc0a
+handle: complaintsColumns
+instructions: ''
+name: 'Complaints Columns'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_complaintscolumns}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

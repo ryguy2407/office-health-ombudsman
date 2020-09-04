@@ -1,0 +1,9 @@
+handle: footerNewsAndUpdates
+instructions: ''
+maxNodes: ''
+name: 'Footer news and updates'
+propagateNodes: false
+sortOrder: 6
+structure:
+  maxLevels: null
+  uid: e6f3a893-5849-42a5-84f4-bd5890990f4c

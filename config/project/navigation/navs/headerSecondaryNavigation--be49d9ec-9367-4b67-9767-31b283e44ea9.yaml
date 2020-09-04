@@ -1,0 +1,9 @@
+handle: headerSecondaryNavigation
+instructions: ''
+maxNodes: ''
+name: 'Header - secondary navigation'
+propagateNodes: false
+sortOrder: 2
+structure:
+  maxLevels: null
+  uid: d5cf1bcf-f91f-48c0-a1a5-584d902ddf8c

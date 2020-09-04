@@ -1,0 +1,96 @@
+field: 2956cb3e-0304-49cf-bc32-b12ddd75c758
+fieldLayouts:
+  9c79db5a-e219-4993-b2a7-572f18b63bc9:
+    tabs:
+      -
+        fields:
+          1a9f2997-070f-4e68-8d78-42a0fd46c3a5:
+            required: false
+            sortOrder: 2
+          c5687eaa-de46-44e4-b532-724f395236db:
+            required: false
+            sortOrder: 1
+          cd75a4bf-04fe-4ab6-9e1b-b3fb1036ba0c:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  1a9f2997-070f-4e68-8d78-42a0fd46c3a5:
+    contentColumnType: text
+    fieldGroup: null
+    handle: accordionContent
+    instructions: ''
+    name: 'Accordion content'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: ''
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: ''
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  c5687eaa-de46-44e4-b532-724f395236db:
+    contentColumnType: text
+    fieldGroup: null
+    handle: accordionHeading
+    instructions: ''
+    name: 'Accordion heading'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cd75a4bf-04fe-4ab6-9e1b-b3fb1036ba0c:
+    contentColumnType: string
+    fieldGroup: null
+    handle: nestedAccordion
+    instructions: ''
+    name: 'Nested Accordion'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - fb4eda8c-1a91-4c27-83d0-fc950ec424db
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - fb9ca748-3142-41f9-b099-2a2239d075c6
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_28_nestedaccordion}}'
+      fieldLayout: row
+      maxRows: ''
+      minRows: ''
+      propagationMethod: all
+      selectionLabel: 'Add a nested element'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: accordionMatrix
+name: 'Accordion matrix'
+sortOrder: 1

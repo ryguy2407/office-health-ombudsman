@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: cfb0e3e6-dc05-4091-b3a7-57069471d991
+handle: slideshow
+instructions: ''
+name: Slideshow
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_slideshow}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,144 @@
+field: c5b82df7-5113-4799-a572-dde62154d0bb
+fieldLayouts:
+  0fd69fe8-22b0-48ca-8ef2-42d77941d8c5:
+    tabs:
+      -
+        fields:
+          4767c5ce-e1e9-445f-b8c8-0d66c9a6850d:
+            required: false
+            sortOrder: 5
+          5f8c5c14-d9bc-4ce5-84b1-d1c99a5904b0:
+            required: false
+            sortOrder: 3
+          c48cff8a-fd2a-41f1-979c-1c32f5e438d8:
+            required: false
+            sortOrder: 4
+          d5e104ca-2a23-4286-8154-f0f67790e3c7:
+            required: false
+            sortOrder: 2
+          ef07976b-f5e8-4c45-b6cf-23fdce3bae95:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  4767c5ce-e1e9-445f-b8c8-0d66c9a6850d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonLink
+    instructions: ''
+    name: 'Button Link'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5f8c5c14-d9bc-4ce5-84b1-d1c99a5904b0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  c48cff8a-fd2a-41f1-979c-1c32f5e438d8:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d5e104ca-2a23-4286-8154-f0f67790e3c7:
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: ''
+    name: Icon
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an icon'
+      singleUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  ef07976b-f5e8-4c45-b6cf-23fdce3bae95:
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundColour
+    instructions: ''
+    name: 'Background Colour'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Please select'
+            -
+              - value
+              - ''
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: columns
+name: Columns
+sortOrder: 1

@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 027716c8-e2e8-4283-8aa2-4913b9ab2af2
+handle: seoKeywords
+instructions: 'A comma separated list of keywords, Google ignores these but other search engines still use them, so it is still worth doing.'
+name: 'SEO Keywords'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

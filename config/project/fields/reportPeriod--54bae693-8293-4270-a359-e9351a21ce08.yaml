@@ -1,0 +1,45 @@
+contentColumnType: string
+fieldGroup: 9b82b716-6440-436e-af42-13367f3f4ee7
+handle: reportPeriod
+instructions: ''
+name: 'Report period'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Monthly
+        -
+          - value
+          - monthly
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Quarterly
+        -
+          - value
+          - quarterly
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Annually
+        -
+          - value
+          - annually
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

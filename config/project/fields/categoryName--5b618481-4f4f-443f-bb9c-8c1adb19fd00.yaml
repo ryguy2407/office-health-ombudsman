@@ -1,0 +1,166 @@
+contentColumnType: string
+fieldGroup: c0b4eec9-4c5d-4eab-a8d0-c04917ed2d40
+handle: categoryName
+instructions: ''
+name: 'Category Name'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - '-- ACTIONS TAKEN CATEGORIES --'
+        -
+          - value
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Prohibition Order'
+        -
+          - value
+          - prohibition-order
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Immediate Registration Action'
+        -
+          - value
+          - immediate-registration-action
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'QCAT Decisions'
+        -
+          - value
+          - qcat-decisions
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '-- MEDIA RELEASE CATEGORIES -- '
+        -
+          - value
+          - 'null'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - General
+        -
+          - value
+          - general
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Immediate actions'
+        -
+          - value
+          - immediate-actions
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Investigations reports'
+        -
+          - value
+          - investigations-reports
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Performance
+        -
+          - value
+          - performance
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - '-- REPORT CATEGORIES --'
+        -
+          - value
+          - nullReports
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Monitoring activities'
+        -
+          - value
+          - monitoring-activities
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Investigation reports'
+        -
+          - value
+          - investigation-reports
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Performance reporting'
+        -
+          - value
+          - performance-reporting
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Annual reports'
+        -
+          - value
+          - annual-reports
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

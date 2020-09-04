@@ -1,0 +1,9 @@
+handle: footerProviderNavigation
+instructions: ''
+maxNodes: ''
+name: 'Footer provider navigation'
+propagateNodes: false
+sortOrder: 5
+structure:
+  maxLevels: null
+  uid: df3aec4b-c097-464a-bdcb-a7bc3fac6c61

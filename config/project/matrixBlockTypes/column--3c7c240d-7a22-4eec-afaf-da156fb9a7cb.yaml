@@ -1,0 +1,87 @@
+field: c42ef844-20d1-4a93-bbaa-562719ead5fd
+fieldLayouts:
+  f37673ac-346b-4def-ad84-353542d1eb6a:
+    tabs:
+      -
+        fields:
+          10e008e1-24bb-40d7-b3c9-185b1ebe7cf4:
+            required: false
+            sortOrder: 2
+          5dd4666a-8270-4900-bf5e-d81cd305e206:
+            required: false
+            sortOrder: 1
+          e552936b-49bf-4ba3-8ae7-5772261da7bc:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  10e008e1-24bb-40d7-b3c9-185b1ebe7cf4:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5dd4666a-8270-4900-bf5e-d81cd305e206:
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: ''
+    name: Icon
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Add an icon'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  e552936b-49bf-4ba3-8ae7-5772261da7bc:
+    contentColumnType: string
+    fieldGroup: null
+    handle: relatedLink
+    instructions: ''
+    name: 'Related Link'
+    searchable: true
+    settings:
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: 'Add a link'
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: column
+name: Column
+sortOrder: 1

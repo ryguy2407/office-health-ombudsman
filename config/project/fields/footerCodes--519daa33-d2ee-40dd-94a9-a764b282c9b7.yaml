@@ -1,0 +1,11 @@
+contentColumnType: text
+fieldGroup: 77beb25f-41ad-4bc5-b185-0ceb0781060a
+handle: footerCodes
+instructions: ''
+name: 'Footer codes'
+searchable: true
+settings:
+  mode: gfm
+translationKeyFormat: null
+translationMethod: none
+type: luwes\codemirror\fields\CodeMirrorField

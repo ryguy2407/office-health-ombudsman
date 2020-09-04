@@ -1,0 +1,31 @@
+childBlocks: ''
+field: fb4bae98-1902-4611-9b1c-635f478d5575
+fieldLayouts:
+  7b6cfacb-6d55-4a54-a25b-e58903951651:
+    tabs:
+      -
+        fields:
+          a3cbfe3a-2a0c-45e4-8aa3-1b660286552c:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+      -
+        fields:
+          551b101c-e6ad-4e6a-bd88-38e0cf071257:
+            required: false
+            sortOrder: 3
+          e7b2fe6b-98c7-4eb1-a270-83d982092073:
+            required: false
+            sortOrder: 1
+          f89d0c99-6a52-4949-b745-a11c9955c3b8:
+            required: false
+            sortOrder: 2
+        name: Settings
+        sortOrder: 2
+handle: regularCards
+maxBlocks: 0
+maxChildBlocks: 0
+name: Cards
+sortOrder: 8
+topLevel: false

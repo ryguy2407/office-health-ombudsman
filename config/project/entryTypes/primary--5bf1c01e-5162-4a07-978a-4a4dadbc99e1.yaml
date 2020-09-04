@@ -1,0 +1,57 @@
+fieldLayouts:
+  c90df183-9c7e-4ac0-a6d4-d92beff9f18d:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: c0c064fa-7cee-4723-b1a3-6f5399de2e43
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 29bae51e-94ea-4a2c-9dba-38d7bb7f3c25
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 198ea782-49c4-4b1c-871d-8ee901646d07
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: fb4bae98-1902-4611-9b1c-635f478d5575
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: ac7a53bb-d5a3-45b5-b06d-13719eaae4eb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 7bf738e1-3bb2-45f6-ac54-c9385d07d952
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 15396392-b2d0-4259-b386-ff3bf7a2da20
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8275cae2-520b-4aa3-ad6e-e436d430c6bf
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4f2ceb84-b609-4765-8a3c-1bb92e61e08f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'SEO Fields'
+        sortOrder: 2
+handle: primary
+hasTitleField: true
+name: Primary
+section: 739c043d-cdbd-4681-8d30-f919a424604a
+sortOrder: 4
+titleFormat: ''

@@ -1,0 +1,193 @@
+field: a3cbfe3a-2a0c-45e4-8aa3-1b660286552c
+fieldLayouts:
+  ab53fc32-ec47-4ff9-9219-91a77429254e:
+    tabs:
+      -
+        fields:
+          8dadd2b1-82aa-41cb-aed0-f43f037c9963:
+            required: false
+            sortOrder: 4
+          8e36d4d4-31bd-495b-af49-f5038fa79062:
+            required: false
+            sortOrder: 5
+          9739f7c5-7aa6-4f90-b54a-0cc943a90317:
+            required: false
+            sortOrder: 3
+          a1921901-ac77-4152-ba4b-067d5b66fe28:
+            required: false
+            sortOrder: 2
+          a3f3646d-88c7-4b2c-81c8-ddae8b9ac745:
+            required: false
+            sortOrder: 6
+          c100a6d6-9218-49f8-b085-d99780f45cee:
+            required: false
+            sortOrder: 1
+          faf606b0-91d5-4e80-9631-f5d63e02f640:
+            required: false
+            sortOrder: 7
+        name: Content
+        sortOrder: 1
+fields:
+  8dadd2b1-82aa-41cb-aed0-f43f037c9963:
+    contentColumnType: string
+    fieldGroup: null
+    handle: rel
+    instructions: 'For internal links'
+    name: 'Button page'
+    searchable: true
+    settings:
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  8e36d4d4-31bd-495b-af49-f5038fa79062:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: buttonUrl
+    instructions: 'For external links'
+    name: 'Button Url'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  9739f7c5-7aa6-4f90-b54a-0cc943a90317:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a1921901-ac77-4152-ba4b-067d5b66fe28:
+    contentColumnType: text
+    fieldGroup: null
+    handle: richText
+    instructions: ''
+    name: 'Rich text'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  a3f3646d-88c7-4b2c-81c8-ddae8b9ac745:
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonStyle
+    instructions: ''
+    name: 'Button style'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Solid
+            -
+              - value
+              - solid
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Outline
+            -
+              - value
+              - outline
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Link
+            -
+              - value
+              - link
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  c100a6d6-9218-49f8-b085-d99780f45cee:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  faf606b0-91d5-4e80-9631-f5d63e02f640:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: newWindow
+    instructions: ''
+    name: 'Open link in new window'
+    searchable: true
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: column
+name: Column
+sortOrder: 1

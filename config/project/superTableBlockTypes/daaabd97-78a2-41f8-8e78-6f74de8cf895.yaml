@@ -1,0 +1,92 @@
+field: fb4bae98-1902-4611-9b1c-635f478d5575
+fieldLayouts:
+  af49d373-25ee-469f-807b-f9578ef65f34:
+    tabs:
+      -
+        fields:
+          77548aa7-8f19-4ec9-8b2e-1b57ea966d85:
+            required: false
+            sortOrder: 2
+          900919f1-9e83-4ba0-8c29-1877804aeee2:
+            required: false
+            sortOrder: 4
+          ae7148a3-7c9f-4551-ad0a-c576e4a10e5c:
+            required: false
+            sortOrder: 3
+          af468e57-4a43-444f-97b4-b51d62262eb2:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  77548aa7-8f19-4ec9-8b2e-1b57ea966d85:
+    contentColumnType: string
+    fieldGroup: null
+    handle: backgroundImage
+    instructions: ''
+    name: 'Background Image'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add background image'
+      singleUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  900919f1-9e83-4ba0-8c29-1877804aeee2:
+    contentColumnType: string
+    fieldGroup: null
+    handle: layout
+    instructions: ''
+    name: Layout
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_layout}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  ae7148a3-7c9f-4551-ad0a-c576e4a10e5c:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: sectionDivider
+    instructions: ''
+    name: 'Section Divider'
+    searchable: true
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  af468e57-4a43-444f-97b4-b51d62262eb2:
+    contentColumnType: text
+    fieldGroup: null
+    handle: backgroundColour
+    instructions: ''
+    name: 'Background Colour'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

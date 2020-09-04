@@ -1,0 +1,52 @@
+field: 900919f1-9e83-4ba0-8c29-1877804aeee2
+fieldLayouts:
+  4178d422-58d2-44e7-b77a-f17fcfd12b26:
+    tabs:
+      -
+        fields:
+          0497b089-0785-4eb0-9a8a-588da285381e:
+            required: false
+            sortOrder: 2
+          a2035c31-dda6-400c-a982-c2195556d891:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  0497b089-0785-4eb0-9a8a-588da285381e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoCaption
+    instructions: ''
+    name: 'Video caption'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a2035c31-dda6-400c-a982-c2195556d891:
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoEmbedCode
+    instructions: ''
+    name: 'Video embed code'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: video
+name: Video
+sortOrder: 5

@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 0f85e3df-8f63-4ed9-9a44-454550f7575f
+handle: accordionMatrix
+instructions: ''
+name: 'Accordion Matrix'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_accordionmatrix}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

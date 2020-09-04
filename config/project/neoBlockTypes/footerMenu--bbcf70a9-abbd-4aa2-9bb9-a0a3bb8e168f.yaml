@@ -1,0 +1,18 @@
+childBlocks: ''
+field: d2a50860-7bde-495c-9bd0-6a131580df29
+fieldLayouts:
+  6085045e-0cf6-4b50-a426-7600993649de:
+    tabs:
+      -
+        fields:
+          bb741c5a-01c9-48d1-9767-bc10900e9d26:
+            required: false
+            sortOrder: 1
+        name: Menu
+        sortOrder: 1
+handle: footerMenu
+maxBlocks: 0
+maxChildBlocks: 0
+name: 'Footer menu'
+sortOrder: 2
+topLevel: false

@@ -1,0 +1,21 @@
+childBlocks: ''
+field: fb4bae98-1902-4611-9b1c-635f478d5575
+fieldLayouts:
+  9c7ea731-f546-4b5e-9ab1-adfcaf16ffca:
+    tabs:
+      -
+        fields:
+          7b955f65-3cc5-42fe-b596-b2d7c320b45a:
+            required: false
+            sortOrder: 1
+          fb1dd9e5-7848-43a8-8c35-dffa917e1efa:
+            required: false
+            sortOrder: 2
+        name: CONTENT
+        sortOrder: 1
+handle: reports
+maxBlocks: 0
+maxChildBlocks: 0
+name: Reports
+sortOrder: 23
+topLevel: false

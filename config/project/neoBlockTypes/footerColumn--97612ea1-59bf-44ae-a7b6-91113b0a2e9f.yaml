@@ -1,0 +1,9 @@
+childBlocks:
+  - footerMenu
+field: d2a50860-7bde-495c-9bd0-6a131580df29
+handle: footerColumn
+maxBlocks: 0
+maxChildBlocks: 0
+name: 'Footer column'
+sortOrder: 1
+topLevel: true

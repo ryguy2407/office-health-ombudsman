@@ -1,0 +1,45 @@
+contentColumnType: string
+fieldGroup: c0b4eec9-4c5d-4eab-a8d0-c04917ed2d40
+handle: entryName
+instructions: ''
+name: 'Entry Name'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Actions Taken'
+        -
+          - value
+          - actionsTaken
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Reports
+        -
+          - value
+          - reports
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Media Releases'
+        -
+          - value
+          - mediaReleases
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

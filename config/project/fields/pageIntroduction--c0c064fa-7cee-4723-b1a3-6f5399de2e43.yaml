@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 1363d3d4-fc9b-40c8-a7c7-2cf1cdf71cb8
+handle: pageIntroduction
+instructions: ''
+name: 'Page introduction'
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

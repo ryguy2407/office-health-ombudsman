@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 862f0012-849b-4288-82b0-c9606e3e052a
+handle: footerNavigation
+instructions: ''
+name: 'Footer navigation'
+searchable: true
+settings:
+  maxBlocks: ''
+  maxTopBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: benf\neo\Field

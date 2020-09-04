@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 66479900-8161-4ee8-a366-479c2428c023
+handle: latestReleasesCategories
+instructions: ''
+name: 'Latest releases categories'
+searchable: true
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  source: 'group:ef9a4554-2a92-48e4-b75e-d39f8e16750d'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

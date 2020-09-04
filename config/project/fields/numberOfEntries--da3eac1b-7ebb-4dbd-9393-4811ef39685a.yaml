@@ -1,0 +1,17 @@
+contentColumnType: smallint(2)
+fieldGroup: c0b4eec9-4c5d-4eab-a8d0-c04917ed2d40
+handle: numberOfEntries
+instructions: ''
+name: 'Number of entries'
+searchable: true
+settings:
+  decimals: 0
+  defaultValue: '0'
+  max: '12'
+  min: '0'
+  prefix: ''
+  size: null
+  suffix: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

@@ -1,0 +1,42 @@
+field: 239cfa8e-2ebf-4caf-8ecb-254355970e79
+fieldLayouts:
+  d99c45c3-fa2b-4c51-ac8f-c7dad81b4975:
+    tabs:
+      -
+        fields:
+          b7a9b718-3a20-4dd7-a9c2-8ee6d7719dbf:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  b7a9b718-3a20-4dd7-a9c2-8ee6d7719dbf:
+    contentColumnType: string
+    fieldGroup: null
+    handle: tableColumns
+    instructions: ''
+    name: 'Table columns'
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - b3c985ae-5791-472e-8f6e-1a9fc35f6b45
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_29_tablecolumns}}'
+      fieldLayout: table
+      maxRows: ''
+      minRows: ''
+      propagationMethod: all
+      selectionLabel: ''
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: tableRow
+name: 'Table row'
+sortOrder: 1

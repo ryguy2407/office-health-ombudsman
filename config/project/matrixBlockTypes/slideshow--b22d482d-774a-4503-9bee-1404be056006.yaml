@@ -1,0 +1,106 @@
+field: 02840bd5-3249-46e9-8eff-2650829c92bb
+fieldLayouts:
+  bebe6d93-f20a-44f6-ac22-0dc098fa46bb:
+    tabs:
+      -
+        fields:
+          3cce9d87-0235-45c2-a5d1-959ba9d862bd:
+            required: false
+            sortOrder: 3
+          6feef228-405c-4751-9375-a922f25caaeb:
+            required: false
+            sortOrder: 1
+          77ba0029-6800-407d-974c-7336f6bdddaa:
+            required: false
+            sortOrder: 2
+          b79a4e73-9fb8-402f-8fa9-cc175ffec5a1:
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  3cce9d87-0235-45c2-a5d1-959ba9d862bd:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonLink
+    instructions: ''
+    name: 'Button Link'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6feef228-405c-4751-9375-a922f25caaeb:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Add an image'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  77ba0029-6800-407d-974c-7336f6bdddaa:
+    contentColumnType: text
+    fieldGroup: null
+    handle: slideshowText
+    instructions: ''
+    name: 'Slideshow Text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b79a4e73-9fb8-402f-8fa9-cc175ffec5a1:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button Text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: slideshow
+name: Slideshow
+sortOrder: 1

@@ -1,0 +1,34 @@
+contentColumnType: string
+fieldGroup: 27c20eea-7252-47e8-a74b-cc91af2f962e
+handle: cardBackground
+instructions: ''
+name: 'Card background'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - White
+        -
+          - value
+          - bg-white
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Light
+        -
+          - value
+          - bg-light
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

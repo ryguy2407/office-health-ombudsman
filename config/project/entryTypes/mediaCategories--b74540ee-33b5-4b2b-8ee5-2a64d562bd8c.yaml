@@ -1,0 +1,37 @@
+fieldLayouts:
+  6cf5fa3f-a9c8-40cc-b054-e74a390a6749:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 7bf738e1-3bb2-45f6-ac54-c9385d07d952
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8275cae2-520b-4aa3-ad6e-e436d430c6bf
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4f2ceb84-b609-4765-8a3c-1bb92e61e08f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 15396392-b2d0-4259-b386-ff3bf7a2da20
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ac7a53bb-d5a3-45b5-b06d-13719eaae4eb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'SEO Fields'
+        sortOrder: 1
+handle: mediaCategories
+hasTitleField: false
+name: 'Media categories'
+section: b6477f8e-a065-4fec-acc3-6a0abb00cf09
+sortOrder: 1
+titleFormat: '{section.name|raw}'

@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: c14cd4ff-8dbf-4ca8-a599-6a5c7bd4d6f1
+handle: gridMatrix
+instructions: ''
+name: 'Grid Matrix'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_gridmatrix}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

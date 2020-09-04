@@ -1,0 +1,11 @@
+contentColumnType: boolean
+fieldGroup: 905b04a9-6392-4043-9b56-6a0a92518b39
+handle: footerColumnThreeNavigation
+instructions: 'Select this option to display this page in the third column in the footer navigation'
+name: 'Footer column three navigation'
+searchable: true
+settings:
+  default: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

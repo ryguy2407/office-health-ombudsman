@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 582b4a03-b997-427c-8217-9432af1bd0af
+handle: nameOfPractitioner
+instructions: ''
+name: 'Name of practitioner'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

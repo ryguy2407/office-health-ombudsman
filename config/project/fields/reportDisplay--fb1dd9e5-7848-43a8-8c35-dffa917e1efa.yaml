@@ -1,0 +1,34 @@
+contentColumnType: string
+fieldGroup: 9b82b716-6440-436e-af42-13367f3f4ee7
+handle: reportDisplay
+instructions: ''
+name: 'Report display'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Table
+        -
+          - value
+          - table
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Accordion
+        -
+          - value
+          - accordion
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

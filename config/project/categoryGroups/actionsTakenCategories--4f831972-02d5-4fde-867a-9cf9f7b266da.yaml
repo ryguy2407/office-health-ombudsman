@@ -1,0 +1,23 @@
+fieldLayouts:
+  d2411982-496a-4ea5-a781-16ff1a994d07:
+    tabs:
+      -
+        fields:
+          c0c064fa-7cee-4723-b1a3-6f5399de2e43:
+            required: false
+            sortOrder: 1
+          fb4bae98-1902-4611-9b1c-635f478d5575:
+            required: false
+            sortOrder: 2
+        name: 'Page Builder'
+        sortOrder: 1
+handle: actionsTakenCategories
+name: 'Actions Taken Categories'
+siteSettings:
+  693a5f5f-5f4e-40ad-b3b4-228d13f6dfc9:
+    hasUrls: true
+    template: actions-taken-categories/_entry
+    uriFormat: 'actions-taken-categories/{slug}'
+structure:
+  maxLevels: null
+  uid: 25f874bd-ff31-4532-9994-c5f5af022086

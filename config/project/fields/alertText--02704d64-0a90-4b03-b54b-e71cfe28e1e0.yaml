@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 660da6c7-7f10-4191-ad1b-6cf0a6a16d68
+handle: alertText
+instructions: ''
+name: 'Alert text'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

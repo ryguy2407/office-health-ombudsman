@@ -1,0 +1,163 @@
+field: b1567a16-e716-4948-9b1b-e644e0c925c3
+fieldLayouts:
+  89fb8b9f-ea21-44bd-b021-a059fccb7b60:
+    tabs:
+      -
+        fields:
+          02ebb408-7c92-4a2c-82a0-3d139f7a8cd6:
+            required: false
+            sortOrder: 2
+          bcb46d7d-547e-4bed-b77c-8e5cbc4515a6:
+            required: false
+            sortOrder: 1
+          f87f91ee-631f-4f60-ac7b-860082272537:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  02ebb408-7c92-4a2c-82a0-3d139f7a8cd6:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bcb46d7d-547e-4bed-b77c-8e5cbc4515a6:
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: 'Select an icon to use'
+    name: Icon
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Globe
+            -
+              - value
+              - 'fad fa-globe-asia'
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Envelope
+            -
+              - value
+              - 'fal fa-envelope-open'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Paper
+            -
+              - value
+              - 'fal fa-file-alt'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Phone
+            -
+              - value
+              - 'far fa-phone'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Translate
+            -
+              - value
+              - 'far fa-language'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Media
+            -
+              - value
+              - 'fal fa-photo-video'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Image file'
+            -
+              - value
+              - 'far fa-file-image'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Relay service'
+            -
+              - value
+              - 'fas fa-assistive-listening-systems'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  f87f91ee-631f-4f60-ac7b-860082272537:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: contactBlock
+name: 'Contact block'
+sortOrder: 1

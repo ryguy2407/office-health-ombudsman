@@ -1,0 +1,9 @@
+handle: footerColumnOneNavigation
+instructions: ''
+maxNodes: ''
+name: 'Footer - column one navigation'
+propagateNodes: false
+sortOrder: 3
+structure:
+  maxLevels: null
+  uid: 637c84e5-f461-41bb-af11-464e3d6e52fe

@@ -1,0 +1,10 @@
+handle: mediaReleaseCategories
+name: 'Media Release Categories'
+siteSettings:
+  693a5f5f-5f4e-40ad-b3b4-228d13f6dfc9:
+    hasUrls: true
+    template: ''
+    uriFormat: 'media-release-categories/{slug}'
+structure:
+  maxLevels: null
+  uid: 8edbfdfe-8697-4f8d-bc04-c66e9311a193

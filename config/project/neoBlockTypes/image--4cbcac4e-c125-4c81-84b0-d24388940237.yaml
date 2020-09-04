@@ -1,0 +1,21 @@
+childBlocks: ''
+field: fb4bae98-1902-4611-9b1c-635f478d5575
+fieldLayouts:
+  e5e26891-7cad-4cb6-bba1-1272389b0877:
+    tabs:
+      -
+        fields:
+          cabc4951-c0a9-4f78-a5dc-b87882d5b1fe:
+            required: false
+            sortOrder: 2
+          f7a2f435-dbae-4b79-83b1-2c22e1d34d04:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+handle: image
+maxBlocks: 0
+maxChildBlocks: 0
+name: Image
+sortOrder: 6
+topLevel: false

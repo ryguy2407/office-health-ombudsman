@@ -1,0 +1,13 @@
+contentColumnType: datetime
+fieldGroup: 66479900-8161-4ee8-a366-479c2428c023
+handle: mediaReleaseDate
+instructions: ''
+name: 'Media release date'
+searchable: true
+settings:
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

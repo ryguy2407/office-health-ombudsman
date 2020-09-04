@@ -1,0 +1,5 @@
+isPublic: '1'
+name: 'Public Schema'
+scope:
+  - 'sections.9100f018-86ae-4404-9e3b-ea4edb287788:read'
+  - 'entrytypes.73093137-eb4a-41d7-b831-922bbaf05b52:read'

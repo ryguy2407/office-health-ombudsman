@@ -1,0 +1,13 @@
+contentColumnType: datetime
+fieldGroup: 9b82b716-6440-436e-af42-13367f3f4ee7
+handle: publicationDate
+instructions: ''
+name: 'Publication Date'
+searchable: true
+settings:
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

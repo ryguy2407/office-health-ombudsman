@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 582b4a03-b997-427c-8217-9432af1bd0af
+handle: actionsTakenCategory
+instructions: ''
+name: 'Actions Taken Category'
+searchable: true
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  source: 'group:4f831972-02d5-4fde-867a-9cf9f7b266da'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

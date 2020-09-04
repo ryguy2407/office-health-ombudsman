@@ -1,0 +1,142 @@
+field: 55d9c451-98eb-4346-b08c-f5c595ba79e5
+fieldLayouts:
+  6e5aba05-93fc-47b0-9680-643d3b024e4d:
+    tabs:
+      -
+        fields:
+          07d4f8a3-4ca8-480f-950b-a7edaa0e907b:
+            required: false
+            sortOrder: 3
+          24ff475f-17a3-4ce3-bf54-5262a67621d6:
+            required: false
+            sortOrder: 5
+          7355207c-88f9-4169-ab14-48616b34b7bd:
+            required: false
+            sortOrder: 4
+          90fd00ee-dc09-42f7-9bdd-f151ea67d0e5:
+            required: false
+            sortOrder: 2
+          97973b78-03c0-423a-9862-775ad5038d47:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  07d4f8a3-4ca8-480f-950b-a7edaa0e907b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button text'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  24ff475f-17a3-4ce3-bf54-5262a67621d6:
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: newWindow
+    instructions: ''
+    name: 'New window'
+    searchable: true
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  7355207c-88f9-4169-ab14-48616b34b7bd:
+    contentColumnType: string
+    fieldGroup: null
+    handle: style
+    instructions: ''
+    name: Style
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Solid
+            -
+              - value
+              - solid
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Outline
+            -
+              - value
+              - outline
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Link
+            -
+              - value
+              - link
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  90fd00ee-dc09-42f7-9bdd-f151ea67d0e5:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: buttonUrl
+    instructions: ''
+    name: URL
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  97973b78-03c0-423a-9862-775ad5038d47:
+    contentColumnType: string
+    fieldGroup: null
+    handle: entry
+    instructions: ''
+    name: Entry
+    searchable: true
+    settings:
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources:
+        - 'section:3f2bf6e9-848e-4ac5-9e2e-3c84d759f92d'
+        - 'section:9826732f-ad0e-4d59-8ed1-d69194846b33'
+        - 'section:3b09c842-eb50-4587-9a61-aed57b516a23'
+        - 'section:739c043d-cdbd-4681-8d30-f919a424604a'
+        - 'section:4d3025e2-24d5-49e5-b60f-5d7e0e291bdf'
+        - 'section:bef0bba3-7f65-4ebe-8f8b-0d70dae335d5'
+        - singles
+        - 'section:ef1770ba-90d3-4590-91ec-aa1306f1ae78'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: button
+name: Button
+sortOrder: 1

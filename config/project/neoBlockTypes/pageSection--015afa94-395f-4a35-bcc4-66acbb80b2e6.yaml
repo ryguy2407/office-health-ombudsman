@@ -1,0 +1,53 @@
+childBlocks:
+  - richText
+  - codeEmbed
+  - lineBreak
+  - image
+  - video
+  - regularCards
+  - textMedia
+  - splitScreen
+  - siteSelector
+  - gridLinks
+  - accordion
+  - table
+  - form
+  - relatedMatrix
+  - cards
+  - tiles
+  - columns
+  - linkList
+  - mediaReleases
+  - reports
+field: fb4bae98-1902-4611-9b1c-635f478d5575
+fieldLayouts:
+  6c25c01b-40fd-4e9c-8908-3bb0516ff4b2:
+    tabs:
+      -
+        name: Content
+        sortOrder: 1
+      -
+        fields:
+          17ed3c76-fd15-4a38-9b0e-8241d2d7a4ea:
+            required: false
+            sortOrder: 4
+          29162e0a-9214-4081-b9ae-5c7960434d7d:
+            required: false
+            sortOrder: 2
+          49840cbf-2ff5-4932-b2bb-bef74a03aa2a:
+            required: false
+            sortOrder: 1
+          7a630eb3-d531-469c-b4ea-5f81ec9d3426:
+            required: false
+            sortOrder: 3
+          97b08165-47a9-40eb-96a7-910862683d4f:
+            required: false
+            sortOrder: 5
+        name: Settings
+        sortOrder: 2
+handle: pageSection
+maxBlocks: 0
+maxChildBlocks: 0
+name: Section
+sortOrder: 1
+topLevel: true

@@ -1,0 +1,129 @@
+field: 0c2487f9-4bfe-497f-9192-00e8553bc831
+fieldLayouts:
+  8a6d6275-3d5c-41ae-8d42-2104f9c2cf1b:
+    tabs:
+      -
+        fields:
+          263f7e69-26fa-4047-825e-c77ed6a85956:
+            required: false
+            sortOrder: 3
+          69adf90c-4b55-4630-b575-bf7485920f5c:
+            required: false
+            sortOrder: 5
+          8c7ae10e-d21a-4eb0-9e8b-40acc8e00690:
+            required: false
+            sortOrder: 2
+          a5ace92b-8492-44d3-ad9c-2aea53abb8d1:
+            required: false
+            sortOrder: 1
+          f8107f43-e781-4e22-a4ce-999028544459:
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  263f7e69-26fa-4047-825e-c77ed6a85956:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionBackgroundColour
+    instructions: ''
+    name: 'Section background colour'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  69adf90c-4b55-4630-b575-bf7485920f5c:
+    contentColumnType: string
+    fieldGroup: null
+    handle: relatedPage
+    instructions: ''
+    name: 'Related page'
+    searchable: true
+    settings:
+      limit: '2'
+      localizeRelations: false
+      selectionLabel: 'Add site section entry'
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  8c7ae10e-d21a-4eb0-9e8b-40acc8e00690:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionDescription
+    instructions: ''
+    name: 'Section description'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a5ace92b-8492-44d3-ad9c-2aea53abb8d1:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitle
+    instructions: ''
+    name: 'Section title'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f8107f43-e781-4e22-a4ce-999028544459:
+    contentColumnType: string
+    fieldGroup: null
+    handle: sectionIcon
+    instructions: ''
+    name: 'Section icon'
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an icon'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: siteSection
+name: 'Site section'
+sortOrder: 1

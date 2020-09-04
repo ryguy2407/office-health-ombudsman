@@ -1,0 +1,12 @@
+fieldLayouts:
+  0234959c-fdc0-4d4d-8393-9e58c60d1782:
+    tabs:
+      -
+        fields:
+          c5b82df7-5113-4799-a572-dde62154d0bb:
+            required: false
+            sortOrder: 1
+        name: Complaints
+        sortOrder: 1
+handle: complaints
+name: Complaints
