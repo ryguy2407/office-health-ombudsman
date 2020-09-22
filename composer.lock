@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "770cc48b6dd01af92d2848414981b9f1",
+    "content-hash": "22c4375c6f45b2d24bb5ab0c4450c8e6",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -1171,59 +1171,6 @@
                 "symmetric key cryptography"
             ],
             "time": "2018-07-24T23:27:56+00:00"
-        },
-        {
-            "name": "dgrigg/craft-migration-assistant",
-            "version": "3.2.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dgrigg/craft-migration-assistant/zipball/551796ac36e0131ad87302486bdef6f1dc10d82e",
-                "reference": "551796ac36e0131ad87302486bdef6f1dc10d82e",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Migration Assistant",
-                "handle": "migrationassistant",
-                "developer": "DGrigg Dev Inc.",
-                "developerUrl": "https://dgrigg.com",
-                "class": "dgrigg\\migrationassistant\\MigrationAssistant",
-                "hasCpSettings": false,
-                "hasCpSection": true,
-                "changelogUrl": "https://raw.githubusercontent.com/dgrigg/craft-migration-assistant/master/CHANGELOG.md"
-            },
-            "autoload": {
-                "psr-4": {
-                    "dgrigg\\migrationassistant\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Derrick Grigg",
-                    "email": "derrick@dgrigg.com"
-                }
-            ],
-            "description": "Create migrations for settings and content at the click of a mouse. Keep environments in sync with ease.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft plugin",
-                "craftcms",
-                "migration",
-                "migration assistant",
-                "migration manager"
-            ],
-            "support": {
-                "docs": "https://github.com/dgrigg/craft-migration-assistant/blob/master/README.md",
-                "issues": "https://github.com/dgrigg/craft-migration-assistant/issues"
-            },
-            "time": "2020-09-08T13:33:48+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
