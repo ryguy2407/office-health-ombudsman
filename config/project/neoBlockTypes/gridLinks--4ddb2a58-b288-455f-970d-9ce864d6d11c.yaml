@@ -1,21 +1,34 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  3a0003b7-1cdb-4d9f-afd1-17c15fb23a12:
+  -
     tabs:
       -
-        fields:
-          c42ef844-20d1-4a93-bbaa-562719ead5fd:
-            required: false
-            sortOrder: 2
-          e7b2fe6b-98c7-4eb1-a270-83d982092073:
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: e7b2fe6b-98c7-4eb1-a270-83d982092073
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c42ef844-20d1-4a93-bbaa-562719ead5fd
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: CONTENT
         sortOrder: 1
 handle: gridLinks
 maxBlocks: 0
 maxChildBlocks: 0
+maxSiblingBlocks: 0
 name: 'Grid links'
 sortOrder: 12
 topLevel: false

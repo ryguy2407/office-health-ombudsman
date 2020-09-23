@@ -1,6 +1,6 @@
 enableVersioning: true
-handle: actionsTaken
-name: 'Actions Taken Entries'
+handle: protectiveOrders
+name: 'Protective Orders'
 previewTargets:
   -
     __assoc__:
@@ -19,5 +19,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: actions-taken/_entry
-    uriFormat: 'actions-taken/{slug}'
+    uriFormat: 'protective-orders/{slug}'
 type: channel

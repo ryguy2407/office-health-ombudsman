@@ -1,18 +1,25 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  7b6db4c7-b00f-4997-b463-17415c1cefb4:
+  -
     tabs:
       -
-        fields:
-          1f7268b9-953b-4c1b-aed1-6e6b07c9705c:
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: 1f7268b9-953b-4c1b-aed1-6e6b07c9705c
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Form
         sortOrder: 1
 handle: form
 maxBlocks: 0
 maxChildBlocks: 0
+maxSiblingBlocks: 0
 name: Form
 sortOrder: 15
 topLevel: false

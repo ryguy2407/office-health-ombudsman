@@ -1,24 +1,43 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  de818869-4dcf-4c52-877c-417a9cc6b7a0:
+  -
     tabs:
       -
-        fields:
-          c90191a0-6157-4f70-aee4-1aafdda05019:
-            required: false
-            sortOrder: 2
-          cabc4951-c0a9-4f78-a5dc-b87882d5b1fe:
-            required: false
-            sortOrder: 3
-          f7a2f435-dbae-4b79-83b1-2c22e1d34d04:
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: f7a2f435-dbae-4b79-83b1-2c22e1d34d04
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c90191a0-6157-4f70-aee4-1aafdda05019
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cabc4951-c0a9-4f78-a5dc-b87882d5b1fe
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: video
 maxBlocks: 0
 maxChildBlocks: 0
+maxSiblingBlocks: 0
 name: Video
 sortOrder: 7
 topLevel: false

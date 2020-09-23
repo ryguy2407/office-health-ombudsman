@@ -1,31 +1,56 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  b1f06728-9601-4904-9da2-71b784fa2fc9:
+  -
     tabs:
       -
-        fields:
-          aea0f145-e645-4cc0-a527-40ec2aa6a934:
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: aea0f145-e645-4cc0-a527-40ec2aa6a934
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
       -
-        fields:
-          551b101c-e6ad-4e6a-bd88-38e0cf071257:
-            required: false
-            sortOrder: 3
-          e7b2fe6b-98c7-4eb1-a270-83d982092073:
-            required: false
-            sortOrder: 1
-          f89d0c99-6a52-4949-b745-a11c9955c3b8:
-            required: false
-            sortOrder: 2
+        elements:
+          -
+            fieldUid: e7b2fe6b-98c7-4eb1-a270-83d982092073
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f89d0c99-6a52-4949-b745-a11c9955c3b8
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 551b101c-e6ad-4e6a-bd88-38e0cf071257
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Settings
         sortOrder: 2
 handle: cards
 maxBlocks: 0
 maxChildBlocks: 0
+maxSiblingBlocks: 0
 name: Cards
 sortOrder: 18
 topLevel: false

@@ -1,18 +1,25 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  b1953131-7ef1-45dc-ae5e-df4c00ea40f8:
+  -
     tabs:
       -
-        fields:
-          aea0f145-e645-4cc0-a527-40ec2aa6a934:
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: aea0f145-e645-4cc0-a527-40ec2aa6a934
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: linkList
 maxBlocks: 0
 maxChildBlocks: 0
+maxSiblingBlocks: 0
 name: 'Link list'
 sortOrder: 21
 topLevel: false

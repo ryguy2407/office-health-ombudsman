@@ -1,18 +1,25 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  6ce6cc5e-08c8-48f7-9289-e16b77da8036:
+  -
     tabs:
       -
-        fields:
-          2956cb3e-0304-49cf-bc32-b12ddd75c758:
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: 2956cb3e-0304-49cf-bc32-b12ddd75c758
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Accordion
         sortOrder: 1
 handle: accordion
 maxBlocks: 0
 maxChildBlocks: 0
+maxSiblingBlocks: 0
 name: Accordion
 sortOrder: 13
 topLevel: false

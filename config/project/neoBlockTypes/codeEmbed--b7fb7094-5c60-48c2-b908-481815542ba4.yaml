@@ -1,18 +1,25 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  b49fe9cf-30f5-4203-8742-0385439a07e9:
+  -
     tabs:
       -
-        fields:
-          5490c5cd-012e-467a-8f00-a4c62f061c08:
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: 5490c5cd-012e-467a-8f00-a4c62f061c08
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: CONTENT
         sortOrder: 1
 handle: codeEmbed
 maxBlocks: 0
 maxChildBlocks: 0
+maxSiblingBlocks: 0
 name: 'Code embed'
 sortOrder: 4
 topLevel: false

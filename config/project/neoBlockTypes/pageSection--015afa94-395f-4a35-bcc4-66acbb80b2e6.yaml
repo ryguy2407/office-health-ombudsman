@@ -19,35 +19,64 @@ childBlocks:
   - linkList
   - mediaReleases
   - reports
+  - protectiveOrders
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  6c25c01b-40fd-4e9c-8908-3bb0516ff4b2:
+  -
     tabs:
       -
-        name: Content
-        sortOrder: 1
-      -
-        fields:
-          17ed3c76-fd15-4a38-9b0e-8241d2d7a4ea:
-            required: false
-            sortOrder: 4
-          29162e0a-9214-4081-b9ae-5c7960434d7d:
-            required: false
-            sortOrder: 2
-          49840cbf-2ff5-4932-b2bb-bef74a03aa2a:
-            required: false
-            sortOrder: 1
-          7a630eb3-d531-469c-b4ea-5f81ec9d3426:
-            required: false
-            sortOrder: 3
-          97b08165-47a9-40eb-96a7-910862683d4f:
-            required: false
-            sortOrder: 5
+        elements:
+          -
+            fieldUid: 49840cbf-2ff5-4932-b2bb-bef74a03aa2a
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 29162e0a-9214-4081-b9ae-5c7960434d7d
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7a630eb3-d531-469c-b4ea-5f81ec9d3426
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 17ed3c76-fd15-4a38-9b0e-8241d2d7a4ea
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 97b08165-47a9-40eb-96a7-910862683d4f
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Settings
-        sortOrder: 2
+        sortOrder: 1
 handle: pageSection
 maxBlocks: 0
 maxChildBlocks: 0
+maxSiblingBlocks: 0
 name: Section
 sortOrder: 1
 topLevel: true
