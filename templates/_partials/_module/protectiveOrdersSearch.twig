@@ -13,43 +13,41 @@
 
     {% paginate entries as pageInfo, pageEntries %}
 
-    <div class="container mx-auto relative">
-        <div id="protectiveOrders">
-            <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-4">
+    <div class="container mx-auto relative" id="protectiveOrders">
+        <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-4">
+            <div class="w-full lg:w-1/5 py-2">
+                <p><strong>Name of practitioner</strong></p>
+            </div>
+            <div class="w-full lg:w-1/5 py-2">
+                <p><strong>Date of action</strong></p>
+            </div>
+            <div class="w-full lg:w-1/5 py-2">
+                <p><strong>Details</strong></p>
+            </div>
+            <div class="w-full lg:w-1/5 py-2">
+                <p><strong>Prohibition type</strong></p>
+            </div>
+            <div class="w-full lg:w-1/5 py-2">
+                <p><strong>Type of practitioner</strong></p>
+            </div>
+        </div>
+        {% for entry in pageEntries %}
+            <div class="flex flex-col lg:flex-row border-b border-navy-200 space-x-0 lg:space-x-4">
                 <div class="w-full lg:w-1/5 py-2">
-                    <p><strong>Name of practitioner</strong></p>
+                    <p>{{ entry.nameOfPractitioner }}</p>
                 </div>
                 <div class="w-full lg:w-1/5 py-2">
-                    <p><strong>Date of action</strong></p>
+                    <p>{{ entry.dateOfAction | date('d M, Y') }}</p>
                 </div>
                 <div class="w-full lg:w-1/5 py-2">
-                    <p><strong>Details</strong></p>
+                    {{ entry.details | markdown }}
                 </div>
                 <div class="w-full lg:w-1/5 py-2">
-                    <p><strong>Prohibition type</strong></p>
+                    <p>{{ entry.prohibitionType }}</p>
                 </div>
                 <div class="w-full lg:w-1/5 py-2">
-                    <p><strong>Type of practitioner</strong></p>
+                    <p>{{ entry.typeOfPractitioner }}</p>
                 </div>
             </div>
-            {% for entry in pageEntries %}
-                <div class="flex flex-col lg:flex-row border-b border-navy-200 space-x-0 lg:space-x-4">
-                    <div class="w-full lg:w-1/5 py-2">
-                        <p>{{ entry.nameOfPractitioner }}</p>
-                    </div>
-                    <div class="w-full lg:w-1/5 py-2">
-                        <p>{{ entry.dateOfAction | date('d M, Y') }}</p>
-                    </div>
-                    <div class="w-full lg:w-1/5 py-2">
-                        {{ entry.details | markdown }}
-                    </div>
-                    <div class="w-full lg:w-1/5 py-2">
-                        <p>{{ entry.prohibitionType }}</p>
-                    </div>
-                    <div class="w-full lg:w-1/5 py-2">
-                        <p>{{ entry.typeOfPractitioner }}</p>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
     </div>
