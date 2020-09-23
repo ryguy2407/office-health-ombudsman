@@ -11,59 +11,61 @@
 
 {% set entries = craft.entries().section('protectiveOrders').search(query).limit(20) %}
 
-{% paginate entries as pageInfo, pageEntries %}
+    {% paginate entries as pageInfo, pageEntries %}
 
-<div class="container mx-auto relative" id="protectiveOrders">
-    <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-4">
-        <div class="w-full lg:w-1/5 py-2">
-            <p><strong>Name of practitioner</strong></p>
-        </div>
-        <div class="w-full lg:w-1/5 py-2">
-            <p><strong>Date of action</strong></p>
-        </div>
-        <div class="w-full lg:w-1/5 py-2">
-            <p><strong>Details</strong></p>
-        </div>
-        <div class="w-full lg:w-1/5 py-2">
-            <p><strong>Prohibition type</strong></p>
-        </div>
-        <div class="w-full lg:w-1/5 py-2">
-            <p><strong>Type of practitioner</strong></p>
-        </div>
-    </div>
-    {% for entry in pageEntries %}
-        <div class="flex flex-col lg:flex-row border-b border-navy-200 space-x-0 lg:space-x-4">
+    <div class="container mx-auto relative" id="protectiveOrders">
+        <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-4">
             <div class="w-full lg:w-1/5 py-2">
-                <p>{{ entry.nameOfPractitioner }}</p>
+                <p><strong>Name of practitioner</strong></p>
             </div>
             <div class="w-full lg:w-1/5 py-2">
-                <p>{{ entry.dateOfAction | date('d M, Y') }}</p>
+                <p><strong>Date of action</strong></p>
             </div>
             <div class="w-full lg:w-1/5 py-2">
-                {{ entry.details | markdown }}
+                <p><strong>Details</strong></p>
             </div>
             <div class="w-full lg:w-1/5 py-2">
-                <p>{{ entry.prohibitionType }}</p>
+                <p><strong>Prohibition type</strong></p>
             </div>
             <div class="w-full lg:w-1/5 py-2">
-                <p>{{ entry.typeOfPractitioner }}</p>
+                <p><strong>Type of practitioner</strong></p>
             </div>
         </div>
-    {% endfor %}
-    <div class="w-full lg:w-1/2 px-8 lg:px-0 mx-auto flex flex-row justify-between mt-8">
-        <p class="p-2 text-base mb-0">Pages:</p>
-        {% if pageInfo.prevUrl %}<a class="p-2" href="{{ pageInfo.prevUrl }}#protectiveOrders">Previous Page</a>{% endif %}
-
-        {% for page, url in pageInfo.getPrevUrls(5) %}
-            <a class="p-2" href="{{ url }}#protectiveOrders">{{ page }}</a>
+        {% for entry in pageEntries %}
+            <div class="flex flex-col lg:flex-row border-b border-navy-200 space-x-0 lg:space-x-4">
+                <div class="w-full lg:w-1/5 py-2">
+                    <p>{{ entry.nameOfPractitioner }}</p>
+                </div>
+                <div class="w-full lg:w-1/5 py-2">
+                    <p>{{ entry.dateOfAction | date('d M, Y') }}</p>
+                </div>
+                <div class="w-full lg:w-1/5 py-2">
+                    {{ entry.details | markdown }}
+                </div>
+                <div class="w-full lg:w-1/5 py-2">
+                    <p>{{ entry.prohibitionType }}</p>
+                </div>
+                <div class="w-full lg:w-1/5 py-2">
+                    <p>{{ entry.typeOfPractitioner }}</p>
+                </div>
+            </div>
         {% endfor %}
+        {% if not query | length %}
+        <div class="w-full lg:w-1/2 px-8 lg:px-0 mx-auto flex flex-row justify-between mt-8">
+            <p class="p-2 text-base mb-0">Pages:</p>
+            {% if pageInfo.prevUrl %}<a class="p-2" href="{{ pageInfo.prevUrl }}#protectiveOrders">Previous Page</a>{% endif %}
 
-        <span class="current p-2 bg-navy-200 rounded">{{ pageInfo.currentPage }}</span>
+            {% for page, url in pageInfo.getPrevUrls(5) %}
+                <a class="p-2" href="{{ url }}#protectiveOrders">{{ page }}</a>
+            {% endfor %}
 
-        {% for page, url in pageInfo.getNextUrls(5) %}
-            <a class="p-2" href="{{ url }}#protectiveOrders">{{ page }}</a>
-        {% endfor %}
+            <span class="current p-2 bg-navy-200 rounded">{{ pageInfo.currentPage }}</span>
 
-        {% if pageInfo.nextUrl %}<a class="p-2" href="{{ pageInfo.nextUrl }}#protectiveOrders">Next Page</a>{% endif %}
+            {% for page, url in pageInfo.getNextUrls(5) %}
+                <a class="p-2" href="{{ url }}#protectiveOrders">{{ page }}</a>
+            {% endfor %}
+
+            {% if pageInfo.nextUrl %}<a class="p-2" href="{{ pageInfo.nextUrl }}#protectiveOrders">Next Page</a>{% endif %}
+        </div>
+        {% endif %}
     </div>
-</div>
