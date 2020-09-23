@@ -37,7 +37,7 @@
                     <p>{{ entry.nameOfPractitioner }}</p>
                 </div>
                 <div class="w-full lg:w-1/5 py-2">
-                    <p>{{ entry.dateOfAction | date('d M, Y') }}</p>
+                    <p>{{ entry.dateOfAction | date('d M Y') }}</p>
                 </div>
                 <div class="w-full lg:w-1/5 py-2">
                     {{ entry.details | markdown }}
