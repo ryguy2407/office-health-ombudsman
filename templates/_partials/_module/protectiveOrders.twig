@@ -2,7 +2,7 @@
 
 {{ sprig.script }}
 
-{% set entries = craft.entries().section('protectiveOrders').limit(20) %}
+{% set entries = craft.entries().section('protectiveOrders').orderBy('dateOfAction asc').limit(20) %}
 
     {% paginate entries as pageInfo, pageEntries %}
 

@@ -11,13 +11,13 @@
     {% if entry.type == 'contactUs' %}
 
         <section class="bg-light py-24">
-            <div class="md:max-w-3xl mx-auto">
+            <div class="md:max-w-3xl mx-auto px-8 md:px-0">
                 <h2 class="text-4xl font-bold text-center">Contact us</h2>
                 {% set blocks = entry.contactUsMatrix.all() %}
                 {% if blocks|length %}
                     {% for block in blocks %}
-                        <div class="flex flex-row justify-between py-8">
-                            <div class="w-1/12">
+                        <div class="flex flex-col md:flex-row justify-between py-8">
+                            <div class="w-1/12 mb-4 md:mb-0">
                                 <i class="{{ block.icon.value }} text-4xl mt-4"></i>
                             </div>
                             <div class="w-11/12">

@@ -33,7 +33,11 @@ return [
             '@rootUrl' => getenv('DEFAULT_SITE_URL'),
             '@baseAssetPath' => getenv('BASE_ASSET_PATH'),
             '@rootDir' => getenv('ROOT_DIR')
-        ]
+        ],
+
+        'defaultSearchTermOptions' => [
+            'subLeft' => true,
+        ],
 
     ],
 
