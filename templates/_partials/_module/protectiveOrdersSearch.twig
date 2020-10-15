@@ -9,7 +9,7 @@
     </div>
 {% endif %}
 
-{% set entries = craft.entries().section('protectiveOrders').search(query).limit(20) %}
+{% set entries = craft.entries().section('protectiveOrders').orderBy('dateOfAction desc').search(query).limit(20) %}
 
     {% paginate entries as pageInfo, pageEntries %}
 
