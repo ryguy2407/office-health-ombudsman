@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34df79caf5ded7dc224e4e5254570063",
+    "content-hash": "e735563bcb2756260e0ccb13c4da0470",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -72,11 +72,11 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.158.6",
+            "version": "3.158.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4e912c1ae4d4b3538ada36ac1478f980f9bdf329",
-                "reference": "4e912c1ae4d4b3538ada36ac1478f980f9bdf329",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a492e9aac7cba87177c06095c4e5bc9adcb1e397",
+                "reference": "a492e9aac7cba87177c06095c4e5bc9adcb1e397",
                 "shasum": ""
             },
             "require": {
@@ -148,7 +148,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-10-09T18:11:48+00:00"
+            "time": "2020-10-20T18:11:49+00:00"
         },
         {
             "name": "billythekid/conditional-fields",
@@ -756,11 +756,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.12.1",
+            "version": "3.5.14",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/142e988624dcb0405a6e4baf126e1207e6b084fd",
-                "reference": "142e988624dcb0405a6e4baf126e1207e6b084fd",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/81a574b56f0f08e3847ad01f80242e78cdb18195",
+                "reference": "81a574b56f0f08e3847ad01f80242e78cdb18195",
                 "shasum": ""
             },
             "require": {
@@ -841,7 +841,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2020-10-02T21:21:05+00:00"
+            "time": "2020-10-20T22:27:53+00:00"
         },
         {
             "name": "craftcms/feed-me",
@@ -985,11 +985,11 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.8.2",
+            "version": "2.8.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/d9758847fcdd5b26ed238cfdee3eab707edb0faa",
-                "reference": "d9758847fcdd5b26ed238cfdee3eab707edb0faa",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/92e2aa88ae1aa60fee0fc83b2dede4806395979c",
+                "reference": "92e2aa88ae1aa60fee0fc83b2dede4806395979c",
                 "shasum": ""
             },
             "require": {
@@ -1030,7 +1030,7 @@
                 "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom"
             },
-            "time": "2020-10-14T08:21:11+00:00"
+            "time": "2020-10-19T13:52:37+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1565,16 +1565,11 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.14.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "9d82b20a07ca560a5075e24ca8ac5721bc8c961d"
-            },
+            "version": "v1.14.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/9d82b20a07ca560a5075e24ca8ac5721bc8c961d",
-                "reference": "9d82b20a07ca560a5075e24ca8ac5721bc8c961d",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/c1503299c779af0cbc99b43788f75930988852cf",
+                "reference": "c1503299c779af0cbc99b43788f75930988852cf",
                 "shasum": ""
             },
             "require": {
@@ -1613,7 +1608,7 @@
                 "google",
                 "oauth2"
             ],
-            "time": "2020-10-14T16:58:18+00:00"
+            "time": "2020-10-16T21:33:48+00:00"
         },
         {
             "name": "google/cloud",
@@ -3843,11 +3838,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.21",
+            "version": "3.3.22",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/618d96de589275bfcb97f3395304f1fd6196485c",
-                "reference": "618d96de589275bfcb97f3395304f1fd6196485c",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/3d9113e9a407d797da9a794883c494e199a12f33",
+                "reference": "3d9113e9a407d797da9a794883c494e199a12f33",
                 "shasum": ""
             },
             "require": {
@@ -3911,7 +3906,7 @@
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support"
             },
-            "time": "2020-09-30T13:32:55+00:00"
+            "time": "2020-10-20T16:34:40+00:00"
         },
         {
             "name": "opis/closure",
@@ -4721,11 +4716,11 @@
         },
         {
             "name": "putyourlightson/craft-sprig",
-            "version": "1.0.0-beta.17",
+            "version": "1.0.0-beta.18.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/873f9dbedd2b58c1e5c0f93d3eb0e7a0397ab7f5",
-                "reference": "873f9dbedd2b58c1e5c0f93d3eb0e7a0397ab7f5",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/7f1bbcc023df0f6b18f6cdef3533300c6e1b86d6",
+                "reference": "7f1bbcc023df0f6b18f6cdef3533300c6e1b86d6",
                 "shasum": ""
             },
             "require": {
@@ -4746,7 +4741,8 @@
                 "developerUrl": "https://putyourlightson.com/",
                 "documentationUrl": "https://putyourlightson.com/plugins/sprig",
                 "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-sprig/v1/CHANGELOG.md",
-                "class": "putyourlightson\\sprig\\Sprig"
+                "class": "putyourlightson\\sprig\\Sprig",
+                "schemaVersion": "1.0.0"
             },
             "autoload": {
                 "psr-4": {
@@ -4758,7 +4754,7 @@
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
-            "time": "2020-09-25T08:28:49+00:00"
+            "time": "2020-10-19T16:24:46+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -5278,16 +5274,11 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.58.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "af383f8c707f841302ffceacfeffd2c7f74f362f"
-            },
+            "version": "v7.61.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/af383f8c707f841302ffceacfeffd2c7f74f362f",
-                "reference": "af383f8c707f841302ffceacfeffd2c7f74f362f",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/51c6cd18cb51740101c940a3fefc876ef7cd8cae",
+                "reference": "51c6cd18cb51740101c940a3fefc876ef7cd8cae",
                 "shasum": ""
             },
             "require": {
@@ -5331,7 +5322,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-10-14T15:00:30+00:00"
+            "time": "2020-10-20T20:01:45+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -6736,11 +6727,11 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "1.3.31",
+            "version": "1.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/5d3f25841998e1b015edd3f54a48d650751857e9",
-                "reference": "5d3f25841998e1b015edd3f54a48d650751857e9",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/3bd7ac7be1ffb5b5bbed016de41ed16fda5f0d58",
+                "reference": "3bd7ac7be1ffb5b5bbed016de41ed16fda5f0d58",
                 "shasum": ""
             },
             "require": {
@@ -6784,7 +6775,7 @@
                 "docs": "https://github.com/verbb/navigation",
                 "rss": "https://github.com/verbb/navigation/commits/v2.atom"
             },
-            "time": "2020-09-29T00:15:19+00:00"
+            "time": "2020-10-20T02:18:51+00:00"
         },
         {
             "name": "verbb/super-table",

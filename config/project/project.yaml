@@ -1,4 +1,4 @@
-dateModified: 1600834985
+dateModified: 1603240399
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Office of the Health Obudsman'
@@ -143,7 +143,7 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.19
+    schemaVersion: 1.0.21
   neo:
     edition: standard
     enabled: true

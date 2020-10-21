@@ -47,10 +47,16 @@
                 <div class="-mx-3 flex flex-wrap items-center">
 
                     <div class="px-3 flex justify-center md:justify-between w-full md:w-2/3 mb-4 md:mb-0">
-                        <ul class="flex flex-wrap text-sm">
-                            <li><a href="#">{{ '©'|raw }} Office of the Health Ombudsman</a></li>
-                            <li class="ml-4"><a href="/privacy-policy" class="hover:opacity-70">Privacy policy</a></li>
-                            <li class="ml-4"><a href="/disclaimer" class="hover:opacity-70">Disclaimer</a></li>
+                        <ul class="flex flex-wrap text-sm space-x-4 justify-center md:justify-start">
+                            <li><a href="#" class="hover:opacity-70">{{ '©'|raw }} Office of the Health Ombudsman</a></li>
+                            {% set nodes = craft.navigation.nodes('bottomFooterNavigation').all() %}
+                            {% nav node in nodes %}
+                                <li class="{% if node.classes | length %}{{ node.classes }}{% endif %}">
+                                    <a {% if node.url %}href="{{ node.url }}"{% endif %} class="{% if node.active %}is-active{% endif %} hover:opacity-70"{% if node.newWindow %} target="_blank" rel="noopener"{% endif %} {% for attribute in node.customAttributes %}{{ attribute.attribute }}="{{ attribute.value }}"{% endfor %}>
+                                    {{- node.title -}}
+                                    </a>
+                                </li>
+                            {% endnav %}
                         </ul>
                     </div>
                     <div class="px-3 w-full md:w-1/3 ">
