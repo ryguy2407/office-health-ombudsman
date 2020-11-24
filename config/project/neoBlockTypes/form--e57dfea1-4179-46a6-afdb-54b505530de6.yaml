@@ -1,7 +1,7 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  -
+  7b6db4c7-b00f-4997-b463-17415c1cefb4:
     tabs:
       -
         elements:
@@ -9,7 +9,7 @@ fieldLayouts:
             fieldUid: 1f7268b9-953b-4c1b-aed1-6e6b07c9705c
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

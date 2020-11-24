@@ -1,7 +1,7 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  -
+  b1f06728-9601-4904-9da2-71b784fa2fc9:
     tabs:
       -
         elements:
@@ -9,7 +9,7 @@ fieldLayouts:
             fieldUid: aea0f145-e645-4cc0-a527-40ec2aa6a934
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -22,7 +22,7 @@ fieldLayouts:
             fieldUid: e7b2fe6b-98c7-4eb1-a270-83d982092073
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -31,7 +31,7 @@ fieldLayouts:
             fieldUid: f89d0c99-6a52-4949-b745-a11c9955c3b8
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -40,7 +40,7 @@ fieldLayouts:
             fieldUid: 551b101c-e6ad-4e6a-bd88-38e0cf071257
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -52,5 +52,5 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: Cards
-sortOrder: 18
+sortOrder: 19
 topLevel: false

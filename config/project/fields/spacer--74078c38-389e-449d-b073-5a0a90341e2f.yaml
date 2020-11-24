@@ -1,0 +1,45 @@
+contentColumnType: string
+fieldGroup: 21995cd5-96a2-44db-bd9e-c27bca83be68
+handle: spacer
+instructions: ''
+name: Spacer
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Small
+        -
+          - value
+          - h-8
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Medium
+        -
+          - value
+          - h-16
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Large
+        -
+          - value
+          - h-24
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

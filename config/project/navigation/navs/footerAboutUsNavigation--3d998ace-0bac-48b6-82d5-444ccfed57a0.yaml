@@ -1,0 +1,25 @@
+handle: footerAboutUsNavigation
+instructions: ''
+maxNodes: ''
+name: 'Footer About us navigation'
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  custom:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  693a5f5f-5f4e-40ad-b3b4-228d13f6dfc9: null
+sortOrder: 3
+structure:
+  maxLevels: null
+  uid: a987ad03-85b7-4387-9d8b-504524aaf256

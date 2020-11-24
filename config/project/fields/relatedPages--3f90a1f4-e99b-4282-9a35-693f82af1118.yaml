@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: 27c20eea-7252-47e8-a74b-cc91af2f962e
+handle: relatedPages
+instructions: ''
+name: 'Related pages'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: 'Add related pages'
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:0cb17afc-cf1b-4a70-b436-02f6a5719699'
+    - 'section:739c043d-cdbd-4681-8d30-f919a424604a'
+    - singles
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

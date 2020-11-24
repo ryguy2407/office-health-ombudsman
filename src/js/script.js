@@ -1,5 +1,11 @@
 jQuery(document).ready(function(){
-    $('div.accordionTrigger').on('click', function(){
+    $('.accordionTrigger').on('click', function(){
+        $(this).toggleClass('open');
+        if($(this).hasClass('open')) {
+            $(this).attr('aria-expanded', true);
+        } else {
+            $(this).attr('aria-expanded', false);
+        }
         $(this).find('img').toggleClass('rotate-90');
         $(this).next('.panel').slideToggle();
     });

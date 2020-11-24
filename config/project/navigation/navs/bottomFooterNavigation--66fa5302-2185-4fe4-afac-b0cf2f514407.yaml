@@ -1,0 +1,9 @@
+handle: bottomFooterNavigation
+instructions: ''
+maxNodes: ''
+name: 'Bottom Footer Navigation'
+propagateNodes: false
+sortOrder: 7
+structure:
+  maxLevels: '1'
+  uid: 30fd10df-cf7a-433d-be98-77915425ff29

@@ -76,11 +76,11 @@
     {% if module.includePagination %}
         <div class="container relative flex justify-between">
             {% if pageInfo.prevUrl %}
-                <a href="{{ pageInfo.prevUrl }}#relatedMatrixCards" class="btn btn-solid mt-4">Previous Page</a>
+                <a href="{{ pageInfo.prevUrl }}#relatedMatrixCards" class="btn btn-solid mt-4">Previous</a>
             {% else %}
                 <div class="spacer"></div>
             {% endif %}
-            {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}#relatedMatrixCards" class="btn btn-solid mt-4">Next Page</a>{% endif %}
+            {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}#relatedMatrixCards" class="btn btn-solid mt-4">Next</a>{% endif %}
         </div>
     {% endif %}
 

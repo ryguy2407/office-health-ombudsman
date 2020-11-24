@@ -1,7 +1,7 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  -
+  40314cb3-3668-4d41-8700-a10b521b6545:
     tabs:
       -
         elements:
@@ -9,7 +9,7 @@ fieldLayouts:
             fieldUid: aea0f145-e645-4cc0-a527-40ec2aa6a934
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -22,7 +22,7 @@ fieldLayouts:
             fieldUid: e7b2fe6b-98c7-4eb1-a270-83d982092073
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -31,7 +31,7 @@ fieldLayouts:
             fieldUid: f89d0c99-6a52-4949-b745-a11c9955c3b8
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -43,5 +43,5 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: Columns
-sortOrder: 20
+sortOrder: 21
 topLevel: false

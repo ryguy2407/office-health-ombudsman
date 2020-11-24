@@ -1,16 +1,16 @@
 contentColumnType: text
-fieldGroup: 582b4a03-b997-427c-8217-9432af1bd0af
-handle: prohibitionType
+fieldGroup: 862f0012-849b-4288-82b0-c9606e3e052a
+handle: footerText
 instructions: ''
-name: 'Prohibition type'
-searchable: true
+name: 'Footer text'
+searchable: false
 settings:
   byteLimit: null
   charLimit: null
   code: ''
   columnType: null
   initialRows: '4'
-  multiline: ''
+  multiline: '1'
   placeholder: ''
   uiMode: normal
 translationKeyFormat: null

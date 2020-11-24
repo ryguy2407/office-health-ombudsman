@@ -3,19 +3,61 @@ fieldLayouts:
   bebe6d93-f20a-44f6-ac22-0dc098fa46bb:
     tabs:
       -
-        fields:
-          3cce9d87-0235-45c2-a5d1-959ba9d862bd:
+        elements:
+          -
+            fieldUid: 6feef228-405c-4751-9375-a922f25caaeb
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          6feef228-405c-4751-9375-a922f25caaeb:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 617c9d1b-e97d-4206-90f2-cf67835da704
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          77ba0029-6800-407d-974c-7336f6bdddaa:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 77ba0029-6800-407d-974c-7336f6bdddaa
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          b79a4e73-9fb8-402f-8fa9-cc175ffec5a1:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b7be0c27-81f4-4c2c-8eea-429212b45d89
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3cce9d87-0235-45c2-a5d1-959ba9d862bd
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b79a4e73-9fb8-402f-8fa9-cc175ffec5a1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -34,24 +76,63 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  617c9d1b-e97d-4206-90f2-cf67835da704:
+    contentColumnType: string
+    fieldGroup: null
+    handle: mobileImage
+    instructions: 'Upload an image here to show on mobile view. If you don''t upload one, the main image will be used on desktop and mobile versions.'
+    name: 'Mobile image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   6feef228-405c-4751-9375-a922f25caaeb:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: ''
-    name: Image
+    instructions: 'This is the image that will be used in the slideshow for larger screen sizes.'
+    name: 'Desktop Image'
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: 'Add an image'
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:72ae913b-01d4-4be5-bab1-e0ffc26c8a70'
@@ -60,8 +141,8 @@ fields:
       sources: '*'
       targetSiteId: null
       useSingleFolder: false
-      validateRelatedElements: ''
-      viewMode: list
+      validateRelatedElements: false
+      viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
@@ -80,6 +161,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
@@ -98,6 +180,26 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b7be0c27-81f4-4c2c-8eea-429212b45d89:
+    contentColumnType: text
+    fieldGroup: null
+    handle: slideshowSubheading
+    instructions: ''
+    name: 'Slideshow subheading'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

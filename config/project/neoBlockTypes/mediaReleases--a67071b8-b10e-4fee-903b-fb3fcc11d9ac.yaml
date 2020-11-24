@@ -1,7 +1,7 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  -
+  8f47e1e4-33a3-40bd-9bcd-e8b775877aa2:
     tabs:
       -
         elements:
@@ -9,7 +9,7 @@ fieldLayouts:
             fieldUid: 5a39aec0-dd22-403a-adaa-95157ed5d665
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -18,7 +18,7 @@ fieldLayouts:
             fieldUid: 41e08df9-c20f-426a-98df-d1a4ada3724d
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -30,5 +30,5 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: 'Media releases'
-sortOrder: 22
+sortOrder: 23
 topLevel: false

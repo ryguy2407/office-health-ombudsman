@@ -24,7 +24,30 @@
                                 position: image.getFocalPoint()
                             }
                             ) %}
-                        <img class="absolute lazyload object-cover w-full h-full pointer-events-none"
+
+                        {% set mobileImage = block.mobileImage.one() %}
+                        {% set transformedMobileImages = craft.imager.transformImage(mobileImage,
+                            [
+                                { width: 3000 },
+                                { width: 2000 }
+                            ],
+                            {
+                                format: 'jpg',
+                                allowUpscale: true,
+                                mode: 'crop',
+                                jpegQuality: 80,
+                                interlace: true,
+                                position: image.getFocalPoint()
+                            }
+                            ) %}
+
+                        <img class="block md:hidden absolute lazyload object-cover w-full h-full pointer-events-none"
+                             src="{{ craft.imager.base64Pixel(2,1) }}"
+                             data-sizes="auto"
+                             data-srcset="{{ craft.imager.srcset(transformedMobileImages) }}"
+                        >
+
+                        <img class="hidden md:block absolute lazyload object-cover w-full h-full pointer-events-none"
                              src="{{ craft.imager.base64Pixel(2,1) }}"
                              data-sizes="auto"
                              data-srcset="{{ craft.imager.srcset(transformedImages) }}"
@@ -34,6 +57,7 @@
                         <div class="container mx-auto py-10 py-16 md:py-48 px-4 h-full relative flex items-center">
                             <div class="w-1/2 md:pr-24">
                                 <h1 class="text-4xl lg:text-6xl font-bold leading-none mb-8">{{ block.slideshowText }}</h1>
+                                <p class="text-xl lg:text-2xl font-bold leading-none mb-8">{{ block.slideshowSubheading }}</p>
                                 <a href="{{ block.buttonLink }}" class="btn btn-solid text-lg">{{ block.buttonText }}</a>
                             </div>
                         </div>

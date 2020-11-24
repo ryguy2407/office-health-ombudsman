@@ -1,4 +1,4 @@
-dateModified: 1603240399
+dateModified: 1606112800
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Office of the Health Obudsman'
@@ -10,7 +10,7 @@ plugins:
     schemaVersion: '1.2'
   blitz:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 3.6.6
     settings:
       apiKey: ''
@@ -78,7 +78,7 @@ plugins:
   feed-me:
     edition: standard
     enabled: true
-    schemaVersion: 2.1.2
+    schemaVersion: 4.3.0
   field-manager:
     edition: standard
     enabled: true
@@ -86,7 +86,8 @@ plugins:
   freeform:
     edition: pro
     enabled: true
-    schemaVersion: 3.0.8
+    licenseKey: HA6QJIALMQ9V25GEIBPJGSO6
+    schemaVersion: 3.1.0
     settings:
       ajaxByDefault: false
       autoScrollToErrors: true
@@ -143,11 +144,13 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.21
+    licenseKey: CGILHDABWHFJVIYQ7SPAD1C4
+    schemaVersion: 1.0.19
   neo:
     edition: standard
     enabled: true
-    schemaVersion: 2.8.0
+    licenseKey: 3M3UK8ZAGHIJNWCZIOLAEYDE
+    schemaVersion: 2.8.14
   redactor:
     edition: standard
     enabled: true
@@ -159,11 +162,12 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
+    licenseKey: X1AZQP40WTEV6REM82K1JW2H
     schemaVersion: 3.0.9
   sprig:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 1.0.1
   super-table:
     edition: standard
     enabled: true
