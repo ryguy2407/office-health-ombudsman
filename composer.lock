@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dff0b0d5c7fffafe73515ab59624beeb",
+    "content-hash": "8e2a2d8dc45e08f23702154f3bdf3adc",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -73,11 +73,6 @@
         {
             "name": "aws/aws-sdk-php",
             "version": "3.163.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7b6948915654f0f94847ccaf51172fa1a7f1cc59"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7b6948915654f0f94847ccaf51172fa1a7f1cc59",
@@ -779,11 +774,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.15.1",
+            "version": "3.5.16",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/523a2d915ec328d832bd2cf62df695a1eafb3ab7",
-                "reference": "523a2d915ec328d832bd2cf62df695a1eafb3ab7",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/1d69bfb0308d3b56990d7b257591071992d7a297",
+                "reference": "1d69bfb0308d3b56990d7b257591071992d7a297",
                 "shasum": ""
             },
             "require": {
@@ -810,7 +805,7 @@
                 "mrclay/jsmin-php": "^2.4",
                 "mrclay/minify": "^3.0.7",
                 "php": ">=7.0.0",
-                "pixelandtonic/imagine": "~1.2.2.1",
+                "pixelandtonic/imagine": "~1.2.4.1",
                 "sebastian/diff": "^2.0|^3.0|^4.0",
                 "seld/cli-prompt": "^1.0.3",
                 "symfony/yaml": "^3.2|^4.0",
@@ -821,7 +816,7 @@
                 "webonyx/graphql-php": "^0.12.0",
                 "yii2tech/ar-softdelete": "^1.0.2",
                 "yiisoft/yii2": "~2.0.38.0",
-                "yiisoft/yii2-debug": "^2.1.0",
+                "yiisoft/yii2-debug": "^2.1.14",
                 "yiisoft/yii2-queue": "~2.3.0",
                 "yiisoft/yii2-swiftmailer": "^2.1.0"
             },
@@ -864,7 +859,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2020-11-04T11:25:55+00:00"
+            "time": "2020-11-24T19:40:32+00:00"
         },
         {
             "name": "craftcms/feed-me",
@@ -3884,11 +3879,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.23",
+            "version": "3.3.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b908f4ea4389e86bc1cd8977d88f2659f10a504c",
-                "reference": "b908f4ea4389e86bc1cd8977d88f2659f10a504c",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/35bf58761613bf40c71d80a973f875ff41c0ab7c",
+                "reference": "35bf58761613bf40c71d80a973f875ff41c0ab7c",
                 "shasum": ""
             },
             "require": {
@@ -3952,7 +3947,7 @@
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support"
             },
-            "time": "2020-11-18T16:51:42+00:00"
+            "time": "2020-11-23T17:11:27+00:00"
         },
         {
             "name": "opis/closure",
@@ -4400,19 +4395,15 @@
         },
         {
             "name": "pixelandtonic/imagine",
-            "version": "1.2.2.1",
+            "version": "1.2.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelandtonic/Imagine/zipball/c70db7d7f6bd6fb0abc7562bdabe51265af2518b",
-                "reference": "c70db7d7f6bd6fb0abc7562bdabe51265af2518b",
+                "url": "https://api.github.com/repos/pixelandtonic/Imagine/zipball/2bedcf2dfab50a22126498a16241944c9d4cde65",
+                "reference": "2bedcf2dfab50a22126498a16241944c9d4cde65",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.2.*",
-                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.4 || ^8.2"
             },
             "suggest": {
                 "ext-gd": "to use the GD implementation",
@@ -4430,7 +4421,6 @@
                     "Imagine\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4449,7 +4439,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2019-07-19T12:55:50+00:00"
+            "time": "2020-11-05T18:36:18+00:00"
         },
         {
             "name": "psr/cache",
@@ -4762,22 +4752,16 @@
         },
         {
             "name": "putyourlightson/craft-sprig",
-            "version": "1.0.3",
+            "version": "1.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/3088eec02a98b1f6525ef8dc3920fb893cea4fc4",
-                "reference": "3088eec02a98b1f6525ef8dc3920fb893cea4fc4",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/cd2ae5008476b351e69d0abe13e8d83242f5e42a",
+                "reference": "cd2ae5008476b351e69d0abe13e8d83242f5e42a",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "ivopetkov/html5-dom-document-php": "^2.0.0"
-            },
-            "require-dev": {
-                "codeception/codeception": "^4.0.0",
-                "codeception/module-asserts": "^1.0.0",
-                "codeception/module-yii2": "^1.0.0",
-                "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4795,12 +4779,16 @@
                     "putyourlightson\\sprig\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
-            "time": "2020-10-28T09:10:32+00:00"
+            "support": {
+                "docs": "https://putyourlightson.com/plugins/sprig",
+                "source": "https://github.com/putyourlightson/craft-sprig",
+                "issues": "https://github.com/putyourlightson/craft-sprig/issues"
+            },
+            "time": "2020-11-24T13:19:06+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -5151,11 +5139,11 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "3.9.5",
+            "version": "3.9.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/6ebdb2066fa1d44192f19d7584db9108871e9d31",
-                "reference": "6ebdb2066fa1d44192f19d7584db9108871e9d31",
+                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/87111761d33101247aaf500535275bf69f1b1f7f",
+                "reference": "87111761d33101247aaf500535275bf69f1b1f7f",
                 "shasum": ""
             },
             "require": {
@@ -5195,7 +5183,7 @@
                 }
             ],
             "description": "The most reliable, intuitive and powerful form builder for Craft.",
-            "time": "2020-11-19T22:15:52+00:00"
+            "time": "2020-11-21T05:39:09+00:00"
         },
         {
             "name": "solspace/craft3-commons",
@@ -5331,11 +5319,6 @@
         {
             "name": "stripe/stripe-php",
             "version": "v7.65.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "d4a22eeec7654efb8476fe8bea95b1e9928025a6"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/stripe/stripe-php/zipball/d4a22eeec7654efb8476fe8bea95b1e9928025a6",
@@ -8104,9 +8087,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "putyourlightson/craft-sprig": 10
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
