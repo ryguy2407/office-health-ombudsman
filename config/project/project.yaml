@@ -145,7 +145,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: CGILHDABWHFJVIYQ7SPAD1C4
-    schemaVersion: 1.0.19
+    schemaVersion: 1.0.21
   neo:
     edition: standard
     enabled: true
