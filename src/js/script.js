@@ -1,7 +1,9 @@
 jQuery(document).ready(function(){
     $('.accordionTrigger').on('click', function(){
+
         $(this).toggleClass('open');
         if($(this).hasClass('open')) {
+            $('a#expandall').children('span.text').text('Collapse all -');
             $(this).attr('aria-expanded', true);
         } else {
             $(this).attr('aria-expanded', false);
@@ -19,13 +21,17 @@ jQuery(document).ready(function(){
 
         if(expandText === 'Expand all +') {
             $(this).children('span.text').text('Collapse all -');
+            $('div.accordion').children('.accordionTrigger').each(function(){
+                $(this).trigger('click');
+            });
         } else {
             $(this).children('span.text').text('Expand all +');
+            $('div.accordion').children('.accordionTrigger').each(function(){
+                if($(this).hasClass('open')) {
+                    $(this).trigger('click');
+                }
+            });
         }
-
-        $('div.accordion').children('.accordionTrigger').each(function(){
-            $(this).trigger('click');
-        });
     });
 
     $('.hamburger').on('click', function(){
