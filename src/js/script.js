@@ -10,6 +10,24 @@ jQuery(document).ready(function(){
         $(this).next('.panel').slideToggle();
     });
 
+    $('a#expandall').on('click', function(e){
+        e.preventDefault();
+
+        var expandText = $(this).find('span.text').html();
+
+        console.log(expandText);
+
+        if(expandText === 'Expand all +') {
+            $(this).children('span.text').text('Collapse all -');
+        } else {
+            $(this).children('span.text').text('Expand all +');
+        }
+
+        $('div.accordion').children('.accordionTrigger').each(function(){
+            $(this).trigger('click');
+        });
+    });
+
     $('.hamburger').on('click', function(){
         $(this).toggleClass('is-active');
 

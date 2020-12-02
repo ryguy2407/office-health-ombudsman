@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e2a2d8dc45e08f23702154f3bdf3adc",
+    "content-hash": "e9c83cef249d90a75bfbfc6814ecb57e",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -1008,11 +1008,11 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.8.3",
+            "version": "2.8.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/92e2aa88ae1aa60fee0fc83b2dede4806395979c",
-                "reference": "92e2aa88ae1aa60fee0fc83b2dede4806395979c",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/73113daea0541ee53036a4129428ddcf8e056ba0",
+                "reference": "73113daea0541ee53036a4129428ddcf8e056ba0",
                 "shasum": ""
             },
             "require": {
@@ -1053,7 +1053,7 @@
                 "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom"
             },
-            "time": "2020-10-19T13:52:37+00:00"
+            "time": "2020-11-30T15:20:16+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1473,11 +1473,11 @@
         },
         {
             "name": "ether/seo",
-            "version": "3.6.6",
+            "version": "3.6.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ethercreative/seo/zipball/cfacc65fbea87ace4a40c0c0e5d35ce2e1167e60",
-                "reference": "cfacc65fbea87ace4a40c0c0e5d35ce2e1167e60",
+                "url": "https://api.github.com/repos/ethercreative/seo/zipball/9e545940248a6b70b16adf3480b9c8f6c197859d",
+                "reference": "9e545940248a6b70b16adf3480b9c8f6c197859d",
                 "shasum": ""
             },
             "require": {
@@ -1504,7 +1504,7 @@
                 "issues": "https://github.com/ethercreative/seo",
                 "docs": "https://github.com/ethercreative/seo/blob/v3/README.md"
             },
-            "time": "2020-06-30T13:44:29+00:00"
+            "time": "2020-11-30T12:51:47+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -5139,11 +5139,11 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "3.9.6",
+            "version": "3.9.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/87111761d33101247aaf500535275bf69f1b1f7f",
-                "reference": "87111761d33101247aaf500535275bf69f1b1f7f",
+                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/e8d4ad99ea5a5361d1e450b14de22fea2b972926",
+                "reference": "e8d4ad99ea5a5361d1e450b14de22fea2b972926",
                 "shasum": ""
             },
             "require": {
@@ -5183,7 +5183,7 @@
                 }
             ],
             "description": "The most reliable, intuitive and powerful form builder for Craft.",
-            "time": "2020-11-21T05:39:09+00:00"
+            "time": "2020-12-01T15:54:38+00:00"
         },
         {
             "name": "solspace/craft3-commons",
@@ -5318,11 +5318,11 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.65.0",
+            "version": "v7.66.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/d4a22eeec7654efb8476fe8bea95b1e9928025a6",
-                "reference": "d4a22eeec7654efb8476fe8bea95b1e9928025a6",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/a2ebaa272a8797b21e81afaf8d5ba0953ff15e13",
+                "reference": "a2ebaa272a8797b21e81afaf8d5ba0953ff15e13",
                 "shasum": ""
             },
             "require": {
@@ -5330,13 +5330,6 @@
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.16.5",
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.3",
-                "symfony/process": "~3.4"
             },
             "type": "library",
             "extra": {
@@ -5349,7 +5342,6 @@
                     "Stripe\\": "lib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5366,7 +5358,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-11-19T19:37:25+00:00"
+            "time": "2020-12-01T18:44:12+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -6883,11 +6875,11 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "1.4.3",
+            "version": "1.4.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/61e400688827f0b32322c30e163862693f09712b",
-                "reference": "61e400688827f0b32322c30e163862693f09712b",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/c3413d8a5b5b51edfa8f6b0f595b15b53e4baf45",
+                "reference": "c3413d8a5b5b51edfa8f6b0f595b15b53e4baf45",
                 "shasum": ""
             },
             "require": {
@@ -6931,15 +6923,15 @@
                 "docs": "https://github.com/verbb/navigation",
                 "rss": "https://github.com/verbb/navigation/commits/v2.atom"
             },
-            "time": "2020-11-16T05:33:26+00:00"
+            "time": "2020-12-01T23:19:15+00:00"
         },
         {
             "name": "verbb/super-table",
-            "version": "2.6.3",
+            "version": "2.6.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/d1e7b06082aebb67750e0793eaa7f0e5a868107e",
-                "reference": "d1e7b06082aebb67750e0793eaa7f0e5a868107e",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/78a53adbacac238a85a32893ae0cf0caaf7c7713",
+                "reference": "78a53adbacac238a85a32893ae0cf0caaf7c7713",
                 "shasum": ""
             },
             "require": {
@@ -6984,7 +6976,7 @@
                 "docs": "https://github.com/verbb/super-table",
                 "rss": "https://github.com/verbb/super-table/commits/v2.atom"
             },
-            "time": "2020-09-29T00:19:36+00:00"
+            "time": "2020-11-28T06:02:46+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

@@ -1,12 +1,12 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
-  b1953131-7ef1-45dc-ae5e-df4c00ea40f8:
+  0f1b9ed8-1188-49b8-a373-8f7b69cbc560:
     tabs:
       -
         elements:
           -
-            fieldUid: aea0f145-e645-4cc0-a527-40ec2aa6a934
+            fieldUid: b1567a16-e716-4948-9b1b-e644e0c925c3
             instructions: null
             label: null
             required: false
@@ -16,10 +16,10 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: linkList
+handle: contactUs
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
-name: 'Link list'
-sortOrder: 23
+name: 'Contact us'
+sortOrder: 17
 topLevel: false

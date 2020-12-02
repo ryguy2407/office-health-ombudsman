@@ -13,6 +13,7 @@ childBlocks:
   - table
   - form
   - spacer
+  - contactUs
   - relatedMatrix
   - cards
   - tiles
