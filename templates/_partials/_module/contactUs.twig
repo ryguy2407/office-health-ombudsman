@@ -1,23 +1,25 @@
 {% if module.type.handle == 'contactUs' %}
-    {% set blocks = module.contactUsMatrix.all() %}
-    {% if blocks|length %}
-        <div class="md:max-w-3xl mx-auto px-8 md:px-0">
-            {% for block in blocks %}
-                <div class="flex flex-col md:flex-row justify-between py-8">
-                    <div class="w-1/12 mb-4 md:mb-0">
-                        <i class="{{ block.icon.value }} text-4xl mt-4"></i>
-                    </div>
-                    <div class="w-11/12">
-                        <h3>{{ block.heading }}</h3>
-                        <div class="richText">
-                            {{ block.text }}
+    <div class="container relative">
+        {% set blocks = module.contactUsMatrix.all() %}
+        {% if blocks|length %}
+            <div class="md:max-w-3xl mx-auto px-8 md:px-0">
+                {% for block in blocks %}
+                    <div class="flex flex-col md:flex-row justify-between py-8">
+                        <div class="w-1/12 mb-4 md:mb-0">
+                            <i class="{{ block.icon.value }} text-4xl mt-4"></i>
+                        </div>
+                        <div class="w-11/12">
+                            <h3>{{ block.heading }}</h3>
+                            <div class="richText">
+                                {{ block.text }}
+                            </div>
                         </div>
                     </div>
-                </div>
-                {% if not loop.last %}
-                    <div class="bg-dark" style="height: 1px;"></div>
-                {% endif %}
-            {% endfor %}
-        </div>
-    {% endif %}
+                    {% if not loop.last %}
+                        <div class="bg-dark" style="height: 1px;"></div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
 {% endif %}
