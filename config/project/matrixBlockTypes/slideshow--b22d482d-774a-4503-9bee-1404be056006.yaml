@@ -41,7 +41,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3cce9d87-0235-45c2-a5d1-959ba9d862bd
+            fieldUid: b79a4e73-9fb8-402f-8fa9-cc175ffec5a1
             instructions: null
             label: null
             required: false
@@ -50,7 +50,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b79a4e73-9fb8-402f-8fa9-cc175ffec5a1
+            fieldUid: cf7d320c-d6d0-4a44-81f3-d150aa017222
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3cce9d87-0235-45c2-a5d1-959ba9d862bd
             instructions: null
             label: null
             required: false
@@ -65,7 +74,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: buttonLink
-    instructions: ''
+    instructions: 'If you supply a button link, it will override the internal link, so make sure you only select one option here.'
     name: 'Button Link'
     searchable: true
     settings:
@@ -203,6 +212,27 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  cf7d320c-d6d0-4a44-81f3-d150aa017222:
+    contentColumnType: string
+    fieldGroup: null
+    handle: internalLink
+    instructions: 'If the slideshow is linking to a page or entry on our site then use this field.'
+    name: 'Internal link'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
 handle: slideshow
 name: Slideshow
 sortOrder: 1
