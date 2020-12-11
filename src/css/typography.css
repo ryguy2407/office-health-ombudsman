@@ -105,52 +105,29 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     ul {
-        @apply list-disc;
+        li {
+            @apply mb-2 text-lg list-disc;
+        }
     }
 
     ol {
         @apply list-decimal;
     }
 
-    li {
-        @apply mb-2;
+    hr {
+        @apply my-8;
+    }
+    a {
+        @apply border-b border-dark text-navy-500;
+        &:hover {
+             @apply border-solid border-teal-500;
+        }
     }
 }
 
 @media (max-width: 640px) { 
     ul, ol, li {
         @apply text-base;
-    }
-}
-
-.richtext {
-    hr {
-        @apply my-8;
-    }
-    a {
-        @apply border-b border-dark text-navy-500;
-        &:hover {
-             @apply border-solid border-teal-500;
-        }
-    }
-}
-
-.richText {
-    li {
-        @apply text-lg;
-    }
-    hr {
-        @apply my-8;
-    }
-
-    blockquote {
-        @apply border-l-4 pl-8 mb-6;
-    }
-    a {
-        @apply border-b border-dark text-navy-500;
-        &:hover {
-             @apply border-solid border-teal-500;
-        }
     }
 }
 
