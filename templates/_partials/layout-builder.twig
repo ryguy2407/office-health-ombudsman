@@ -10,8 +10,8 @@
                 <div class="absolute inset-0">
                     {% set image = block.backgroundImage.one() %}
                     {% set full = (image.width > 2000) ? 2000 : image.width %}
-                    {% set half = round(full / 2) %}
-                    {% set fourth = round(full / 4) %}
+                    {% set half = (full / 2) | round %}
+                    {% set fourth = (full / 4) | round %}
 
                     <img class="object-cover w-full h-full lazyload" src="{{ image.url({ width: half }) }}" alt=""
                         data-srcset="{{ image.url({ width: fourth }) }} {{ fourth }}w,
