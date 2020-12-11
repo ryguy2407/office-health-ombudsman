@@ -14,7 +14,7 @@
                 <div class="panel my-8 richtext" id="accordionPanel1" aria-labelledby="accordionParent{{ loop.index }}" style="display: none;">
                     {{ block.accordionContent }}
 
-                    {% for nested in block.nestedAccordion %}
+                    {% for nested in block.nestedAccordion.all() %}
                         <div class="nestedLevel accordion">
                             <button class="accordionTrigger flex w-full focus:outline-none">
                                 <img class="mr-4" src="/assets/img/closed.svg" alt="Accordion icon">

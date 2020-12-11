@@ -1,7 +1,7 @@
 <span class="breadcrumb-item {% if textColour is defined %}text-{{ textColour }}{% else %}text-white{% endif %} %}">
     <a href="/"><i class="far fa-home-alt"></i></a>
 </span>
-{% for segment in craft.request.segments %}
+{% for segment in craft.app.request.segments %}
     {% set segmentEntries = craft.entries.slug(segment).all() %}
     <span class="{% if textColour is defined %}text-{{ textColour }}{% else %}text-white{% endif %} %} mx-2">/</span>
     {% for segmentEntry in segmentEntries %}
