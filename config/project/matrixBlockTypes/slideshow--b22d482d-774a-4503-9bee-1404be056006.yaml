@@ -75,7 +75,7 @@ fields:
     fieldGroup: null
     handle: buttonLink
     instructions: 'If you supply a button link, it will override the internal link, so make sure you only select one option here.'
-    name: 'Button Link'
+    name: 'External link'
     searchable: true
     settings:
       byteLimit: null
