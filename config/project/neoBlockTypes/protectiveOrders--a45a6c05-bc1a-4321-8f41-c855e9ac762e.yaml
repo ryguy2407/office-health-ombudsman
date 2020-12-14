@@ -1,5 +1,21 @@
 childBlocks: ''
 field: fb4bae98-1902-4611-9b1c-635f478d5575
+fieldLayouts:
+  ef33cb79-5fed-4c15-b3d7-6b8d98d86d0f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 11b6f8f9-a493-4fd4-99cb-e49eef0968fa
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: CONTENT
+        sortOrder: 1
 handle: protectiveOrders
 maxBlocks: 0
 maxChildBlocks: 0

@@ -1,0 +1,22 @@
+contentColumnType: string
+fieldGroup: 75f9d910-f695-4591-9506-e6cfe921fcd7
+handle: protectiveOrderTag
+instructions: ''
+name: 'Protective order tag'
+searchable: true
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: 'taggroup:d712b724-84c0-496a-b7f2-d9996b9c245c'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Tags

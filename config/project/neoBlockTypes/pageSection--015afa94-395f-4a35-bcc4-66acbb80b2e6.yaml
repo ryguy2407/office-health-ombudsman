@@ -1,5 +1,27 @@
 childBlocks:
-  22: protectiveOrders
+  - richText
+  - codeEmbed
+  - lineBreak
+  - image
+  - video
+  - regularCards
+  - textMedia
+  - splitScreen
+  - siteSelector
+  - gridLinks
+  - accordion
+  - table
+  - form
+  - spacer
+  - contactUs
+  - relatedMatrix
+  - cards
+  - tiles
+  - columns
+  - linkList
+  - mediaReleases
+  - reports
+  - protectiveOrders
 field: fb4bae98-1902-4611-9b1c-635f478d5575
 fieldLayouts:
   6c25c01b-40fd-4e9c-8908-3bb0516ff4b2:

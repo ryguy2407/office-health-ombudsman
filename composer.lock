@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7154c12cc9cbb724460e6d4fc2666c79",
+    "content-hash": "dd619813658071fbc57429e26ab598e7",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -74,16 +74,11 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.168.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1d6a976da857d13b156bd63613ee086c13f6dc29"
-            },
+            "version": "3.168.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1d6a976da857d13b156bd63613ee086c13f6dc29",
-                "reference": "1d6a976da857d13b156bd63613ee086c13f6dc29",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/49ef1f905388c8185012c9651b80941b8f2a218d",
+                "reference": "49ef1f905388c8185012c9651b80941b8f2a218d",
                 "shasum": ""
             },
             "require": {
@@ -158,9 +153,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.168.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.168.3"
             },
-            "time": "2020-12-10T19:35:18+00:00"
+            "time": "2020-12-11T19:12:18+00:00"
         },
         {
             "name": "billythekid/conditional-fields",
@@ -1004,11 +999,11 @@
         },
         {
             "name": "craftcms/feed-me",
-            "version": "4.3.1",
+            "version": "4.3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/feed-me/zipball/db8581dde3d19e9e01c55400d261f58e2ca4e681",
-                "reference": "db8581dde3d19e9e01c55400d261f58e2ca4e681",
+                "url": "https://api.github.com/repos/craftcms/feed-me/zipball/93ef499c112b4ee94adb273d5101a914f04d20cf",
+                "reference": "93ef499c112b4ee94adb273d5101a914f04d20cf",
                 "shasum": ""
             },
             "require": {
@@ -1019,10 +1014,6 @@
                 "nesbot/carbon": "^1.22 || ^2.10",
                 "ralouphie/mimey": "^2.1.0",
                 "seld/jsonlint": "^1.7"
-            },
-            "require-dev": {
-                "codeception/codeception": "^4.0.0",
-                "codeception/module-asserts": "^1.3"
             },
             "type": "craft-plugin",
             "extra": {
@@ -1035,7 +1026,6 @@
                     "craft\\feedme\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1051,20 +1041,20 @@
             ],
             "description": "Import content from XML, RSS, CSV or JSON feeds into entries, categories, Craft Commerce products, and more.",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "feed me"
             ],
             "support": {
-                "docs": "https://docs.craftcms.com/feed-me/v4/",
                 "email": "support@craftcms.com",
                 "issues": "https://github.com/craftcms/feed-me/issues?state=open",
-                "rss": "https://github.com/craftcms/feed-me/commits/master.atom",
-                "source": "https://github.com/craftcms/feed-me"
+                "source": "https://github.com/craftcms/feed-me",
+                "docs": "https://docs.craftcms.com/feed-me/v4/",
+                "rss": "https://github.com/craftcms/feed-me/commits/master.atom"
             },
-            "time": "2020-11-09T20:29:29+00:00"
+            "time": "2020-12-11T04:28:13+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1187,6 +1177,7 @@
                     "craft\\redactor\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1198,18 +1189,18 @@
             ],
             "description": "Edit rich text content in Craft CMS using Redactor by Imperavi.",
             "keywords": [
+                "Redactor",
                 "cms",
                 "craftcms",
                 "html",
-                "redactor",
                 "yii2"
             ],
             "support": {
+                "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
                 "email": "support@craftcms.com",
                 "issues": "https://github.com/craftcms/redactor/issues?state=open",
-                "source": "https://github.com/craftcms/redactor",
-                "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
-                "rss": "https://github.com/craftcms/redactor/commits/v2.atom"
+                "rss": "https://github.com/craftcms/redactor/commits/v2.atom",
+                "source": "https://github.com/craftcms/redactor"
             },
             "time": "2020-12-08T12:55:30+00:00"
         },
@@ -4478,6 +4469,10 @@
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
             },
+            "require-dev": {
+                "codeception/codeception": "^3.0",
+                "vlucas/phpdotenv": "^3.0"
+            },
             "type": "craft-plugin",
             "extra": {
                 "name": "SEOmatic",
@@ -4505,6 +4500,7 @@
                     "nystudio107\\seomatic\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -4516,22 +4512,23 @@
             ],
             "description": "SEOmatic facilitates modern SEO best practices & implementation for Craft CMS 3. It is a turnkey SEO system that is comprehensive, powerful, and flexible.",
             "keywords": [
+                "Craft",
+                "JSON-LD",
+                "Sitemap",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "facebook",
-                "json-ld",
                 "meta",
                 "seo",
                 "seomatic",
-                "sitemap",
                 "tags",
                 "twitter"
             ],
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
-                "issues": "https://nystudio107.com/plugins/seomatic/support"
+                "issues": "https://nystudio107.com/plugins/seomatic/support",
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.26"
             },
             "time": "2020-12-08T20:42:00+00:00"
         },
@@ -5918,6 +5915,9 @@
                 "symfony/finder": "^2.8|^3.0|^4.0|^5.0",
                 "symfony/property-access": "^2.8|^3.0|^4.0|^5.0"
             },
+            "require-dev": {
+                "phpunit/phpunit": "^6.1"
+            },
             "type": "craft-plugin",
             "extra": {
                 "schemaVersion": "3.1.0",
@@ -5936,6 +5936,7 @@
                     "Solspace\\Freeform\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "Solspace",
@@ -5943,6 +5944,9 @@
                 }
             ],
             "description": "The most reliable, intuitive and powerful form builder for Craft.",
+            "support": {
+                "source": "https://github.com/solspace/craft3-freeform/tree/v3.9.9"
+            },
             "time": "2020-12-02T13:30:03+00:00"
         },
         {
@@ -6000,6 +6004,7 @@
                     "benf\\neo\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -6011,18 +6016,18 @@
             ],
             "description": "A Matrix-like field type that uses existing fields",
             "keywords": [
+                "Neo",
                 "cms",
                 "craftcms",
                 "field",
                 "matrix",
-                "neo",
                 "plugin"
             ],
             "support": {
-                "issues": "https://github.com/spicywebau/craft-neo/issues",
-                "source": "https://github.com/spicywebau/craft-neo",
                 "docs": "https://github.com/spicywebau/craft-neo/wiki",
-                "rss": "https://github.com/spicywebau/craft-neo/commits/master.atom"
+                "issues": "https://github.com/spicywebau/craft-neo/issues",
+                "rss": "https://github.com/spicywebau/craft-neo/commits/master.atom",
+                "source": "https://github.com/spicywebau/craft-neo"
             },
             "time": "2020-12-10T07:20:15+00:00"
         },
@@ -7805,11 +7810,11 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "1.4.7",
+            "version": "1.4.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/91892d4d4528cfdaaac31e667fe3a6243a7bd87d",
-                "reference": "91892d4d4528cfdaaac31e667fe3a6243a7bd87d",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/abf028bd837eada30715ebff8295a2c817573f79",
+                "reference": "abf028bd837eada30715ebff8295a2c817573f79",
                 "shasum": ""
             },
             "require": {
@@ -7853,7 +7858,7 @@
                 "docs": "https://github.com/verbb/navigation",
                 "rss": "https://github.com/verbb/navigation/commits/v2.atom"
             },
-            "time": "2020-12-07T01:00:49+00:00"
+            "time": "2020-12-11T09:52:15+00:00"
         },
         {
             "name": "verbb/super-table",

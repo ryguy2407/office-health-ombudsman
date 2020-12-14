@@ -1,19 +1,42 @@
-{% set query = query ?? '' %}
+{# Sets a default value if not defined by `s-val:*` on the clicked element #}
+{% set page = page ?? 1 %}
 
 {# Outputs the search field only on initial page load (not in AJAX requests) #}
 {% if sprig.isInclude %}
     {# Updates the entire `#results` div on keyup or when the value is changed #}
-    <div class="container relative mx-auto mb-4 flex flex-row justify-end">
-        <input class="border rounded border-navy-200 py-2 px-4" sprig s-trigger="keyup changed" s-target="#protectiveOrders" s-swap="outerHTML"
-           type="text" name="query" value="{{ query }}" placeholder="Search">
+{#    <div class="container relative mx-auto mb-4 flex flex-row justify-end">#}
+{#        <input class="border rounded border-navy-200 py-2 px-4" sprig s-trigger="keyup changed" s-target="#protectiveOrders" s-swap="outerHTML"#}
+{#           type="text" name="query" value="{{ query }}" placeholder="Search">#}
+{#    </div>#}
+{% endif %}
+
+{% set tag = craft.tags()
+    .group('protectiveOrderTags')
+    .title(tagTitle)
+%}
+
+{% set entries = craft.entries().section('protectiveOrders').orderBy('dateOfAction desc').relatedTo(tag).limit(limit) %}
+
+{# Paginates the entry query given the current page #}
+{% set pageInfo = sprig.paginate(entries, page) %}
+{% set entries = pageInfo.pageResults %}
+
+{% if entries %}
+    <div class="container mx-auto relative mt-8">
+        <div class="flex justify-between mb-8">
+            {# Decrements `page` by 1 and pushes the new value into the URL on click #}
+            <button class="{% if page > 1 %}visible{% else %}invisible{% endif %} bg-primary-500 p-4 text-navy" sprig s-val:page="{{ page - 1 }}" s-push-url="?page={{ page - 1 }}">
+                Previous
+            </button>
+            {# Increments `page` by 1 and pushes the new value into the URL on click #}
+            <button class="{% if page < pageInfo.totalPages %}visible{% else %}invisible{% endif %} bg-primary-500 p-4 text-navy" sprig s-val:page="{{ page + 1 }}" s-push-url="?page={{ page + 1 }}">
+                Next
+            </button>
+        </div>
     </div>
 {% endif %}
 
-{% set entries = craft.entries().section('protectiveOrders').orderBy('dateOfAction desc').search(query).limit(20) %}
-
-    {% paginate entries as pageInfo, pageEntries %}
-
-    <div class="container mx-auto relative" id="protectiveOrders">
+    <div class="container mx-auto relative mt-8" id="protectiveOrders">
         <div class="flex flex-col lg:flex-row space-x-0 lg:space-x-4">
             <div class="w-full lg:w-1/5 py-2">
                 <p><strong>Name of practitioner</strong></p>
@@ -31,7 +54,7 @@
                 <p><strong>Type of practitioner</strong></p>
             </div>
         </div>
-        {% for entry in pageEntries %}
+        {% for entry in entries %}
             <div class="flex flex-col lg:flex-row border-b border-navy-200 space-x-0 lg:space-x-4">
                 <div class="w-full lg:w-1/5 py-2">
                     <p>{{ entry.nameOfPractitioner }}</p>
@@ -51,3 +74,15 @@
             </div>
         {% endfor %}
     </div>
+
+{% if entries %}
+    <div class="container mx-auto relative mt-8">
+        <p>
+            <em>
+                Showing {{ pageInfo.first }}-{{ pageInfo.last }}
+                of {{ pageInfo.total }} entries.
+            </em><br>
+            <em>Page {{ pageInfo.currentPage }} of {{ pageInfo.totalPages }} pages.</em><br>
+        </p>
+    </div>
+{% endif %}
