@@ -10,12 +10,13 @@
 {#    </div>#}
 {% endif %}
 
-{% set tag = craft.tags()
+{% set relatedTag = craft.tags()
     .group('protectiveOrderTags')
     .title(tagTitle)
+    .one()
 %}
 
-{% set entries = craft.entries().section('protectiveOrders').orderBy('dateOfAction desc').relatedTo(tag).limit(limit) %}
+{% set entries = craft.entries().section('protectiveOrders').orderBy('dateOfAction desc').relatedTo(relatedTag).limit(limit) %}
 
 {# Paginates the entry query given the current page #}
 {% set pageInfo = sprig.paginate(entries, page) %}
