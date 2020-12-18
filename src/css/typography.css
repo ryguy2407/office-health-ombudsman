@@ -125,9 +125,13 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
-@media (max-width: 640px) { 
-    ul, ol, li {
-        @apply text-base;
+@media (max-width: 640px) {
+    .richtext {
+        ul {
+            li {
+                @apply text-base;
+            }
+        }
     }
 }
 
